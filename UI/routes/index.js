@@ -7,4 +7,9 @@ router.get('/', function(req, res, next) {
   res.sendFile(path.join(__dirname, '..', 'views', 'index.html'));
 });
 
+// get login page
+router.get('/login', (req, res, next) => {
+  res.sendFile(path.join(__dirname, '..', 'views', 'login.html'));
+});
+
 module.exports = router;
