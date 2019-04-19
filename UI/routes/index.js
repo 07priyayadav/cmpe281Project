@@ -12,4 +12,9 @@ router.get('/login', (req, res, next) => {
   res.sendFile(path.join(__dirname, '..', 'views', 'login.html'));
 });
 
+// get dashboard page
+router.get('/dashboard', (req, res, next) => {
+  res.sendFile(path.join(__dirname, '..', 'views', 'dashboard.html'));
+});
+
 module.exports = router;
