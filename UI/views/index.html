@@ -40,12 +40,12 @@
                 <input type="checkbox" id="drop">
                 <ul class="menu mt-1">
                     <li class="mr-lg-4 mr-3 active"><a href="/">Home</a></li>
-                    <li class="mr-lg-4 mr-3"><a href="#services" class="scroll">Services</a></li>
+                    <li id="btnbuildfarm" style="display: none"  class="mr-lg-4 mr-3"><a href="#services" class="scroll">Build Smart Farm</a></li>
                     <li class="mr-lg-4 mr-3"><a href="#about" class="scroll">About</a></li>
                     <li class="mr-lg-4 mr-3"><a href="#news" class="scroll">News</a></li>
                     <li id="btnDashboard" style="display: none" class="mr-lg-4 mr-3"><a href="/dashboard" class="scroll">Dashboard</a></li>
-                    <li id="btnNodes" style="display: none" class="mr-lg-4 mr-3"><a href="#" class="scroll">Nodes</a></li>
-                    <li id="btnClusters" style="display: none" class="mr-lg-4 mr-3"><a href="#" class="scroll">Clusters</a></li>
+                    <li id="btnNodes" style="display: none" class="mr-lg-4 mr-3"><a href="#managenode" class="scroll">Nodes</a></li>
+                    <li id="btnClusters" style="display: none" class="mr-lg-4 mr-3"><a href="/clusters" class="scroll">Clusters</a></li>
                     <li class="mr-lg-4 mr-3"><a href="/login" id="btnLogin" class="scroll">Login</a></li>
                 </ul>
             </div>
@@ -56,7 +56,7 @@
         <div class="agile_banner_info">
             <div class="row banner_agile_para">
                 <div class="col-lg-9 ban-text">
-                    <h2>Smart Agriculture Solution </h2>
+                    <h2>Services</h2>
                 </div>
                 <div class="col-lg-3 ban-buton">
                     <a href="#services" data-toggle="modal" data-target="#exampleModalCenter" role="button"> Read More </a>
@@ -69,29 +69,169 @@
     <section class="wedo py-5" id="services">
         <div class="container py-lg-5">
             <div class="w3l_head1">
-                <h4 class="heading text-center"> Services</h4>
-                <p class="subs1 mt-4 text-center mx-auto">Leverage IoT,Cloud technology to build smart farm at affordable price</p>
+                <div style="width: 90%;margin:0 auto">
+                <h4 class="heading text-center">Build Smart Farm</h4>
+                <div class="contact_grid_right mt-5 mx-auto text-left">
+                <form id="buildFarmForm">
+                        <div class="row contact_top">
+                            <div class="col-sm-6">
+                                <input type="text" id="inputFarmerID" name="FarmerID" placeholder="Farmer ID" required="">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" id="inputFarmID" name="FarmID" placeholder="Farm ID" required="">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" id="inputRanchID" name="RanchID" placeholder="Ranch ID" required="">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" id="inputClusterID" name="ClusterID" placeholder="Cluster ID" required="">
+                            </div>
+                             <div class="col-sm-6">
+                                <input type="text" id="inputSensorID" name="SensorID" placeholder="Sensor ID" required="">
+                            </div>
+                             <div class="col-sm-6">
+                                <p>Select Monitor Parameter</p>
+                                <input id="btemperature" type="checkbox" name="temperature" value="temperature">
+                                <label for="btemperature" style="color:black !important;">Temperature</label>
+                                <br>
+                                <input id="bhumidity" type="checkbox" name="humidity" value="Humidity">
+                                <label for="bhumitidy" style="color:black !important;">Humitidy</label>
+                                <br>
+                                <input id="bsoilMoisture" type="checkbox" name="soilMoisture" value="Soil Moisture">  <label for="bsoilMoisture" style="color:black !important;">Soil Moisture</label>
+                                <br>
+                                <input id="bwindSpeed" type="checkbox" name="windSpeed" value="Wind Speed">
+                                <label for="bwindSpeed" style="color:black !important;">Wind Speed</label>
+                                <br>
+                                <input id="brain" type="checkbox" name="rain" value="Rain">
+                                <label for="brain" style="color:black !important;">Rain</label>
+                                <br>
+                            </div>
+                        </div>
+                        <input id="addFarmButton" type="submit" value="Add Smart Farm">
+                    </form>
             </div>
-            <div class="row about-info-grids text-center py-lg-5 py-3 mt-3">
-                <div class="col-md-4 about-info about-info1">
-                    <span class="fa fa-tint"></span>
-                    <h4>Build Smart Farm</h4>
-                    <p>Multiple smart ranches can be built by farmers. Out IoT engineers will help in setting up smart network.</p>
-                </div>
-                <div class="col-md-4 about-info about-info2">
-                    <span class="fa fa-leaf"></span>
-                    <h4>Real Time Monitoring</h4>
-                    <p>Multiple ranches can be monitored by farmers at real time.This helps farmers know the soil health, climate conditions temperature and crop health.</p>
-                </div>
-                <div class="col-md-4 about-info about-info3">
-                    <span class="fa fa-pagelines"></span>
-                    <h4>Choose from Sensors Range</h4>
-                    <p>SmartAgCloud supports range of physical sensors. Farmers are provided with option to choose sensors to monitor farms smartly.</p>
+            </div>
+    </section>
+    <!-- //what we do -->
+    <!-- Manage Node -->
+    <section class="row foot-1 py-5" id="managenode">
+        <!-- <section  class="container py-lg-5" id="managenode"> -->
+        <div class="col-lg-6 foot-1_grid_right">
+            <div style="width: 90%;margin:0 auto">
+                <h4 class="mb-4">Add Sensor</h4>
+                <div class="contact_grid_right mt-5 mx-auto text-left">
+                    <form id="addSensorForm">
+                        <div class="row contact_top">
+                            <div class="col-sm-6">
+                                <input type="text" id="inputSensorName" name="sensorName" placeholder="Sensor Name" required="">
+                            </div>
+                            <div class="col-sm-6">
+                                <p> Sensor Status</p>
+                                <select id="selectSensorStatus">
+                                  <option id = "ON" value="Turn-On">Turn-On</option>
+                                   <label for="ON" style="color:white !important;">Turn-On</label>
+                                   <br>
+                                  <option id = "ACTIVE" value="Active">Active</option>
+                                 <label for="ACTIVE" style="color:white !important;">Active</label>
+                                   <br>
+                                  <option id = "Inactive" value="Inactive">Inactive</option>
+                                  <label for="Inactive" style="color:white !important;">Inactive</label>
+                                   <br>
+                                  <option id = "Turn-Off" value="Turn-Off">Turn-Off</option>
+                                  <label for="Turn-Off" style="color:white !important;">Turn-Off</label>
+                                   <br>
+                                  <option id = "main" value="Maintenance">Maintenance</option>
+                                  <label for="main" style="color:white !important;">Maintenance</label>
+                                   <br>
+                                </select>
+                                <br>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" id="inputSensorManufacturer" name="SensorManufacturer" placeholder="Sensor Manufacturer" required="">
+                            </div>
+                            <div class="col-sm-6">
+                                <p>Select Monitor Parameter</p>
+                                <input id="temperature" type="checkbox" name="temperature" value="temperature">
+                                <label for="temperature" style="color:white !important;">Temperature</label>
+                                <br>
+                                <input id="humidity" type="checkbox" name="humidity" value="Humidity">
+                                <label for="humitidy" style="color:white !important;">Humitidy</label>
+                                <br>
+                                <input id="soilMoisture" type="checkbox" name="soilMoisture" value="Soil Moisture">  <label for="humitidy" style="color:white !important;">Soil Moisture</label>
+                                <br>
+                                <input id="windSpeed" type="checkbox" name="windSpeed" value="Wind Speed">
+                                <label for="windSpeed" style="color:white !important;">Wind Speed</label>
+                                <br>
+                                <input id="rain" type="checkbox" name="rain" value="Rain">
+                                <label for="rain" style="color:white !important;">Rain</label>
+                                <br>
+                            </div>
+                        </div>
+                        <input id="addSensorButton" type="submit" value="Add Sensor">
+                    </form>
                 </div>
             </div>
         </div>
+        <div class="col-lg-6">
+            <div style="display: flex;width: 90%; margin: 0 auto">
+               <h4 style="flex: 1" class="mb-4">Manage Sensors </h4>
+               <input placeholder="&nbsp;&nbsp;&nbsp;Search" style="flex: 1" type="text">
+           </div>
+           <div class="contact_grid_right mt-5 mx-auto text-left">
+                    <form action="#" method="post">
+                        <div class="row contact_top">
+                            <div class="col-sm-6">
+                                <input type="text" name="sensorName" placeholder="Sensor Name" required="">
+                            </div>
+                            <div class="col-sm-6">
+                                <p> Sensor Status</p>
+                                <select>
+                                  <option id = "ON" value="Turn-On">Turn-On</option>
+                                   <label for="ON" style="color:white !important;">Turn-On</label>
+                                   <br>
+                                  <option id = "ACTIVE" value="Active">Active</option>
+                                 <label for="ACTIVE" style="color:white !important;">Active</label>
+                                   <br>
+                                  <option id = "Inactive" value="Inactive">Inactive</option>
+                                  <label for="Inactive" style="color:white !important;">Inactive</label>
+                                   <br>
+                                  <option id = "Turn-Off" value="Turn-Off">Turn-Off</option>
+                                  <label for="Turn-Off" style="color:white !important;">Turn-Off</label>
+                                   <br>
+                                  <option id = "main" value="Maintenance">Maintenance</option>
+                                  <label for="main" style="color:white !important;">Maintenance</label>
+                                   <br>
+                                </select>
+                                <br>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" name="SensorManufacturer" placeholder="Sensor Manufacturer" required="">
+                            </div>
+                            <div class="col-sm-6">
+                                <p>Select Monitor Parameter</p>
+                                <input id="temperature" type="checkbox" name="temperature" value="temperature">
+                                <label for="temperature" style="color:white !important;">Temperature</label>
+                                <br>
+                                <input id="humidity" type="checkbox" name="humidity" value="Humidity">
+                                <label for="humitidy" style="color:white !important;">Humitidy</label>
+                                <br>
+                                <input id="soilMoisture" type="checkbox" name="soilMoisture" value="Soil Moisture">  <label for="humitidy" style="color:white !important;">Soil Moisture</label>
+                                <br>
+                                <input id="windSpeed" type="checkbox" name="windSpeed" value="Wind Speed">
+                                <label for="windSpeed" style="color:white !important;">Wind Speed</label>
+                                <br>
+                                <input id="rain" type="checkbox" name="rain" value="Rain">
+                                <label for="rain" style="color:white !important;">Rain</label>
+                                <br>
+                            </div>
+                        </div>
+                        <input style="margin-right: 100px" type="submit" value="Edit Sensor">
+                        <input type="submit" value="Delete Sensor">
+                    </form>
+                </div>
+        </div>
     </section>
-    <!-- //what we do -->
+    <!-- Manage Node -->
     <!-- news -->
     <section class="news py-5" id="about">
         <div class="container py-lg-5">

@@ -17,4 +17,9 @@ router.get('/dashboard', (req, res, next) => {
   res.sendFile(path.join(__dirname, '..', 'views', 'dashboard.html'));
 });
 
+// get clusters page
+router.get('/clusters', (req, res, next) => {
+  res.sendFile(path.join(__dirname, '..', 'views', 'clusters.html'));
+});
+
 module.exports = router;
