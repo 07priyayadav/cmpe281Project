@@ -11,6 +11,13 @@ $(document).ready(function() {
             $("#btnNodes").css("display", "");
             $("#btnClusters").css("display", "");
             $("#btnbuildfarm").css("display", "");
+            $("#managenodes").css("display", "");
+            $("#about").css("display", "none");
+            $("#news").css("display", "none");
+            $("#contact").css("display", "none");
+            $("#btnabout").css("display", "none");
+            $("#btnnews").css("display", "none");
+
         }
     }
 
