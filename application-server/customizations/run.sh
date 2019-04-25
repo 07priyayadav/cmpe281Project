@@ -1,3 +1,4 @@
+git submodule update --init --recursive
 cd ../node-red/
 cp ../customizations/settings.js .
 cp ../customizations/flows.json .
