@@ -1,58 +1,51 @@
 [
     {
-        "id": "30b8b31b.b13d6c",
+        "id": "3a44a793.d4f7d8",
         "type": "tab",
         "label": "DBTest",
         "disabled": true,
         "info": ""
     },
     {
-        "id": "215a464d.21717a",
+        "id": "5f53818c.186bc",
         "type": "tab",
         "label": "CheckRange",
         "disabled": true,
         "info": ""
     },
     {
-        "id": "19a2ab78.2e73b5",
+        "id": "1cfb3818.d1db88",
         "type": "tab",
         "label": "EachSensor",
         "disabled": true,
         "info": ""
     },
     {
-        "id": "e9859ff0.14239",
+        "id": "3736a922.aa8396",
         "type": "tab",
         "label": "TestDataGen",
-        "disabled": false,
+        "disabled": true,
         "info": ""
     },
     {
-        "id": "fcb46f3f.87aa9",
+        "id": "92c9c3ef.39c9a",
         "type": "tab",
         "label": "RoleBasedLogin",
         "disabled": false,
         "info": ""
     },
     {
-        "id": "c1088999.1f4dc8",
+        "id": "85b67cb7.2993c",
         "type": "tab",
         "label": "sensor generator",
-        "disabled": false,
+        "disabled": true,
         "info": ""
     },
     {
-        "id": "1cbcdb88.58fea4",
+        "id": "79f883ec.307dec",
         "type": "tab",
-        "label": "Dashboard",
-        "disabled": false,
-        "info": ""
-    },
-    {
-        "id": "ca72da37.1c2a58",
-        "type": "tab",
-        "label": "Flow 4",
-        "disabled": false,
+        "label": "Flow 3",
+        "disabled": true,
         "info": ""
     },
     {
@@ -391,9 +384,547 @@
         "keyspace": "cloud_sensor_data"
     },
     {
-        "id": "8535010b.55d64",
+        "id": "e81d613b.b7137",
+        "type": "ui_group",
+        "z": "",
+        "name": "Default",
+        "tab": "b6aee9de.0e7558",
+        "order": 2,
+        "disp": true,
+        "width": "18",
+        "collapse": false
+    },
+    {
+        "id": "b6aee9de.0e7558",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": true,
+        "hidden": true
+    },
+    {
+        "id": "69715470.1c769c",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#4e557b",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#4e557b",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#4e557b",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#000000",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#7179a5",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#4e557b",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "true",
+            "lockMenu": "true",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "ab2948ea.420c08",
+        "type": "ui_group",
+        "z": "",
+        "name": "Sensor Status Board",
+        "tab": "b6aee9de.0e7558",
+        "order": 3,
+        "disp": true,
+        "width": "10",
+        "collapse": true
+    },
+    {
+        "id": "36df1de9.d7e1b2",
+        "type": "ui_group",
+        "z": "",
+        "name": "Floor Map",
+        "tab": "b6aee9de.0e7558",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "10b63f1b.6f9391",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "localhost",
+        "broker": "127.0.0.1",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "1385826c.c5e1ce",
+        "type": "users_config",
+        "appPath": "/users",
+        "jwtCookieName": "nr.nodeUsers.jwt",
+        "jwtHttpsOnly": false
+    },
+    {
+        "id": "7d67a0fd.2ad08",
+        "type": "ui_group",
+        "z": "",
+        "name": "Filters",
+        "tab": "b6aee9de.0e7558",
+        "order": 1,
+        "disp": true,
+        "width": "24",
+        "collapse": false
+    },
+    {
+        "id": "65e6b016.a3652",
+        "type": "ui_group",
+        "z": "",
+        "name": "Farmer statistics",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "8",
+        "collapse": false
+    },
+    {
+        "id": "d5689f9b.fd9db",
+        "type": "CassandraDatabase",
+        "z": "",
+        "hosts": "34.210.88.7",
+        "port": "9042",
+        "keyspace": "network_data"
+    },
+    {
+        "id": "224b7d26.67ca32",
+        "type": "CassandraDatabase",
+        "z": "",
+        "hosts": "13.57.27.218",
+        "port": "9042",
+        "keyspace": "network"
+    },
+    {
+        "id": "af4976b1.2695a8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Farmer statistics",
+        "tab": "f117cae8.38d768",
+        "order": 4,
+        "disp": true,
+        "width": "27",
+        "collapse": false
+    },
+    {
+        "id": "2a4a094f.663ed6",
+        "type": "CassandraDatabase",
+        "z": "",
+        "hosts": "34.210.88.7",
+        "port": "9042",
+        "keyspace": "cloud_sensor_data"
+    },
+    {
+        "id": "f117cae8.38d768",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Farmer",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1c96a990.7978c6",
+        "type": "CassandraDatabase",
+        "z": "",
+        "hosts": "13.57.27.218",
+        "port": "9042",
+        "keyspace": "cloud_sensor_data"
+    },
+    {
+        "id": "b40dd8b3.658c48",
+        "type": "ui_group",
+        "z": "",
+        "name": "IOT Status Chart",
+        "tab": "5a3643e6.00972c",
+        "order": 2,
+        "disp": true,
+        "width": "27",
+        "collapse": false
+    },
+    {
+        "id": "5a3643e6.00972c",
+        "type": "ui_tab",
+        "z": "",
+        "name": "IOT Support",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8cc9d8c6.579f58",
+        "type": "CassandraDatabase",
+        "z": "",
+        "hosts": "34.210.88.7",
+        "port": "9042",
+        "keyspace": "cloud_sensor_data"
+    },
+    {
+        "id": "faca4658.70a1f8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Farmer Notifications",
+        "tab": "f117cae8.38d768",
+        "order": 2,
+        "disp": true,
+        "width": "13",
+        "collapse": true
+    },
+    {
+        "id": "c17b876f.2eca08",
+        "type": "ui_group",
+        "z": "",
+        "name": "Floor Map",
+        "tab": "5a3643e6.00972c",
+        "order": 1,
+        "disp": true,
+        "width": "14",
+        "collapse": false
+    },
+    {
+        "id": "933f8f51.89678",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "localhost",
+        "broker": "127.0.0.1",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "bc2bafdd.22f21",
+        "type": "CassandraDatabase",
+        "z": "",
+        "hosts": "13.57.27.218",
+        "port": "9042",
+        "keyspace": "cloud_sensor_data"
+    },
+    {
+        "id": "e985d58d.3a3f68",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "localhost",
+        "broker": "127.0.0.1",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "e5962960.8b5d88",
+        "type": "CassandraDatabase",
+        "z": "",
+        "hosts": "18.236.211.38",
+        "port": "9042",
+        "keyspace": "cloud_sensor_data"
+    },
+    {
+        "id": "f11153fa.1440f",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "localhost",
+        "broker": "127.0.0.1",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "9556f304.0db0d",
+        "type": "CassandraDatabase",
+        "z": "",
+        "hosts": "18.236.211.38",
+        "port": "9042",
+        "keyspace": "cloud_sensor_data"
+    },
+    {
+        "id": "ac401990.62d6b8",
+        "type": "CassandraDatabase",
+        "z": "",
+        "hosts": "34.210.88.7",
+        "port": "9042",
+        "keyspace": "cloud_sensor_data"
+    },
+    {
+        "id": "859bf179.9472a",
+        "type": "ui_group",
+        "z": "",
+        "name": "Farmer Notifications",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "13",
+        "collapse": false
+    },
+    {
+        "id": "8fc6074c.ac30c8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Floor Map",
+        "tab": "f117cae8.38d768",
+        "order": 3,
+        "disp": true,
+        "width": "13",
+        "collapse": false
+    },
+    {
+        "id": "f60381f8.c6e2",
+        "type": "CassandraDatabase",
+        "z": "",
+        "hosts": "54.67.0.79",
+        "port": "9042",
+        "keyspace": "Network"
+    },
+    {
+        "id": "fc6a590b.635c68",
+        "type": "ui_group",
+        "z": "",
+        "name": "IOT location",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "27",
+        "collapse": false
+    },
+    {
+        "id": "b436b97d.0a9248",
+        "type": "ui_group",
+        "z": "",
+        "name": "Farm Overview",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "27",
+        "collapse": false
+    },
+    {
+        "id": "8615499d.0d0688",
+        "type": "ui_group",
+        "z": "",
+        "name": "IOT Status Chart",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "27",
+        "collapse": false
+    },
+    {
+        "id": "fe13dd98.6254b",
+        "type": "CassandraDatabase",
+        "z": "",
+        "hosts": "34.210.88.7",
+        "port": "9042",
+        "keyspace": "cloud_sensor_data"
+    },
+    {
+        "id": "69f2a424.7e258c",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "af4976b1.2695a8",
+        "order": 2,
+        "width": "3",
+        "height": "5"
+    },
+    {
+        "id": "f92c8add.a24488",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "af4976b1.2695a8",
+        "order": 4,
+        "width": "3",
+        "height": "5"
+    },
+    {
+        "id": "c07f68a1.819ca8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "af4976b1.2695a8",
+        "order": 6,
+        "width": "5",
+        "height": "5"
+    },
+    {
+        "id": "27bc5c3e.b78954",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "af4976b1.2695a8",
+        "order": 8,
+        "width": "3",
+        "height": "5"
+    },
+    {
+        "id": "6f1f3d12.49d584",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "af4976b1.2695a8",
+        "order": 10,
+        "width": "5",
+        "height": "5"
+    },
+    {
+        "id": "b427e3f9.55255",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "localhost",
+        "broker": "127.0.0.1",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "95405a5.d019ea8",
+        "type": "CassandraDatabase",
+        "z": "",
+        "hosts": "34.210.88.7",
+        "port": "9042",
+        "keyspace": "cloud_sensor_data"
+    },
+    {
+        "id": "6e2151a7.37b13",
         "type": "inject",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "",
         "topic": "",
         "payload": "{\"name\":\"Emergency Medical Operation\",\"lat\":37.33,\"lon\":-121.91,\"SIDC\":\"ENOPA-------\",\"options\":{\"fillOpacity\":0.8}}",
@@ -406,14 +937,14 @@
         "y": 60,
         "wires": [
             [
-                "26439c30.146cc4"
+                "a79edfa6.64fe8"
             ]
         ]
     },
     {
-        "id": "b4ebddd3.a755d",
+        "id": "1ab9fafc.7e80b5",
         "type": "worldmap",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "",
         "lat": "",
         "lon": "",
@@ -432,23 +963,23 @@
         "wires": []
     },
     {
-        "id": "26439c30.146cc4",
+        "id": "a79edfa6.64fe8",
         "type": "worldmap-tracks",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "",
         "depth": 20,
         "x": 340,
         "y": 60,
         "wires": [
             [
-                "b4ebddd3.a755d"
+                "1ab9fafc.7e80b5"
             ]
         ]
     },
     {
-        "id": "4a732bb2.6bd2f4",
+        "id": "b9d84a0a.448b88",
         "type": "inject",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "",
         "topic": "",
         "payload": "",
@@ -461,14 +992,14 @@
         "y": 60,
         "wires": [
             [
-                "54dfad3.f5a8854"
+                "1979840f.64c3cc"
             ]
         ]
     },
     {
-        "id": "54dfad3.f5a8854",
+        "id": "1979840f.64c3cc",
         "type": "data-generator",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "Humidity",
         "field": "payload",
         "fieldType": "msg",
@@ -478,14 +1009,14 @@
         "y": 60,
         "wires": [
             [
-                "13212e9d.9a0071"
+                "1e42f0b9.0a344f"
             ]
         ]
     },
     {
-        "id": "1b422ea9.de6e71",
+        "id": "4baf15d6.d167ec",
         "type": "function",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "json parse",
         "func": "try {\n    msg.payload = JSON.parse(msg.payload);\n} catch (e) {\n    node.error(`error in json parse: ${e}`);\n}\nreturn msg;",
         "outputs": 1,
@@ -494,14 +1025,14 @@
         "y": 120,
         "wires": [
             [
-                "a74ae372.e3253"
+                "f0172745.932898"
             ]
         ]
     },
     {
-        "id": "a74ae372.e3253",
+        "id": "f0172745.932898",
         "type": "debug",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "HumidityMsg",
         "active": true,
         "tosidebar": true,
@@ -513,38 +1044,38 @@
         "wires": []
     },
     {
-        "id": "a3d09240.0c33",
+        "id": "32108314.1fc83c",
         "type": "mqtt in",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "/humidityTopic",
         "topic": "/humidityTopic",
         "qos": "2",
-        "broker": "977359bb.95ba38",
+        "broker": "10b63f1b.6f9391",
         "x": 100,
         "y": 120,
         "wires": [
             [
-                "1b422ea9.de6e71"
+                "4baf15d6.d167ec"
             ]
         ]
     },
     {
-        "id": "4d149293.d0aedc",
+        "id": "ab30b0d2.c3ba6",
         "type": "mqtt out",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "/humidityTopic",
         "topic": "/humidityTopic",
         "qos": "",
         "retain": "",
-        "broker": "977359bb.95ba38",
+        "broker": "10b63f1b.6f9391",
         "x": 680,
         "y": 60,
         "wires": []
     },
     {
-        "id": "aaa43289.15e67",
+        "id": "a5e72e79.e8bad",
         "type": "http in",
-        "z": "19a2ab78.2e73b5",
+        "z": "1cfb3818.d1db88",
         "name": "POST /flowdata",
         "url": "/flowdata",
         "method": "post",
@@ -554,14 +1085,14 @@
         "y": 100,
         "wires": [
             [
-                "8c0cc494.14b328"
+                "dd548a16.8c06e8"
             ]
         ]
     },
     {
-        "id": "6f78cb12.20b924",
+        "id": "738762fb.2e6ebc",
         "type": "http response",
-        "z": "19a2ab78.2e73b5",
+        "z": "1cfb3818.d1db88",
         "name": "",
         "statusCode": "",
         "headers": {},
@@ -570,9 +1101,9 @@
         "wires": []
     },
     {
-        "id": "8c0cc494.14b328",
+        "id": "dd548a16.8c06e8",
         "type": "function",
-        "z": "19a2ab78.2e73b5",
+        "z": "1cfb3818.d1db88",
         "name": "process request",
         "func": "const flowdata = flow.get(\"data\") || [];\nconst body = msg.req.body;\nif(body.add) {\n    body.add.forEach(newData => {\n        flowdata.push(newData);\n    })\n}\nflow.set(\"data\", flowdata);\nmsg.payload = flowdata;\nreturn msg;",
         "outputs": 1,
@@ -581,14 +1112,14 @@
         "y": 100,
         "wires": [
             [
-                "6f78cb12.20b924"
+                "738762fb.2e6ebc"
             ]
         ]
     },
     {
-        "id": "45a9674e.748938",
+        "id": "cbfe94ca.8e5858",
         "type": "http in",
-        "z": "19a2ab78.2e73b5",
+        "z": "1cfb3818.d1db88",
         "name": "GET /flowdata",
         "url": "/flowdata",
         "method": "get",
@@ -598,14 +1129,14 @@
         "y": 40,
         "wires": [
             [
-                "4779b7b0.85eb88"
+                "fac33b5d.989208"
             ]
         ]
     },
     {
-        "id": "d5362a39.52a418",
+        "id": "9ff42f13.1c812",
         "type": "http response",
-        "z": "19a2ab78.2e73b5",
+        "z": "1cfb3818.d1db88",
         "name": "",
         "statusCode": "",
         "headers": {},
@@ -614,9 +1145,9 @@
         "wires": []
     },
     {
-        "id": "4779b7b0.85eb88",
+        "id": "fac33b5d.989208",
         "type": "function",
-        "z": "19a2ab78.2e73b5",
+        "z": "1cfb3818.d1db88",
         "name": "process request",
         "func": "msg.payload = {\n    \"flow data\": flow.get(\"data\") || []\n}\nreturn msg;",
         "outputs": 1,
@@ -625,14 +1156,14 @@
         "y": 40,
         "wires": [
             [
-                "d5362a39.52a418"
+                "9ff42f13.1c812"
             ]
         ]
     },
     {
-        "id": "619995e8.4ae8ec",
+        "id": "e3266b0c.3f7558",
         "type": "http in",
-        "z": "19a2ab78.2e73b5",
+        "z": "1cfb3818.d1db88",
         "name": "/dashboard",
         "url": "/dashboard",
         "method": "get",
@@ -642,14 +1173,14 @@
         "y": 160,
         "wires": [
             [
-                "1801f87e.ab90b8"
+                "3ef8104e.fba19"
             ]
         ]
     },
     {
-        "id": "1801f87e.ab90b8",
+        "id": "3ef8104e.fba19",
         "type": "users_isloggedin",
-        "z": "19a2ab78.2e73b5",
+        "z": "1cfb3818.d1db88",
         "name": "",
         "enableCustomHandler": false,
         "outputs": 1,
@@ -660,9 +1191,9 @@
         ]
     },
     {
-        "id": "53c83255.4cfdcc",
+        "id": "c4107e33.d8c6a",
         "type": "users_isloggedin",
-        "z": "fcb46f3f.87aa9",
+        "z": "92c9c3ef.39c9a",
         "name": "",
         "enableCustomHandler": true,
         "outputs": 2,
@@ -670,17 +1201,17 @@
         "y": 140,
         "wires": [
             [
-                "6103e761.ff8cc8"
+                "26bbc347.849e0c"
             ],
             [
-                "340cb3d9.b1088c"
+                "5201f00e.e4fa"
             ]
         ]
     },
     {
-        "id": "827bf593.e1b898",
+        "id": "3293f591.c5395a",
         "type": "http in",
-        "z": "fcb46f3f.87aa9",
+        "z": "92c9c3ef.39c9a",
         "name": "",
         "url": "/demo",
         "method": "get",
@@ -690,14 +1221,14 @@
         "y": 140,
         "wires": [
             [
-                "53c83255.4cfdcc"
+                "c4107e33.d8c6a"
             ]
         ]
     },
     {
-        "id": "6103e761.ff8cc8",
+        "id": "26bbc347.849e0c",
         "type": "template",
-        "z": "fcb46f3f.87aa9",
+        "z": "92c9c3ef.39c9a",
         "name": "for admins onl",
         "field": "payload",
         "fieldType": "msg",
@@ -708,14 +1239,14 @@
         "y": 100,
         "wires": [
             [
-                "fa1d9832.d1d928"
+                "7a35c29c.ada97c"
             ]
         ]
     },
     {
-        "id": "fa1d9832.d1d928",
+        "id": "7a35c29c.ada97c",
         "type": "http response",
-        "z": "fcb46f3f.87aa9",
+        "z": "92c9c3ef.39c9a",
         "name": "",
         "statusCode": "",
         "headers": {},
@@ -724,9 +1255,9 @@
         "wires": []
     },
     {
-        "id": "b22f8a52.b141d8",
+        "id": "73b7f45e.ffffbc",
         "type": "template",
-        "z": "fcb46f3f.87aa9",
+        "z": "92c9c3ef.39c9a",
         "name": "for allowed users only",
         "field": "payload",
         "fieldType": "msg",
@@ -737,14 +1268,14 @@
         "y": 140,
         "wires": [
             [
-                "8af5d186.04d9d"
+                "8937bf01.e1e27"
             ]
         ]
     },
     {
-        "id": "8af5d186.04d9d",
+        "id": "8937bf01.e1e27",
         "type": "http response",
-        "z": "fcb46f3f.87aa9",
+        "z": "92c9c3ef.39c9a",
         "name": "",
         "statusCode": "",
         "headers": {},
@@ -753,9 +1284,9 @@
         "wires": []
     },
     {
-        "id": "528b84d5.50fb0c",
+        "id": "dc2d184d.7e2fc8",
         "type": "switch",
-        "z": "fcb46f3f.87aa9",
+        "z": "92c9c3ef.39c9a",
         "name": "check user scope",
         "property": "payload.user.scope",
         "propertyType": "msg",
@@ -780,9 +1311,9 @@
         ]
     },
     {
-        "id": "340cb3d9.b1088c",
+        "id": "5201f00e.e4fa",
         "type": "template",
-        "z": "fcb46f3f.87aa9",
+        "z": "92c9c3ef.39c9a",
         "name": "custom login page",
         "field": "payload",
         "fieldType": "msg",
@@ -793,14 +1324,14 @@
         "y": 220,
         "wires": [
             [
-                "d5ca0b66.c45438"
+                "dd5212a7.2029b"
             ]
         ]
     },
     {
-        "id": "d5ca0b66.c45438",
+        "id": "dd5212a7.2029b",
         "type": "http response",
-        "z": "fcb46f3f.87aa9",
+        "z": "92c9c3ef.39c9a",
         "name": "",
         "statusCode": "",
         "headers": {},
@@ -809,9 +1340,9 @@
         "wires": []
     },
     {
-        "id": "adb95699.518488",
+        "id": "f82f6aef.017048",
         "type": "comment",
-        "z": "fcb46f3f.87aa9",
+        "z": "92c9c3ef.39c9a",
         "name": "User unauthorized, show login page",
         "info": "",
         "x": 480,
@@ -819,9 +1350,9 @@
         "wires": []
     },
     {
-        "id": "9ab4e1c5.f44b7",
+        "id": "e77d8784.1a5d08",
         "type": "comment",
-        "z": "fcb46f3f.87aa9",
+        "z": "92c9c3ef.39c9a",
         "name": "User authorized, allow through",
         "info": "",
         "x": 460,
@@ -829,9 +1360,9 @@
         "wires": []
     },
     {
-        "id": "986e915f.2e0cb",
+        "id": "1af50e0c.34e4d2",
         "type": "data-generator",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "Temp",
         "field": "payload",
         "fieldType": "msg",
@@ -841,14 +1372,14 @@
         "y": 180,
         "wires": [
             [
-                "3dac012d.189c6e"
+                "3b06bdd4.dc4e72"
             ]
         ]
     },
     {
-        "id": "37392a6c.8f7e46",
+        "id": "d4358453.a6b0a8",
         "type": "function",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "json parse",
         "func": "try {\n    msg.payload = JSON.parse(msg.payload);\n} catch (e) {\n    node.error(`error in json parse: ${e}`);\n}\nreturn msg;",
         "outputs": 1,
@@ -857,14 +1388,14 @@
         "y": 240,
         "wires": [
             [
-                "2b5ecb08.e6f064"
+                "537ec13c.28d9a"
             ]
         ]
     },
     {
-        "id": "2b5ecb08.e6f064",
+        "id": "537ec13c.28d9a",
         "type": "debug",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "TempMsg",
         "active": true,
         "tosidebar": true,
@@ -876,38 +1407,38 @@
         "wires": []
     },
     {
-        "id": "4f435ca6.fa2494",
+        "id": "477df781.2664b8",
         "type": "mqtt in",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "/tempTopic",
         "topic": "/tempTopic",
         "qos": "2",
-        "broker": "977359bb.95ba38",
+        "broker": "10b63f1b.6f9391",
         "x": 80,
         "y": 240,
         "wires": [
             [
-                "37392a6c.8f7e46"
+                "d4358453.a6b0a8"
             ]
         ]
     },
     {
-        "id": "2f3af697.1f6b4a",
+        "id": "e43d75e0.985518",
         "type": "mqtt out",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "/tempTopic",
         "topic": "/tempTopic",
         "qos": "",
         "retain": "",
-        "broker": "977359bb.95ba38",
+        "broker": "10b63f1b.6f9391",
         "x": 630,
         "y": 180,
         "wires": []
     },
     {
-        "id": "86c5a5cd.f1b9e8",
+        "id": "260b3b0b.71c6a4",
         "type": "inject",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "",
         "topic": "",
         "payload": "",
@@ -920,14 +1451,14 @@
         "y": 180,
         "wires": [
             [
-                "986e915f.2e0cb"
+                "1af50e0c.34e4d2"
             ]
         ]
     },
     {
-        "id": "e0913e92.fbe0e",
+        "id": "5d08573f.1fe928",
         "type": "data-generator",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "WindSpeed",
         "field": "payload",
         "fieldType": "msg",
@@ -937,14 +1468,14 @@
         "y": 300,
         "wires": [
             [
-                "16007272.04949e"
+                "9e606976.aa0cf8"
             ]
         ]
     },
     {
-        "id": "7dcdda37.b51714",
+        "id": "8329a3f0.d2bb",
         "type": "function",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "json parse",
         "func": "try {\n    msg.payload = JSON.parse(msg.payload);\n} catch (e) {\n    node.error(`error in json parse: ${e}`);\n}\nreturn msg;",
         "outputs": 1,
@@ -953,14 +1484,14 @@
         "y": 360,
         "wires": [
             [
-                "1bc9df0e.0f2051"
+                "91c89aa0.403a28"
             ]
         ]
     },
     {
-        "id": "1bc9df0e.0f2051",
+        "id": "91c89aa0.403a28",
         "type": "debug",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "WindSpeedMsg",
         "active": true,
         "tosidebar": true,
@@ -972,38 +1503,38 @@
         "wires": []
     },
     {
-        "id": "e6008500.2365e8",
+        "id": "52c51e80.f5985",
         "type": "mqtt in",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "/windspeedtopic",
         "topic": "/windspeedtopic",
         "qos": "2",
-        "broker": "977359bb.95ba38",
+        "broker": "10b63f1b.6f9391",
         "x": 100,
         "y": 360,
         "wires": [
             [
-                "7dcdda37.b51714"
+                "8329a3f0.d2bb"
             ]
         ]
     },
     {
-        "id": "d064c65b.8b6048",
+        "id": "bbb2caf1.c2ac28",
         "type": "mqtt out",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "/windspeedtopic",
         "topic": "/windspeedtopic",
         "qos": "2",
         "retain": "",
-        "broker": "977359bb.95ba38",
+        "broker": "10b63f1b.6f9391",
         "x": 690,
         "y": 300,
         "wires": []
     },
     {
-        "id": "b5c867b.665fb98",
+        "id": "56fc417f.c0c6f",
         "type": "inject",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "",
         "topic": "",
         "payload": "",
@@ -1016,14 +1547,14 @@
         "y": 300,
         "wires": [
             [
-                "e0913e92.fbe0e"
+                "5d08573f.1fe928"
             ]
         ]
     },
     {
-        "id": "c8242e26.6fe3",
+        "id": "8234b4df.725f08",
         "type": "data-generator",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "WindDirection",
         "field": "payload",
         "fieldType": "msg",
@@ -1033,14 +1564,14 @@
         "y": 420,
         "wires": [
             [
-                "cfd525c9.22b158"
+                "eeac5a97.a70ce8"
             ]
         ]
     },
     {
-        "id": "53e0a521.dcf93c",
+        "id": "f326184f.e9e938",
         "type": "function",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "json parse",
         "func": "try {\n    msg.payload = JSON.parse(msg.payload);\n} catch (e) {\n    node.error(`error in json parse: ${e}`);\n}\nreturn msg;",
         "outputs": 1,
@@ -1049,14 +1580,14 @@
         "y": 480,
         "wires": [
             [
-                "360c415c.5b030e"
+                "56ab5050.1cdd8"
             ]
         ]
     },
     {
-        "id": "360c415c.5b030e",
+        "id": "56ab5050.1cdd8",
         "type": "debug",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "/winddirectionMsg",
         "active": true,
         "tosidebar": true,
@@ -1068,38 +1599,38 @@
         "wires": []
     },
     {
-        "id": "b54ad5a1.96bb68",
+        "id": "590b47f9.b3af08",
         "type": "mqtt in",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "/winddirectiontopic",
         "topic": "/winddirectiontopic",
         "qos": "2",
-        "broker": "977359bb.95ba38",
+        "broker": "10b63f1b.6f9391",
         "x": 130,
         "y": 480,
         "wires": [
             [
-                "53e0a521.dcf93c"
+                "f326184f.e9e938"
             ]
         ]
     },
     {
-        "id": "ba83d673.cf8228",
+        "id": "ee3f7dc3.509be",
         "type": "mqtt out",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "/winddirectiontopic",
         "topic": "/winddirectiontopic",
         "qos": "2",
         "retain": "",
-        "broker": "977359bb.95ba38",
+        "broker": "10b63f1b.6f9391",
         "x": 690,
         "y": 420,
         "wires": []
     },
     {
-        "id": "6ba9b8c9.55cfe8",
+        "id": "9ba81859.9d4b68",
         "type": "inject",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "",
         "topic": "",
         "payload": "",
@@ -1112,14 +1643,14 @@
         "y": 420,
         "wires": [
             [
-                "c8242e26.6fe3"
+                "8234b4df.725f08"
             ]
         ]
     },
     {
-        "id": "381303d3.39f8bc",
+        "id": "9b08d5dd.a40c78",
         "type": "data-generator",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "Rain",
         "field": "payload",
         "fieldType": "msg",
@@ -1129,14 +1660,14 @@
         "y": 540,
         "wires": [
             [
-                "c20ace37.fddfd"
+                "822b05e6.4bf1a8"
             ]
         ]
     },
     {
-        "id": "aec2f9fb.421368",
+        "id": "44235889.c30798",
         "type": "function",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "json parse",
         "func": "try {\n    msg.payload = JSON.parse(msg.payload);\n} catch (e) {\n    node.error(`error in json parse: ${e}`);\n}\nreturn msg;",
         "outputs": 1,
@@ -1145,14 +1676,14 @@
         "y": 600,
         "wires": [
             [
-                "ab3e1a7c.341808"
+                "cf072220.8a7ac"
             ]
         ]
     },
     {
-        "id": "ab3e1a7c.341808",
+        "id": "cf072220.8a7ac",
         "type": "debug",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "/rainMsg",
         "active": true,
         "tosidebar": true,
@@ -1164,38 +1695,38 @@
         "wires": []
     },
     {
-        "id": "794b8b73.3b5ca4",
+        "id": "f8e30ce7.9584c",
         "type": "mqtt in",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "/raintopic",
         "topic": "/raintopic",
         "qos": "2",
-        "broker": "977359bb.95ba38",
+        "broker": "10b63f1b.6f9391",
         "x": 100,
         "y": 600,
         "wires": [
             [
-                "aec2f9fb.421368"
+                "44235889.c30798"
             ]
         ]
     },
     {
-        "id": "e5d1ce90.7d69a",
+        "id": "8d196576.6d8788",
         "type": "mqtt out",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "/raintopic",
         "topic": "/raintopic",
         "qos": "2",
         "retain": "",
-        "broker": "977359bb.95ba38",
+        "broker": "10b63f1b.6f9391",
         "x": 640,
         "y": 540,
         "wires": []
     },
     {
-        "id": "b8a65e48.c0055",
+        "id": "cf4f8f75.9c68e",
         "type": "inject",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "",
         "topic": "",
         "payload": "",
@@ -1208,14 +1739,14 @@
         "y": 540,
         "wires": [
             [
-                "381303d3.39f8bc"
+                "9b08d5dd.a40c78"
             ]
         ]
     },
     {
-        "id": "13212e9d.9a0071",
+        "id": "1e42f0b9.0a344f",
         "type": "function",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "adjustRange",
         "func": "if(typeof msg.payload === \"object\"){\nvar tstr = msg.payload.time.toString();\nvar hourarray=tstr.split(\":\",1);\nvar hour = parseInt(hourarray[0], 10);\n    if(hour >= 7 && hour <= 12 ) { \n        msg.payload.value = Math.floor(Math.random() * 6) + 70;\n    }\n    if(hour > 12 && hour <= 18 ) { \n        msg.payload.value = Math.floor((Math.random() * 6) + 60);\n    }\n    if(hour > 18 && hour <= 23 ) { \n        msg.payload.value = Math.floor((Math.random() * 6) + 65);\n    }\n}\nreturn msg;",
         "outputs": 1,
@@ -1224,14 +1755,14 @@
         "y": 60,
         "wires": [
             [
-                "4d149293.d0aedc"
+                "ab30b0d2.c3ba6"
             ]
         ]
     },
     {
-        "id": "3dac012d.189c6e",
+        "id": "3b06bdd4.dc4e72",
         "type": "function",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "adjustRange",
         "func": "if(typeof msg.payload === \"object\"){\nvar tstr = msg.payload.time.toString();\nvar hourarray=tstr.split(\":\",1);\nvar hour = parseInt(hourarray[0], 10);\n    if(hour >= 7 && hour <= 12 ) { \n        msg.payload.value = Math.floor(Math.random() * 4) + 40;\n    }\n    if(hour > 12 && hour <= 18 ) { \n        msg.payload.value = Math.floor((Math.random() * 5) + 44);\n    }\n    if(hour > 18 && hour <= 23 ) { \n        msg.payload.value = Math.floor((Math.random() * 4) + 35);\n    }\n}\nreturn msg;",
         "outputs": 1,
@@ -1240,14 +1771,14 @@
         "y": 180,
         "wires": [
             [
-                "2f3af697.1f6b4a"
+                "e43d75e0.985518"
             ]
         ]
     },
     {
-        "id": "16007272.04949e",
+        "id": "9e606976.aa0cf8",
         "type": "function",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "adjustRange",
         "func": "if(typeof msg.payload === \"object\"){\nvar tstr = msg.payload.time.toString();\nvar hourarray=tstr.split(\":\",1);\nvar hour = parseInt(hourarray[0], 10);\n    if(hour >= 7 && hour <= 12 ) { \n        msg.payload.value = Math.floor(Math.random() * 4) + 40;\n    }\n    if(hour > 12 && hour <= 18 ) { \n        msg.payload.value = Math.floor((Math.random() * 5) + 44);\n    }\n    if(hour > 18 && hour <= 23 ) { \n        msg.payload.value = Math.floor((Math.random() * 4) + 35);\n    }\n}\nreturn msg;",
         "outputs": 1,
@@ -1256,14 +1787,14 @@
         "y": 300,
         "wires": [
             [
-                "d064c65b.8b6048"
+                "bbb2caf1.c2ac28"
             ]
         ]
     },
     {
-        "id": "cfd525c9.22b158",
+        "id": "eeac5a97.a70ce8",
         "type": "function",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "adjustRange",
         "func": "if(typeof msg.payload === \"object\"){\nvar tstr = msg.payload.time.toString();\nvar hourarray=tstr.split(\":\",1);\nvar hour = parseInt(hourarray[0], 10);\n    if(hour >= 7 && hour <= 12 ) { \n        msg.payload.value = Math.floor(Math.random() * 4) + 40;\n    }\n    if(hour > 12 && hour <= 18 ) { \n        msg.payload.value = Math.floor((Math.random() * 5) + 44);\n    }\n    if(hour > 18 && hour <= 23 ) { \n        msg.payload.value = Math.floor((Math.random() * 4) + 35);\n    }\n}\nreturn msg;",
         "outputs": 1,
@@ -1272,14 +1803,14 @@
         "y": 420,
         "wires": [
             [
-                "ba83d673.cf8228"
+                "ee3f7dc3.509be"
             ]
         ]
     },
     {
-        "id": "c20ace37.fddfd",
+        "id": "822b05e6.4bf1a8",
         "type": "function",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "adjustRange",
         "func": "if(typeof msg.payload === \"object\"){\nvar tstr = msg.payload.time.toString();\nvar hourarray=tstr.split(\":\",1);\nvar hour = parseInt(hourarray[0], 10);\n    if(hour >= 7 && hour <= 12 ) { \n        msg.payload.value = Math.floor(Math.random() * 4) + 40;\n    }\n    if(hour > 12 && hour <= 18 ) { \n        msg.payload.value = Math.floor((Math.random() * 5) + 44);\n    }\n    if(hour > 18 && hour <= 23 ) { \n        msg.payload.value = Math.floor((Math.random() * 4) + 35);\n    }\n}\nreturn msg;",
         "outputs": 1,
@@ -1288,14 +1819,14 @@
         "y": 540,
         "wires": [
             [
-                "e5d1ce90.7d69a"
+                "8d196576.6d8788"
             ]
         ]
     },
     {
-        "id": "71084afa.3e4764",
+        "id": "ea829f0c.21699",
         "type": "data-generator",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "Moisture",
         "field": "payload",
         "fieldType": "msg",
@@ -1305,14 +1836,14 @@
         "y": 660,
         "wires": [
             [
-                "d9179453.267cf8"
+                "280aab4a.ba4804"
             ]
         ]
     },
     {
-        "id": "95d1524e.114ce",
+        "id": "f9b24cf.55796b",
         "type": "function",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "json parse",
         "func": "try {\n    msg.payload = JSON.parse(msg.payload);\n} catch (e) {\n    node.error(`error in json parse: ${e}`);\n}\nreturn msg;",
         "outputs": 1,
@@ -1321,14 +1852,14 @@
         "y": 720,
         "wires": [
             [
-                "644e5701.ca2d98"
+                "888782db.b40fa"
             ]
         ]
     },
     {
-        "id": "644e5701.ca2d98",
+        "id": "888782db.b40fa",
         "type": "debug",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "/moistureMsg",
         "active": true,
         "tosidebar": true,
@@ -1340,38 +1871,38 @@
         "wires": []
     },
     {
-        "id": "79262311.f996ec",
+        "id": "b8be3a7f.8d0148",
         "type": "mqtt in",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "/moisturetopic",
         "topic": "/moisturetopic",
         "qos": "2",
-        "broker": "977359bb.95ba38",
+        "broker": "10b63f1b.6f9391",
         "x": 90,
         "y": 720,
         "wires": [
             [
-                "95d1524e.114ce"
+                "f9b24cf.55796b"
             ]
         ]
     },
     {
-        "id": "8fb1f326.23614",
+        "id": "245c9629.a610da",
         "type": "mqtt out",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "/moisturetopic",
         "topic": "/moisturetopic",
         "qos": "2",
         "retain": "",
-        "broker": "977359bb.95ba38",
+        "broker": "10b63f1b.6f9391",
         "x": 640,
         "y": 660,
         "wires": []
     },
     {
-        "id": "7fd9d513.1d22bc",
+        "id": "a8a75268.e2b93",
         "type": "inject",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "",
         "topic": "",
         "payload": "",
@@ -1384,14 +1915,14 @@
         "y": 660,
         "wires": [
             [
-                "71084afa.3e4764"
+                "ea829f0c.21699"
             ]
         ]
     },
     {
-        "id": "d9179453.267cf8",
+        "id": "280aab4a.ba4804",
         "type": "function",
-        "z": "215a464d.21717a",
+        "z": "5f53818c.186bc",
         "name": "adjustRange",
         "func": "if(typeof msg.payload === \"object\"){\nvar tstr = msg.payload.time.toString();\nvar hourarray=tstr.split(\":\",1);\nvar hour = parseInt(hourarray[0], 10);\n    if(hour >= 7 && hour <= 12 ) { \n        msg.payload.value = Math.floor(Math.random() * 4) + 40;\n    }\n    if(hour > 12 && hour <= 18 ) { \n        msg.payload.value = Math.floor((Math.random() * 5) + 44);\n    }\n    if(hour > 18 && hour <= 23 ) { \n        msg.payload.value = Math.floor((Math.random() * 4) + 35);\n    }\n}\nreturn msg;",
         "outputs": 1,
@@ -1400,14 +1931,14 @@
         "y": 660,
         "wires": [
             [
-                "8fb1f326.23614"
+                "245c9629.a610da"
             ]
         ]
     },
     {
-        "id": "ceb050d1.2dd53",
+        "id": "b0986a60.bb0dc8",
         "type": "inject",
-        "z": "19a2ab78.2e73b5",
+        "z": "1cfb3818.d1db88",
         "name": "",
         "topic": "",
         "payload": "",
@@ -1420,14 +1951,14 @@
         "y": 240,
         "wires": [
             [
-                "a577d565.fabc28"
+                "24022979.fd4636"
             ]
         ]
     },
     {
-        "id": "a577d565.fabc28",
+        "id": "24022979.fd4636",
         "type": "function",
-        "z": "19a2ab78.2e73b5",
+        "z": "1cfb3818.d1db88",
         "name": "process farms",
         "func": "const farms = flow.get(\"farms\") || [];\nfarms.forEach(farm => {\n    const res = { \"farmId\": farm.farmId };\n    node.send({\"payload\": {farm, res}});\n});",
         "outputs": 1,
@@ -1436,14 +1967,14 @@
         "y": 300,
         "wires": [
             [
-                "f2f39f9b.9cbda"
+                "e1cc975.b78f668"
             ]
         ]
     },
     {
-        "id": "9a438de3.6e37a",
+        "id": "907c6c0a.3c4e3",
         "type": "debug",
-        "z": "19a2ab78.2e73b5",
+        "z": "1cfb3818.d1db88",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -1455,9 +1986,9 @@
         "wires": []
     },
     {
-        "id": "f2f39f9b.9cbda",
+        "id": "e1cc975.b78f668",
         "type": "function",
-        "z": "19a2ab78.2e73b5",
+        "z": "1cfb3818.d1db88",
         "name": "process ranches",
         "func": "const ranches = msg.payload.farm.ranches;\nconst fres = msg.payload.res;\nranches.forEach(ranch => {\n    const res = { ...fres, \"ranchId\": ranch.ranchId };\n    node.send({\"payload\": {ranch, res}});\n});",
         "outputs": 1,
@@ -1466,14 +1997,14 @@
         "y": 360,
         "wires": [
             [
-                "84ba77d8.8fe908"
+                "54e21395.b1119c"
             ]
         ]
     },
     {
-        "id": "84ba77d8.8fe908",
+        "id": "54e21395.b1119c",
         "type": "function",
-        "z": "19a2ab78.2e73b5",
+        "z": "1cfb3818.d1db88",
         "name": "process clusters",
         "func": "const clusters = msg.payload.ranch.clusters;\nconst rres = msg.payload.res;\nclusters.forEach(cluster => {\n    const res = { ...rres, \"clusterId\": cluster.clusterId };\n    node.send({\"payload\": {cluster, res}});\n});",
         "outputs": 1,
@@ -1482,14 +2013,14 @@
         "y": 420,
         "wires": [
             [
-                "d1b70550.2bf508"
+                "346ff8dd.edaea8"
             ]
         ]
     },
     {
-        "id": "d1b70550.2bf508",
+        "id": "346ff8dd.edaea8",
         "type": "function",
-        "z": "19a2ab78.2e73b5",
+        "z": "1cfb3818.d1db88",
         "name": "process sensors",
         "func": "const sensors = msg.payload.cluster.sensors;\nconst cres = msg.payload.res;\nsensors.forEach(sensor => {\n    const res = { \n        ...cres,\n        \"sensorId\": sensor.sensorId,\n        \"type\": sensor.type,\n        \"status\": sensor.status\n    };\n    node.send({\"payload\": {sensor, res}});\n});",
         "outputs": 1,
@@ -1498,14 +2029,14 @@
         "y": 480,
         "wires": [
             [
-                "50b3f60c.2ca858"
+                "502a9261.fe682c"
             ]
         ]
     },
     {
-        "id": "50b3f60c.2ca858",
+        "id": "502a9261.fe682c",
         "type": "function",
-        "z": "19a2ab78.2e73b5",
+        "z": "1cfb3818.d1db88",
         "name": "process each sensor",
         "func": "const sensor = msg.payload.sensor;\nconst sres = msg.payload.res;\nif (sres.status === \"ON\") {\n    if (sres.type === \"temperature\") {\n        sres.timestamp = new Date();\n        sres.value = Math.random();\n        const hour = sres.timestamp.getHours();\n        if (hour >= 7 && hour <= 12) {\n            sres.value = Math.floor(Math.random() * 4) + 40;\n        }\n        if (hour > 12 && hour <= 18) {\n            sres.value = Math.floor((Math.random() * 5) + 44);\n        }\n        if (hour > 18 && hour <= 23) {\n            sres.value = Math.floor((Math.random() * 4) + 35);\n        }\n    }\n    if (sres.type === \"humidity\") {\n        sres.timestamp = new Date();\n        sres.value = Math.random();\n        const hour = sres.timestamp.getHours();\n        if (hour >= 7 && hour <= 12) {\n            sres.value = Math.floor(Math.random() * 6) + 70;\n        }\n        if (hour > 12 && hour <= 18) {\n            sres.value = Math.floor((Math.random() * 6) + 60);\n        }\n        if (hour > 18 && hour <= 23) {\n            sres.value = Math.floor((Math.random() * 6) + 65);\n        }\n    }\n    if (sres.type === \"windspeed\") {\n        sres.timestamp = new Date();\n        sres.value = Math.random();\n        sres.value = Math.floor((Math.random() * 5) + 8);\n    }\n    if (sres.type === \"rain\") {\n        sres.timestamp = new Date();\n        sres.value = Math.random();\n        const hour = sres.timestamp.getHours();\n        sres.value = Math.floor(Math.random() * 3) + 0;\n    }\n    if (sres.type === \"moisture\") {\n        sres.timestamp = new Date();\n        sres.value = Math.floor((Math.random() * 2) + 5);\n    }\nnode.send({\n    \"payload\": sres\n});\n}",
         "outputs": 1,
@@ -1514,14 +2045,14 @@
         "y": 540,
         "wires": [
             [
-                "9a438de3.6e37a"
+                "907c6c0a.3c4e3"
             ]
         ]
     },
     {
-        "id": "458f0189.d1d5b",
+        "id": "44662e41.02876",
         "type": "inject",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "clear chart",
         "topic": "",
         "payload": "",
@@ -1534,14 +2065,14 @@
         "y": 220,
         "wires": [
             [
-                "1f224215.1e5bee"
+                "e63b89e5.084458"
             ]
         ]
     },
     {
-        "id": "1f224215.1e5bee",
+        "id": "e63b89e5.084458",
         "type": "function",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "empty array",
         "func": "msg.payload = [];\nreturn msg;",
         "outputs": 1,
@@ -1553,9 +2084,9 @@
         ]
     },
     {
-        "id": "362d98d9.cbbe88",
+        "id": "824ca240.a05d4",
         "type": "inject",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "trigger",
         "topic": "",
         "payload": "",
@@ -1568,14 +2099,14 @@
         "y": 300,
         "wires": [
             [
-                "eb226584.703518"
+                "e5550902.5ecc68"
             ]
         ]
     },
     {
-        "id": "eb226584.703518",
+        "id": "e5550902.5ecc68",
         "type": "function",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "custom data",
         "func": "msg.payload = [{\n    \"series\": [\"A\"],\n    \"data\": [\n        [{\n                \"x\": new Date(),\n                \"y\": Math.round((Math.random() * 10) % 10)\n            },\n            {\n                \"x\": new Date(new Date().getTime() + 3600 * 1000),\n                \"y\": Math.round((Math.random() * 10) % 10)\n            },\n            {\n                \"x\": new Date(new Date().getTime() + 3600 * 2000),\n                \"y\": Math.round((Math.random() * 10) % 10)\n            },\n            {\n                \"x\": new Date(new Date().getTime() + 3600 * 3000),\n                \"y\": Math.round((Math.random() * 10) % 10)\n            },\n            {\n                \"x\": new Date(new Date().getTime() + 3600 * 4000),\n                \"y\": Math.round((Math.random() * 10) % 10)\n            },\n            {\n                \"x\": new Date(new Date().getTime() + 3600 * 5000),\n                \"y\": Math.round((Math.random() * 10) % 10)\n            },\n        ]\n    ],\n    \"labels\": [\"\"]\n}];\nreturn msg;",
         "outputs": 1,
@@ -1587,23 +2118,23 @@
         ]
     },
     {
-        "id": "95327a90.e6a068",
+        "id": "54004066.dfb0e",
         "type": "cassandra",
-        "z": "30b8b31b.b13d6c",
-        "mydb": "1100fd68.7db503",
+        "z": "3a44a793.d4f7d8",
+        "mydb": "2a4a094f.663ed6",
         "name": "",
         "x": 450,
         "y": 380,
         "wires": [
             [
-                "bdbca387.9b4ad"
+                "3309a705.866408"
             ]
         ]
     },
     {
-        "id": "bdbca387.9b4ad",
+        "id": "3309a705.866408",
         "type": "debug",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -1615,9 +2146,9 @@
         "wires": []
     },
     {
-        "id": "2d042c0b.e8beb4",
+        "id": "110e34ec.feb1cb",
         "type": "function",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "ReadQuery",
         "func": "msg.topic = \"select * from cloud_sensor_data.sensordata where farm_id='1' and ranch_id='2' and clusterid='2' and sensorid='1'\";\nreturn msg;",
         "outputs": 1,
@@ -1626,14 +2157,14 @@
         "y": 380,
         "wires": [
             [
-                "95327a90.e6a068"
+                "54004066.dfb0e"
             ]
         ]
     },
     {
-        "id": "b577164b.ea2c08",
+        "id": "91222966.ba34e8",
         "type": "inject",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "",
         "topic": "",
         "payload": "",
@@ -1646,14 +2177,14 @@
         "y": 380,
         "wires": [
             [
-                "2d042c0b.e8beb4"
+                "110e34ec.feb1cb"
             ]
         ]
     },
     {
-        "id": "290ab163.ca83ae",
+        "id": "9e8bd14.7fd893",
         "type": "http response",
-        "z": "c1088999.1f4dc8",
+        "z": "85b67cb7.2993c",
         "name": "",
         "statusCode": "",
         "headers": {},
@@ -1662,9 +2193,9 @@
         "wires": []
     },
     {
-        "id": "ecc96ee1.7c468",
+        "id": "8b640027.d24c6",
         "type": "function",
-        "z": "c1088999.1f4dc8",
+        "z": "85b67cb7.2993c",
         "name": "process get farm",
         "func": "//node.warn(flow.get(\"farms\"))\nconst farms = flow.get(\"farms\") || [];\nmsg.payload = farms;\nreturn msg;",
         "outputs": 1,
@@ -1673,14 +2204,14 @@
         "y": 100,
         "wires": [
             [
-                "290ab163.ca83ae"
+                "9e8bd14.7fd893"
             ]
         ]
     },
     {
-        "id": "ccb6c613.1e3fc8",
+        "id": "e9ba90d6.831e7",
         "type": "http in",
-        "z": "c1088999.1f4dc8",
+        "z": "85b67cb7.2993c",
         "name": "GET /farms",
         "url": "/farms",
         "method": "get",
@@ -1690,14 +2221,14 @@
         "y": 100,
         "wires": [
             [
-                "ecc96ee1.7c468"
+                "8b640027.d24c6"
             ]
         ]
     },
     {
-        "id": "8b392357.01fe3",
+        "id": "65976e0f.2e07e",
         "type": "http in",
-        "z": "c1088999.1f4dc8",
+        "z": "85b67cb7.2993c",
         "name": "POST /farms",
         "url": "/farms",
         "method": "post",
@@ -1707,14 +2238,14 @@
         "y": 60,
         "wires": [
             [
-                "7a28aa7b.d4b104"
+                "8b0f1915.34e5a8"
             ]
         ]
     },
     {
-        "id": "7a28aa7b.d4b104",
+        "id": "8b0f1915.34e5a8",
         "type": "function",
-        "z": "c1088999.1f4dc8",
+        "z": "85b67cb7.2993c",
         "name": "process add farm",
         "func": "const newFarm = msg.req.body.farm;\nconst farms = flow.get(\"farms\") || [];\nfarms.push(newFarm);\nflow.set(\"farms\", farms);\nmsg.payload = farms;\nreturn msg;",
         "outputs": 1,
@@ -1723,15 +2254,15 @@
         "y": 60,
         "wires": [
             [
-                "44a33d6c.20f664",
-                "5d29cc9d.352334"
+                "3430a18c.8e5d0e",
+                "98a34ec4.739a4"
             ]
         ]
     },
     {
-        "id": "44a33d6c.20f664",
+        "id": "3430a18c.8e5d0e",
         "type": "http response",
-        "z": "c1088999.1f4dc8",
+        "z": "85b67cb7.2993c",
         "name": "",
         "statusCode": "",
         "headers": {},
@@ -1740,71 +2271,57 @@
         "wires": []
     },
     {
-        "id": "57c3ded3.38e94",
+        "id": "ce958ce3.86424",
         "type": "debug",
-        "z": "c1088999.1f4dc8",
+        "z": "85b67cb7.2993c",
         "name": "",
         "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "payload",
-        "x": 790,
-        "y": 140,
+        "x": 710,
+        "y": 100,
         "wires": []
     },
     {
-        "id": "5d29cc9d.352334",
+        "id": "98a34ec4.739a4",
         "type": "function",
-        "z": "c1088999.1f4dc8",
+        "z": "85b67cb7.2993c",
         "name": "BuildFarmInsertQuery",
         "func": "let farms = msg.req.body.farm;\n\n// for (var i = 0; i < farms.length; i++){\n    // node.error(farms[i]);\n    const farmid = farms.farmId;\n    const farmerid = farms.farmerId;\n    // node.error(farmid);\n    const ranches = farms.ranches;\n    ranches.forEach(ranch => {\n        const ranchid = ranch.ranchId;\n        const clusters = ranch.clusters;\n        clusters.forEach(cluster => {\n            const clusterid = cluster.clusterId\n            const sensors = cluster.sensors;\n            const arr = [];\n            sensors.forEach(sensor => {\n                const sensorid = sensor.sensorId;\n                const sensortype = sensor.type;\n                let buildQuery =\"Insert into network.Farmer_Profile(farmer_id,farm_id,ranch_id,cluster_id,sensor_id,sensor_type) values ('\"+farmerid+\"','\"+farmid+\"','\"+ranchid+\"','\"+clusterid+\"','\"+sensorid+\"','\"+sensortype+\"')\";\n                // let buildQuery =\"select * from cloud_sensor_data.farmer_profile where farm_id='\"+farmid+\"' and ranch_id='\"+ranchid+\"' and clusterid='\"+clusterid+\"' and sensorid='\"+sensorid+\"'\";\n                node.error(buildQuery);\n                arr.push(buildQuery);\n            });\n             node.send({\n            \"payload\": arr\n    });\n        });\n    });\n// }\n \n// msg.topic = \n// return msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 500,
+        "x": 560,
         "y": 60,
         "wires": [
             [
-                "94f4c440.363c78"
+                "e6427361.02f28"
             ]
         ]
     },
     {
-        "id": "d638d5b9.cf4c48",
-        "type": "cassandra",
-        "z": "c1088999.1f4dc8",
-        "mydb": "ecea06b.9181bf8",
-        "name": "Network_Data",
-        "x": 740,
-        "y": 100,
-        "wires": [
-            [
-                "57c3ded3.38e94"
-            ]
-        ]
-    },
-    {
-        "id": "94f4c440.363c78",
+        "id": "e6427361.02f28",
         "type": "function",
-        "z": "c1088999.1f4dc8",
+        "z": "85b67cb7.2993c",
         "name": "InsertQuery",
         "func": "let query = msg.payload;\n\nfor(var i=0 ; i < query.length ;i++) {\n    msg.topic = query[i];\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 690,
+        "x": 750,
         "y": 60,
         "wires": [
             [
-                "d638d5b9.cf4c48"
+                "ce958ce3.86424"
             ]
         ]
     },
     {
-        "id": "d3f48322.9d734",
+        "id": "db34f34b.d0ae5",
         "type": "ui_gauge",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "",
-        "group": "9dba0d87.8df27",
+        "group": "ab2948ea.420c08",
         "order": 2,
         "width": "3",
         "height": "3",
@@ -1826,9 +2343,9 @@
         "wires": []
     },
     {
-        "id": "af4ab5d0.e65838",
+        "id": "6ce202a3.bc55fc",
         "type": "function",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "Parser",
         "func": "let arr = JSON.parse(msg.payload);\narr.forEach(sensor => {\n    const res = {\n        \"topic\": sensor.sensorId,\n        \"payload\": sensor.value,\n        \"series\": sensor.sensorId,\n    };\n    if(sensor.type === \"temperature\") {\n        node.send([res,null,null,null,null]);\n    }\n    if(sensor.type === \"humidity\") {\n        node.send([null,res,null,null,null]);\n    }\n    if(sensor.type === \"windSpeed\") {\n       node.send([null,null,res,null,null]);\n    }\n    if(sensor.type === \"rain\") {\n      node.send([null,null,null,res,null]);\n    }\n    if(sensor.type === \"soilMoisture\") {\n       node.send([null,null,null,null,res]);\n    }\n    \n    \n});",
         "outputs": 5,
@@ -1837,28 +2354,28 @@
         "y": 220,
         "wires": [
             [
-                "eb861d2e.84a53"
+                "5da201d5.8bb59"
             ],
             [
-                "e25a96fe.483338"
+                "cfa40974.7983a8"
             ],
             [
-                "838da0c.d649f6"
+                "d2afc805.493398"
             ],
             [
-                "9577449e.725e48"
+                "a72f6842.6d1a18"
             ],
             [
-                "e7f1a546.926e18"
+                "3c0a1c1b.580594"
             ]
         ]
     },
     {
-        "id": "eb861d2e.84a53",
+        "id": "5da201d5.8bb59",
         "type": "ui_chart",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "",
-        "group": "bd24bb3a.9e8d18",
+        "group": "e81d613b.b7137",
         "order": 1,
         "width": "6",
         "height": "3",
@@ -1897,11 +2414,11 @@
         ]
     },
     {
-        "id": "e7f1a546.926e18",
+        "id": "3c0a1c1b.580594",
         "type": "ui_chart",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "",
-        "group": "bd24bb3a.9e8d18",
+        "group": "e81d613b.b7137",
         "order": 3,
         "width": "6",
         "height": "3",
@@ -1940,11 +2457,11 @@
         ]
     },
     {
-        "id": "e1d2a05.c70ba6",
+        "id": "8c84c7da.cd50c8",
         "type": "ui_gauge",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "",
-        "group": "9dba0d87.8df27",
+        "group": "ab2948ea.420c08",
         "order": 2,
         "width": "3",
         "height": "3",
@@ -1966,11 +2483,11 @@
         "wires": []
     },
     {
-        "id": "bdd408a8.b41228",
+        "id": "5a5f62.a95f20a",
         "type": "ui_gauge",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "",
-        "group": "9dba0d87.8df27",
+        "group": "ab2948ea.420c08",
         "order": 2,
         "width": "3",
         "height": "3",
@@ -1992,10 +2509,10 @@
         "wires": []
     },
     {
-        "id": "df9b84d8.c663e8",
+        "id": "84a89611.67e8e8",
         "type": "ui_template",
-        "z": "30b8b31b.b13d6c",
-        "group": "d75fe7b7.576378",
+        "z": "3a44a793.d4f7d8",
+        "group": "36df1de9.d7e1b2",
         "name": "",
         "order": 3,
         "width": "6",
@@ -2011,27 +2528,27 @@
         ]
     },
     {
-        "id": "d24c1960.34fbe8",
+        "id": "548ac7a1.9c0e48",
         "type": "mqtt in",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "/clustertopic",
         "topic": "/clustertopic",
         "qos": "2",
-        "broker": "977359bb.95ba38",
+        "broker": "10b63f1b.6f9391",
         "x": 510,
         "y": 220,
         "wires": [
             [
-                "af4ab5d0.e65838"
+                "6ce202a3.bc55fc"
             ]
         ]
     },
     {
-        "id": "838da0c.d649f6",
+        "id": "d2afc805.493398",
         "type": "ui_chart",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "",
-        "group": "bd24bb3a.9e8d18",
+        "group": "e81d613b.b7137",
         "order": 3,
         "width": "6",
         "height": "3",
@@ -2070,11 +2587,11 @@
         ]
     },
     {
-        "id": "9577449e.725e48",
+        "id": "a72f6842.6d1a18",
         "type": "ui_chart",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "",
-        "group": "bd24bb3a.9e8d18",
+        "group": "e81d613b.b7137",
         "order": 3,
         "width": "6",
         "height": "3",
@@ -2113,11 +2630,11 @@
         ]
     },
     {
-        "id": "e25a96fe.483338",
+        "id": "cfa40974.7983a8",
         "type": "ui_chart",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "",
-        "group": "bd24bb3a.9e8d18",
+        "group": "e81d613b.b7137",
         "order": 3,
         "width": "6",
         "height": "3",
@@ -2156,561 +2673,9 @@
         ]
     },
     {
-        "id": "246b24a7.692fac",
-        "type": "ui_text",
-        "z": "1cbcdb88.58fea4",
-        "group": "ac095742.0d78f8",
-        "order": 3,
-        "width": "7",
-        "height": "2",
-        "name": "No. of Fams",
-        "label": "No. of Farms",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "x": 590,
-        "y": 60,
-        "wires": []
-    },
-    {
-        "id": "c29eac09.9c5bd",
-        "type": "ui_text",
-        "z": "1cbcdb88.58fea4",
-        "group": "ac095742.0d78f8",
-        "order": 5,
-        "width": "5",
-        "height": "2",
-        "name": "No. of ranches",
-        "label": "No. of Ranches",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "x": 600,
-        "y": 100,
-        "wires": []
-    },
-    {
-        "id": "71e7272e.b3d268",
-        "type": "inject",
-        "z": "1cbcdb88.58fea4",
-        "name": "",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "0.5",
-        "x": 70,
-        "y": 60,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "bac4f613.bf8428",
+        "id": "d1807372.44cbf",
         "type": "function",
-        "z": "1cbcdb88.58fea4",
-        "name": "DB query",
-        "func": "msg.topic = \"select distinct count(farm_id) from cloud_sensor_data.SensorData\";\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 220,
-        "y": 60,
-        "wires": [
-            [
-                "82017292.c38ab"
-            ]
-        ]
-    },
-    {
-        "id": "82017292.c38ab",
-        "type": "cassandra",
-        "z": "1cbcdb88.58fea4",
-        "mydb": "1100fd68.7db503",
-        "name": "",
-        "x": 410,
-        "y": 60,
-        "wires": [
-            [
-                "246b24a7.692fac"
-            ]
-        ]
-    },
-    {
-        "id": "5c5764c9.c9a0ac",
-        "type": "ui_text",
-        "z": "1cbcdb88.58fea4",
-        "group": "ac095742.0d78f8",
-        "order": 7,
-        "width": "5",
-        "height": "2",
-        "name": "No. of clusters",
-        "label": "No. of Clusters",
-        "format": "{{msg.payload}}",
-        "layout": "row-spread",
-        "x": 600,
-        "y": 140,
-        "wires": []
-    },
-    {
-        "id": "c550f636.47cda8",
-        "type": "inject",
-        "z": "1cbcdb88.58fea4",
-        "name": "",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "0.5",
-        "x": 70,
-        "y": 100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c35860b4.fc259",
-        "type": "function",
-        "z": "1cbcdb88.58fea4",
-        "name": "DB query",
-        "func": "msg.topic = \"select distinct count(ranch_id) from cloud_sensor_data.SensorData\";\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 220,
-        "y": 100,
-        "wires": [
-            [
-                "c7b44583.b1ec18"
-            ]
-        ]
-    },
-    {
-        "id": "c7b44583.b1ec18",
-        "type": "cassandra",
-        "z": "1cbcdb88.58fea4",
-        "mydb": "1100fd68.7db503",
-        "name": "",
-        "x": 410,
-        "y": 100,
-        "wires": [
-            [
-                "c29eac09.9c5bd"
-            ]
-        ]
-    },
-    {
-        "id": "85f4dd02.ac",
-        "type": "inject",
-        "z": "1cbcdb88.58fea4",
-        "name": "",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "repeat": "",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "0.5",
-        "x": 70,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7ccc687d.9cd788",
-        "type": "function",
-        "z": "1cbcdb88.58fea4",
-        "name": "DB query",
-        "func": "msg.topic = \"select distinct count(cluster_id) from cloud_sensor_data.SensorData\";\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 220,
-        "y": 140,
-        "wires": [
-            [
-                "c89c1063.81172"
-            ]
-        ]
-    },
-    {
-        "id": "c89c1063.81172",
-        "type": "cassandra",
-        "z": "1cbcdb88.58fea4",
-        "mydb": "1100fd68.7db503",
-        "name": "",
-        "x": 410,
-        "y": 140,
-        "wires": [
-            [
-                "5c5764c9.c9a0ac"
-            ]
-        ]
-    },
-    {
-        "id": "db66974.bee0768",
-        "type": "inject",
-        "z": "1cbcdb88.58fea4",
-        "name": "",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "x": 100,
-        "y": 180,
-        "wires": [
-            [
-                "ffa2877d.601c98"
-            ]
-        ]
-    },
-    {
-        "id": "fa36ee29.87b18",
-        "type": "ui_chart",
-        "z": "1cbcdb88.58fea4",
-        "name": "",
-        "group": "7b23dd2d.8df864",
-        "order": 7,
-        "width": "5",
-        "height": "4",
-        "label": "Soil Moisture",
-        "chartType": "line",
-        "legend": "true",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "useOldStyle": false,
-        "outputs": 2,
-        "x": 670,
-        "y": 420,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "3d03052e.58e51a",
-        "type": "ui_chart",
-        "z": "1cbcdb88.58fea4",
-        "name": "",
-        "group": "7b23dd2d.8df864",
-        "order": 8,
-        "width": "5",
-        "height": "4",
-        "label": "WindSpeed",
-        "chartType": "line",
-        "legend": "true",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "useOldStyle": false,
-        "outputs": 2,
-        "x": 670,
-        "y": 340,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "fb954c79.45f48",
-        "type": "ui_chart",
-        "z": "1cbcdb88.58fea4",
-        "name": "",
-        "group": "7b23dd2d.8df864",
-        "order": 9,
-        "width": "6",
-        "height": "4",
-        "label": "Rain",
-        "chartType": "line",
-        "legend": "true",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "useOldStyle": false,
-        "outputs": 2,
-        "x": 650,
-        "y": 380,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "4b03bb1b.e01eb4",
-        "type": "ui_chart",
-        "z": "1cbcdb88.58fea4",
-        "name": "",
-        "group": "7b23dd2d.8df864",
-        "order": 10,
-        "width": "5",
-        "height": "4",
-        "label": "Humidity",
-        "chartType": "line",
-        "legend": "true",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "useOldStyle": false,
-        "outputs": 2,
-        "x": 660,
-        "y": 300,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "a0ec376.26c9cc8",
-        "type": "cassandra",
-        "z": "1cbcdb88.58fea4",
-        "mydb": "3b9f8378.fbea8c",
-        "name": "",
-        "x": 270,
-        "y": 220,
-        "wires": [
-            [
-                "9aebb85.2608b48",
-                "f67e1c32.3d62b",
-                "9b7228c9.aa6f28"
-            ]
-        ]
-    },
-    {
-        "id": "ffa2877d.601c98",
-        "type": "function",
-        "z": "1cbcdb88.58fea4",
-        "name": "DB query",
-        "func": "msg.topic = \"select * from cloud_sensor_data.SensorData\";\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 100,
-        "y": 220,
-        "wires": [
-            [
-                "a0ec376.26c9cc8"
-            ]
-        ]
-    },
-    {
-        "id": "2d7025b2.8ac67a",
-        "type": "ui_chart",
-        "z": "1cbcdb88.58fea4",
-        "name": "Temperature",
-        "group": "7b23dd2d.8df864",
-        "order": 1,
-        "width": "5",
-        "height": "4",
-        "label": "Temperature",
-        "chartType": "line",
-        "legend": "true",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "Sensor",
-        "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "60",
-        "cutout": 0,
-        "useOneColor": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "useOldStyle": false,
-        "outputs": 2,
-        "x": 670,
-        "y": 260,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "e6c92068.510e6",
-        "type": "debug",
-        "z": "1cbcdb88.58fea4",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "x": 750,
-        "y": 220,
-        "wires": []
-    },
-    {
-        "id": "9aebb85.2608b48",
-        "type": "ui_template",
-        "z": "1cbcdb88.58fea4",
-        "group": "5eebc43d.5088ac",
-        "name": "IOT Manager Monitoring table",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "format": "<table id=\"table\" border=\"1\">\n <tr>\n <th>Farm ID</th> \n <th>Ranch ID</th>\n <th>Cluster ID</th>\n <th>Sensor ID</th>\n <th>Sensor Type</th>\n <th>Timestamp</th>\n <th>Sensor Data</th>\n <th>Sensor Status</th>\n \n </tr>\n <tbody>\n <tr ng-repeat=\"row in msg.payload\">\n <td ng-repeat=\"item in row\" >{{item}}</td>\n </tr>\n </tbody>\n</table>\n",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 530,
-        "y": 220,
-        "wires": [
-            [
-                "e6c92068.510e6"
-            ]
-        ]
-    },
-    {
-        "id": "f67e1c32.3d62b",
-        "type": "function",
-        "z": "1cbcdb88.58fea4",
-        "name": "Parser",
-        "func": "let arr = (msg.payload);\narr.forEach(sensor => {\n    const res = {\n        \"topic\": sensor.sensor_id,\n        \"payload\": sensor.sensor_data,\n        \"series\": sensor.sensor_id,\n    };\n    if(sensor.sensor_type === \"Temperature\") {\n        node.send([res,null,null,null,null]);\n    }\n    if(sensor.sensor_type === \"humidity\") {\n        node.send([null,res,null,null,null]);\n    }\n    if(sensor.sensor_type === \"Wind Speed\") {\n       node.send([null,null,res,null,null]);\n    }\n    if(sensor.sensor_type === \"Rain\") {\n      node.send([null,null,null,res,null]);\n    }\n    if(sensor.sensor_type === \"Soil Moisture\") {\n       node.send([null,null,null,null,res]);\n    }\n    \n    \n    \n});",
-        "outputs": 5,
-        "noerr": 0,
-        "x": 470,
-        "y": 320,
-        "wires": [
-            [
-                "2d7025b2.8ac67a"
-            ],
-            [
-                "4b03bb1b.e01eb4"
-            ],
-            [
-                "3d03052e.58e51a"
-            ],
-            [
-                "fb954c79.45f48"
-            ],
-            [
-                "fa36ee29.87b18"
-            ]
-        ]
-    },
-    {
-        "id": "9b7228c9.aa6f28",
-        "type": "function",
-        "z": "1cbcdb88.58fea4",
-        "name": "Parser",
-        "func": "let items = (msg.payload);\n_.countBy(data, function(items) { return data.name; });\nmsg.options = Object.keys(farm_id);\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 250,
-        "y": 260,
-        "wires": [
-            [
-                "dbb7516d.9aef1"
-            ]
-        ]
-    },
-    {
-        "id": "dbb7516d.9aef1",
-        "type": "debug",
-        "z": "1cbcdb88.58fea4",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "x": 290,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "6e5dec5d.c30d64",
-        "type": "function",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "Set-up name-value map",
         "func": "// This mapping file uses {\"name\":\"value\"} pairs to pre-fill the drop-down widget in the dashboard\nmsg.payload = \n[ \n    {\"[Remove all]\":\"delete\"},\n    {\"Farm\":\"farm/\"},\n    {\"Ranch\":\"ranch/\"}, \n    {\"Cluster\":\"cluster/\"},\n\n];\nreturn msg;",
         "outputs": 1,
@@ -2719,14 +2684,14 @@
         "y": 540,
         "wires": [
             [
-                "6cc4b67.468d248"
+                "4ddf46a8.a887b8"
             ]
         ]
     },
     {
-        "id": "6cc4b67.468d248",
+        "id": "4ddf46a8.a887b8",
         "type": "change",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "",
         "rules": [
             {
@@ -2746,14 +2711,14 @@
         "y": 540,
         "wires": [
             [
-                "d93e44e4.2a4d28"
+                "17773550.2b37bb"
             ]
         ]
     },
     {
-        "id": "adf39f8b.16265",
+        "id": "fd097cc2.af04d",
         "type": "inject",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "Trigger",
         "topic": "",
         "payload": "0",
@@ -2766,19 +2731,19 @@
         "y": 540,
         "wires": [
             [
-                "6e5dec5d.c30d64"
+                "d1807372.44cbf"
             ]
         ]
     },
     {
-        "id": "d93e44e4.2a4d28",
+        "id": "17773550.2b37bb",
         "type": "ui_dropdown",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "Data source",
         "label": "",
         "tooltip": "",
         "place": "",
-        "group": "b8131b4b.8b7018",
+        "group": "7d67a0fd.2ad08",
         "order": 1,
         "width": "4",
         "height": "1",
@@ -2809,108 +2774,23 @@
         ]
     },
     {
-        "id": "c8d82f78.62c45",
+        "id": "2a4ca781.3ae9b8",
         "type": "cassandra",
-        "z": "1cbcdb88.58fea4",
-        "mydb": "1ded2a58.790dc6",
-        "name": "",
-        "x": 330,
-        "y": 480,
-        "wires": [
-            [
-                "4af767d2.c1e0f8"
-            ]
-        ]
-    },
-    {
-        "id": "1037ba04.937af6",
-        "type": "function",
-        "z": "1cbcdb88.58fea4",
-        "name": "Coordinate query",
-        "func": "msg.topic = \"select * from cloud_sensor_data.SensorDataByFarmer where farmer_id = '1'\";\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 210,
-        "y": 440,
-        "wires": [
-            [
-                "c8d82f78.62c45"
-            ]
-        ]
-    },
-    {
-        "id": "7fae5b4f.039624",
-        "type": "inject",
-        "z": "1cbcdb88.58fea4",
-        "name": "",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "repeat": "5",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "x": 70,
-        "y": 400,
-        "wires": [
-            [
-                "1037ba04.937af6"
-            ]
-        ]
-    },
-    {
-        "id": "dc5f0167.b150f",
-        "type": "ui_template",
-        "z": "1cbcdb88.58fea4",
-        "group": "8268cbef.0e3d98",
-        "name": "Farmer sensor status",
-        "order": 0,
-        "width": "13",
-        "height": "8",
-        "format": "<table id=\"table\" border=\"1\">\n <tr>\n <th>Farmer ID</th>\n <th>Timestamp</th>\n <th>Ranch ID</th>\n <th>Cluster ID</th>\n  <th>Farm ID</th>\n <th>Sensor ID</th>\n <th>Sensor Type</th>\n <th>Timestamp</th>\n <th>Sensor Data</th>\n <th>Sensor Status</th>\n \n </tr>\n <tbody>\n <tr ng-repeat=\"row in msg.payload\">\n <td ng-repeat=\"item in row\" >{{item}}</td>\n </tr>\n </tbody>\n</table>\n",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 600,
-        "y": 520,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4af767d2.c1e0f8",
-        "type": "function",
-        "z": "1cbcdb88.58fea4",
-        "name": "threshold values",
-        "func": "for(var i = 0; i< msg.payload.length; i++){\n    if(msg.payload[i].sensor_type === \"Temperature\")\n      {\n          if(msg.payload[i].sensor_data <='55')\n          {\n           msg.payload[i].notification =\"Temperature is below threshold level\";\n          }else if(msg.payload[i].sensor_data >='85' )\n          {\n           msg.payload[i].notification =\"Temperature above threshold level\";\n          }else\n          {\n           msg.payload[i].notification =\"\";\n          }\n          \n      }\n    if(msg.payload[i].sensor_type === \"humidity\")\n      {\n          if(msg.payload[i].sensor_data <='55')\n          {\n           msg.payload[i].notification =\"humidity is below threshold level\";\n          }else if(msg.payload[i].sensor_data >='85' )\n          {\n           msg.payload[i].notification =\"humidity above threshold level\";\n          }else\n          {\n           msg.payload[i].notification =\"\";\n          }\n          \n      }\n    if(msg.payload[i].sensor_type === \"Wind Speed\")\n      {\n          if(msg.payload[i].sensor_data <='55')\n          {\n           msg.payload[i].notification =\"Wind Speed is below threshold level\";\n          }else if(msg.payload[i].sensor_data >='85' )\n          {\n           msg.payload[i].notification =\"Wind Speed above threshold level\";\n          }else\n          {\n           msg.payload[i].notification =\"\";\n          }\n          \n      }\n    if(msg.payload[i].sensor_type === \"Rain\")\n      {\n          if(msg.payload[i].sensor_data <='55')\n          {\n           msg.payload[i].notification =\"Rain is below threshold level\";\n          }else if(msg.payload[i].sensor_data[i] >='85' )\n          {\n           msg.payload[i].notification =\"Rain above threshold level\";\n          }else\n          {\n           msg.payload[i].notification =\"\";\n          }\n          \n      }\n    if(msg.payload[i].sensor_type === \"Soil Moisture\")\n      {\n          if(msg.payload[i].sensor_data <='55')\n          {\n           msg.payload[i].notification =\"Soil Moisture is below threshold level\";\n          }else if(msg.payload[i].sensor_data >='85' )\n          {\n           msg.payload[i].notification =\"Soil Moisture above threshold level\";\n          }else\n          {\n           msg.payload[i].notification =\"\";\n          }\n          \n      }\n}\nreturn msg;\n\n\n\n\n\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 400,
-        "y": 520,
-        "wires": [
-            [
-                "dc5f0167.b150f"
-            ]
-        ]
-    },
-    {
-        "id": "91c9c60f.320e28",
-        "type": "cassandra",
-        "z": "30b8b31b.b13d6c",
-        "mydb": "1100fd68.7db503",
+        "z": "3a44a793.d4f7d8",
+        "mydb": "2a4a094f.663ed6",
         "name": "",
         "x": 490,
         "y": 680,
         "wires": [
             [
-                "97ea2a9a.11e3c8"
+                "43c6c2fe.b6d67c"
             ]
         ]
     },
     {
-        "id": "97ea2a9a.11e3c8",
+        "id": "43c6c2fe.b6d67c",
         "type": "debug",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -2922,9 +2802,9 @@
         "wires": []
     },
     {
-        "id": "932f4f2a.8611c",
+        "id": "53cf7675.368038",
         "type": "function",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "ReadQuery",
         "func": "// msg.topic = \"select * from cloud_sensor_data.sensordata \" ;\nmsg.topic = \"select * from Network_Data.Cluster_Profile \" ;\nreturn msg;",
         "outputs": 1,
@@ -2933,14 +2813,14 @@
         "y": 680,
         "wires": [
             [
-                "91c9c60f.320e28"
+                "2a4ca781.3ae9b8"
             ]
         ]
     },
     {
-        "id": "8e127516.201348",
+        "id": "ace59d7a.2b5e2",
         "type": "inject",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "",
         "topic": "",
         "payload": "",
@@ -2953,274 +2833,14 @@
         "y": 680,
         "wires": [
             [
-                "932f4f2a.8611c"
+                "53cf7675.368038"
             ]
         ]
     },
     {
-        "id": "6c8868e3.fe3058",
-        "type": "inject",
-        "z": "ca72da37.1c2a58",
-        "name": "",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "x": 203,
-        "y": 200,
-        "wires": [
-            [
-                "660c8709.c7cac8"
-            ]
-        ]
-    },
-    {
-        "id": "660c8709.c7cac8",
+        "id": "b250de9.140da2",
         "type": "function",
-        "z": "ca72da37.1c2a58",
-        "name": "process farms",
-        "func": "const farms = flow.get(\"farms\") || [];\nfarms.forEach(farm => {\n    const res = { \"farmId\": farm.farmId };\n    node.send({\"payload\": {farm, res}});\n});",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 313,
-        "y": 300,
-        "wires": [
-            [
-                "f0f361f4.fe232"
-            ]
-        ]
-    },
-    {
-        "id": "f0f361f4.fe232",
-        "type": "function",
-        "z": "ca72da37.1c2a58",
-        "name": "process ranches",
-        "func": "const ranches = msg.payload.farm.ranches;\nconst fres = msg.payload.res;\nranches.forEach(ranch => {\n    const res = { ...fres, \"ranchId\": ranch.ranchId };\n    node.send({\"payload\": {ranch, res}});\n});",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 427,
-        "y": 386,
-        "wires": [
-            [
-                "e5ec4ee6.41da6"
-            ]
-        ]
-    },
-    {
-        "id": "e5ec4ee6.41da6",
-        "type": "function",
-        "z": "ca72da37.1c2a58",
-        "name": "process clusters",
-        "func": "const clusters = msg.payload.ranch.clusters;\nconst rres = msg.payload.res;\nclusters.forEach(cluster => {\n    const cres = {\n        ...rres,\n        \"clusterId\": cluster.clusterId\n    };\n    const sensors = cluster.sensors;\n    const arr = [];\n    sensors.forEach(sensor => {\n        const res = {\n            ...cres,\n            \"sensorId\": sensor.sensorId,\n            \"type\": sensor.type,\n            \"status\": sensor.status\n        };\n        if (res.status === \"ON\") {\n            if (res.type === \"temperature\") {\n                res.timestamp = new Date();\n                res.value = Math.random();\n                const hour = res.timestamp.getHours();\n                if (hour >= 7 && hour <= 12) {\n                    res.value = Math.floor(Math.random() * 4) + 40;\n                }\n                if (hour > 12 && hour <= 18) {\n                    res.value = Math.floor((Math.random() * 5) + 44);\n                }\n                if (hour > 18 && hour <= 23) {\n                    res.value = Math.floor((Math.random() * 4) + 35);\n                }\n            }\n            if (res.type === \"humidity\") {\n                res.timestamp = new Date();\n                res.value = Math.random();\n                const hour = res.timestamp.getHours();\n                if (hour >= 7 && hour <= 12) {\n                    res.value = Math.floor(Math.random() * 6) + 70;\n                }\n                if (hour > 12 && hour <= 18) {\n                    res.value = Math.floor((Math.random() * 6) + 60);\n                }\n                if (hour > 18 && hour <= 23) {\n                    res.value = Math.floor((Math.random() * 6) + 65);\n                }\n            }\n            if (res.type === \"windspeed\") {\n                res.timestamp = new Date();\n                res.value = Math.random();\n                res.value = Math.floor((Math.random() * 5) + 8);\n            }\n            if (res.type === \"rain\") {\n                res.timestamp = new Date();\n                res.value = Math.random();\n                const hour = sres.timestamp.getHours();\n                res.value = Math.floor(Math.random() * 3) + 0;\n            }\n            if (res.type === \"moisture\") {\n                res.timestamp = new Date();\n                res.value = Math.floor((Math.random() * 2) + 5);\n            }\n            arr.push(res);\n        }\n    });\n    node.send({\n        \"payload\": arr\n    });\n});",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 557,
-        "y": 457,
-        "wires": [
-            [
-                "a3e76d6e.4caa2"
-            ]
-        ]
-    },
-    {
-        "id": "a3e76d6e.4caa2",
-        "type": "mqtt out",
-        "z": "ca72da37.1c2a58",
-        "name": "/clustertopic",
-        "topic": "/clustertopic",
-        "qos": "1",
-        "retain": "",
-        "broker": "d8285633.fb3cc8",
-        "x": 820,
-        "y": 458,
-        "wires": []
-    },
-    {
-        "id": "deb7ef31.9b273",
-        "type": "mqtt in",
-        "z": "ca72da37.1c2a58",
-        "name": "/clustertopic",
-        "topic": "/clustertopic",
-        "qos": "2",
-        "broker": "d8285633.fb3cc8",
-        "x": 138,
-        "y": 628,
-        "wires": [
-            [
-                "3e125ebf.a34bd2",
-                "61f1d54c.d673dc"
-            ]
-        ]
-    },
-    {
-        "id": "2fa396a6.b6b12a",
-        "type": "function",
-        "z": "ca72da37.1c2a58",
-        "name": "json parse",
-        "func": "try {\n    \n    var i;\n    var m = \"BEGIN BATCH \";\n    var stmt;\n    for (i = 0; i < msg.payload.length; i++) {\n        var a;\n        a= msg.payload[i];\n     \n       // m += \"INSERT INTO sample.Sensor (farm_id,data_dump_dt,ranch_id) VALUES ('\"+a.farmId+\"','\"+a.timestamp+\"','\"+a.ranchId+\"');\\n\";\n       m += \"INSERT INTO sample.SensorData (Farm_id,Ranch_Id,clusterId,sensorId,sensor_type,status,sensor_value,data_dump_dt) VALUES ('\"+a.farmId+\"','\"+a.ranchId+\"','\"+a.clusterId+\"','\"+a.sensorId+\"','\"+a.type+\"','\"+a.status+\"','\"+a.value+\"','\"+a.timestamp+\"');\\n\";\n    }\n    \n    m += \"APPLY BATCH;\";\n    msg.topic = m;\n    msg.payload = null;\n    node.warn(msg);\n    \n} catch (e) {\n    node.error(`error in json parse: ${e}`);\n}\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 570,
-        "y": 628,
-        "wires": [
-            [
-                "ee6c7f9d.2acb5"
-            ]
-        ]
-    },
-    {
-        "id": "47a8f36e.323bfc",
-        "type": "function",
-        "z": "ca72da37.1c2a58",
-        "name": "process add farm",
-        "func": "const newFarm = msg.req.body.farm;\nconst farms = flow.get(\"farms\") || [];\nfarms.push(newFarm);\nflow.set(\"farms\", farms);\nmsg.payload = farms;\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 390,
-        "y": 50,
-        "wires": [
-            [
-                "9568cded.9977"
-            ]
-        ]
-    },
-    {
-        "id": "24576099.940b2",
-        "type": "http in",
-        "z": "ca72da37.1c2a58",
-        "name": "POST /farms",
-        "url": "/farms",
-        "method": "post",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 145,
-        "y": 51,
-        "wires": [
-            [
-                "47a8f36e.323bfc"
-            ]
-        ]
-    },
-    {
-        "id": "9568cded.9977",
-        "type": "http response",
-        "z": "ca72da37.1c2a58",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 660,
-        "y": 48,
-        "wires": []
-    },
-    {
-        "id": "3b9c4116.0bcd6e",
-        "type": "http response",
-        "z": "ca72da37.1c2a58",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 666,
-        "y": 114,
-        "wires": []
-    },
-    {
-        "id": "7f906ba3.49cfe4",
-        "type": "http in",
-        "z": "ca72da37.1c2a58",
-        "name": "GET /farms",
-        "url": "/farms",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 139,
-        "y": 115,
-        "wires": [
-            [
-                "1ef2aab6.de5185"
-            ]
-        ]
-    },
-    {
-        "id": "1ef2aab6.de5185",
-        "type": "function",
-        "z": "ca72da37.1c2a58",
-        "name": "process get farm",
-        "func": "node.warn(flow.get(\"farms\"))\nconst farms = flow.get(\"farms\") || [];\nmsg.payload = farms;\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 389,
-        "y": 117,
-        "wires": [
-            [
-                "3b9c4116.0bcd6e"
-            ]
-        ]
-    },
-    {
-        "id": "3e125ebf.a34bd2",
-        "type": "json",
-        "z": "ca72da37.1c2a58",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 359.5,
-        "y": 628,
-        "wires": [
-            [
-                "2fa396a6.b6b12a"
-            ]
-        ]
-    },
-    {
-        "id": "ee6c7f9d.2acb5",
-        "type": "cassandra",
-        "z": "ca72da37.1c2a58",
-        "mydb": "d870d288.0a9d2",
-        "name": "",
-        "x": 826.5,
-        "y": 628,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2981fbf4.d5e3a4",
-        "type": "debug",
-        "z": "ca72da37.1c2a58",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "x": 830,
-        "y": 749,
-        "wires": []
-    },
-    {
-        "id": "61f1d54c.d673dc",
-        "type": "function",
-        "z": "ca72da37.1c2a58",
-        "name": "json parse",
-        "func": "try {\n    msg.payload = JSON.parse(msg.payload);\n} catch (e) {\n    node.error(`error in json parse: ${e}`);\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 546,
-        "y": 745,
-        "wires": [
-            [
-                "2981fbf4.d5e3a4"
-            ]
-        ]
-    },
-    {
-        "id": "a1d157d3.a0e938",
-        "type": "function",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "InsertSensorColletedDataQuery",
         "func": "\n    try {\n    \n    var i;\n    var m = \"BEGIN BATCH \";\n    var stmt;\n    for (i = 0; i < msg.payload.length; i++) {\n        var a;\n        a= msg.payload[i];\n     \n       // m += \"INSERT INTO sample.Sensor (farm_id,data_dump_dt,ranch_id) VALUES ('\"+a.farmId+\"','\"+a.timestamp+\"','\"+a.ranchId+\"');\\n\";\n       m += \"INSERT INTO cloud_sensor_data.SensorData (Farm_id,Ranch_Id,clusterId,sensorId,sensor_type,status,sensor_value,data_dump_dt) VALUES ('\"+a.farmId+\"','\"+a.ranchId+\"','\"+a.clusterId+\"','\"+a.sensorId+\"','\"+a.type+\"','\"+a.status+\"','\"+a.value+\"','\"+a.timestamp+\"');\\n\";\n    //   let sensorDataQuery =\"Insert into cloud_sensor_data.SensorData(farm_id,ranch_id,cluster_id,sensor_id,sensor_type,sensor_data,sensor_status,data_dump_dt) values ('\"+a.farmid+\"','\"+a.ranchid+\"','\"+a.clusterid+\"','\"+a.sensorid+\"','\"+a.sensortype+\"','\"+a.sensorvalue+\"','\"+a.sensorstatus+\"','\"+a.timestamp+\"');\\n\";\n    }\n    \n    m += \"APPLY BATCH;\";\n    msg.topic = m;\n    msg.payload = null;\n    node.warn(msg);\n    \n} catch (e) {\n    node.error(`error in json parse: ${e}`);\n}\n\nreturn msg;",
         "outputs": 1,
@@ -3229,18 +2849,18 @@
         "y": 760,
         "wires": [
             [
-                "471f8a5e.45aef4"
+                "2412cbc0.b767a4"
             ]
         ]
     },
     {
-        "id": "c8088e10.88d0d",
+        "id": "f0da06ae.44b1a8",
         "type": "mqtt in",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "/clustertopic",
         "topic": "/clustertopic",
         "qos": "2",
-        "broker": "977359bb.95ba38",
+        "broker": "10b63f1b.6f9391",
         "x": 110,
         "y": 720,
         "wires": [
@@ -3248,23 +2868,23 @@
         ]
     },
     {
-        "id": "471f8a5e.45aef4",
+        "id": "2412cbc0.b767a4",
         "type": "cassandra",
-        "z": "30b8b31b.b13d6c",
-        "mydb": "ecea06b.9181bf8",
+        "z": "3a44a793.d4f7d8",
+        "mydb": "224b7d26.67ca32",
         "name": "Network_Data",
         "x": 420,
         "y": 800,
         "wires": [
             [
-                "cdf3cc85.fb2ad"
+                "35c559c2.e63816"
             ]
         ]
     },
     {
-        "id": "cdf3cc85.fb2ad",
+        "id": "35c559c2.e63816",
         "type": "debug",
-        "z": "30b8b31b.b13d6c",
+        "z": "3a44a793.d4f7d8",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -3276,9 +2896,9 @@
         "wires": []
     },
     {
-        "id": "223df552.81af9a",
+        "id": "6db4d4f9.58e7ec",
         "type": "debug",
-        "z": "c1088999.1f4dc8",
+        "z": "85b67cb7.2993c",
         "name": "",
         "active": true,
         "tosidebar": true,
@@ -3286,45 +2906,45 @@
         "tostatus": false,
         "complete": "payload",
         "x": 510,
-        "y": 360,
+        "y": 480,
         "wires": []
     },
     {
-        "id": "10134800.aa0038",
+        "id": "d9da8d03.7c7da",
         "type": "mqtt in",
-        "z": "c1088999.1f4dc8",
+        "z": "85b67cb7.2993c",
         "name": "/clustertopic",
         "topic": "/clustertopic",
         "qos": "2",
-        "broker": "977359bb.95ba38",
+        "broker": "10b63f1b.6f9391",
         "x": 190,
-        "y": 360,
+        "y": 480,
         "wires": [
             [
-                "be1e9318.a252b"
+                "f91d8e9a.edfd3"
             ]
         ]
     },
     {
-        "id": "be1e9318.a252b",
+        "id": "f91d8e9a.edfd3",
         "type": "function",
-        "z": "c1088999.1f4dc8",
+        "z": "85b67cb7.2993c",
         "name": "json parse",
         "func": "try {\n    msg.payload = JSON.parse(msg.payload);\n  // msg.payload  = msg.payload.cloud[0];\n \n} catch (e) {\n    node.error(`error in json parse: ${e}`);\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "x": 350,
-        "y": 360,
+        "y": 480,
         "wires": [
             [
-                "223df552.81af9a"
+                "6db4d4f9.58e7ec"
             ]
         ]
     },
     {
-        "id": "1be9936c.ac37ad",
+        "id": "19b5f273.cc0d6e",
         "type": "inject",
-        "z": "e9859ff0.14239",
+        "z": "3736a922.aa8396",
         "name": "",
         "topic": "",
         "payload": "",
@@ -3333,123 +2953,123 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "x": 140,
-        "y": 480,
+        "x": 100,
+        "y": 40,
         "wires": [
             [
-                "b666b5e.170d348"
+                "bcc0f0b9.15371"
             ]
         ]
     },
     {
-        "id": "b666b5e.170d348",
+        "id": "bcc0f0b9.15371",
         "type": "function",
-        "z": "e9859ff0.14239",
+        "z": "3736a922.aa8396",
         "name": "process farms",
-        "func": "\nconst farms = flow.get(\"farms\") || [];\nfarms.forEach(farm => {\n    const res = { \"farmId\": farm.farmId };\n    node.send({\"payload\": {farm, res}});\n});\n",
+        "func": "\nconst farms = flow.get(\"farms\") || [];\nfarms.forEach(farm => {\n    const res = { \"farmId\": farm.farmId };\n   // const res1= {\"farmerId\": farm.farmerId};\n    node.send({\"payload\": {farm, res}});\n});\n",
         "outputs": 1,
         "noerr": 0,
-        "x": 180,
-        "y": 520,
+        "x": 140,
+        "y": 80,
         "wires": [
             [
-                "5e80889c.c07148"
+                "aeba4417.ef6e48"
             ]
         ]
     },
     {
-        "id": "5e80889c.c07148",
+        "id": "aeba4417.ef6e48",
         "type": "function",
-        "z": "e9859ff0.14239",
+        "z": "3736a922.aa8396",
         "name": "process ranches",
         "func": "const ranches = msg.payload.farm.ranches;\nconst fres = msg.payload.res;\nranches.forEach(ranch => {\n    const res = { ...fres, \"ranchId\": ranch.ranchId };\n    node.send({\"payload\": {ranch, res}});\n});",
         "outputs": 1,
         "noerr": 0,
-        "x": 220,
-        "y": 560,
+        "x": 180,
+        "y": 120,
         "wires": [
             [
-                "6fdb5075.0b575"
+                "9d6a331e.83b31"
             ]
         ]
     },
     {
-        "id": "6fdb5075.0b575",
+        "id": "9d6a331e.83b31",
         "type": "function",
-        "z": "e9859ff0.14239",
+        "z": "3736a922.aa8396",
         "name": "process clusters",
         "func": "const clusters = msg.payload.ranch.clusters;\nconst rres = msg.payload.res;\nclusters.forEach(cluster => {\n    const cres = {\n        ...rres,\n        \"clusterId\": cluster.clusterId\n    };\n    const sensors = cluster.sensors;\n    const arr = [];\n    sensors.forEach(sensor => {\n    var typ  = sensor.type;\n    var val =   sensor.value;\n    arr.push(typ);\n    arr.push(val);\n    });\n    node.send({\n        \"payload\": arr\n    });\n});",
         "outputs": 1,
         "noerr": 0,
-        "x": 280,
-        "y": 600,
+        "x": 240,
+        "y": 160,
         "wires": [
             [
-                "869dc73.5bce738"
+                "ccd603fe.40047"
             ]
         ]
     },
     {
-        "id": "869dc73.5bce738",
+        "id": "ccd603fe.40047",
         "type": "mqtt out",
-        "z": "e9859ff0.14239",
+        "z": "3736a922.aa8396",
         "name": "/clustertopic",
         "topic": "/clustertopic",
         "qos": "1",
         "retain": "",
-        "broker": "977359bb.95ba38",
-        "x": 450,
-        "y": 600,
+        "broker": "10b63f1b.6f9391",
+        "x": 410,
+        "y": 160,
         "wires": []
     },
     {
-        "id": "5ba1f678.caf148",
+        "id": "5feb8a9.7f42874",
         "type": "cassandra",
-        "z": "e9859ff0.14239",
-        "mydb": "1100fd68.7db503",
+        "z": "3736a922.aa8396",
+        "mydb": "2a4a094f.663ed6",
         "name": "cloud_sensor_data",
-        "x": 370,
-        "y": 800,
+        "x": 330,
+        "y": 320,
         "wires": [
             [
-                "62d0889.8165978"
+                "82d56532.3274f8"
             ]
         ]
     },
     {
-        "id": "19cf1694.f45bb9",
+        "id": "1ff175ae.93635a",
         "type": "function",
-        "z": "e9859ff0.14239",
+        "z": "3736a922.aa8396",
         "name": "json parse",
         "func": "msg.topic = \"select * from cloud_sensor_data.sensordata where farm_id='10'\";\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
-        "x": 190,
-        "y": 800,
+        "x": 150,
+        "y": 320,
         "wires": [
             [
-                "5ba1f678.caf148"
+                "5feb8a9.7f42874"
             ]
         ]
     },
     {
-        "id": "62d0889.8165978",
+        "id": "82d56532.3274f8",
         "type": "debug",
-        "z": "e9859ff0.14239",
+        "z": "3736a922.aa8396",
         "name": "",
         "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "payload",
-        "x": 410,
-        "y": 840,
+        "x": 370,
+        "y": 360,
         "wires": []
     },
     {
-        "id": "fca257c6.83e9f8",
+        "id": "a7a1f675.63aeb8",
         "type": "inject",
-        "z": "e9859ff0.14239",
+        "z": "3736a922.aa8396",
         "name": "",
         "topic": "",
         "payload": "",
@@ -3458,94 +3078,94 @@
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "x": 160,
-        "y": 760,
+        "x": 120,
+        "y": 280,
         "wires": [
             [
-                "19cf1694.f45bb9"
+                "1ff175ae.93635a"
             ]
         ]
     },
     {
-        "id": "f5f12a1f.061f28",
+        "id": "fcfac7b3.1f91f8",
         "type": "cassandra",
-        "z": "e9859ff0.14239",
-        "mydb": "1100fd68.7db503",
+        "z": "3736a922.aa8396",
+        "mydb": "2a4a094f.663ed6",
         "name": "cloud_sensor_data",
-        "x": 710,
-        "y": 660,
+        "x": 650,
+        "y": 220,
         "wires": [
             [
-                "14ba31e7.705f8e"
+                "9abeb1d5.a2f53"
             ]
         ]
     },
     {
-        "id": "98088123.1fe85",
+        "id": "811f3fb5.07288",
         "type": "function",
-        "z": "e9859ff0.14239",
+        "z": "3736a922.aa8396",
         "name": "InsertGeneraterDataInDB",
-        "func": "try {\n    \n    var i;\n    var m = \"BEGIN BATCH \";\n    var stmt;\n    for (i = 0; i < msg.payload.length; i++) {\n        var a;\n        a= msg.payload[i];\n       // m += \"INSERT INTO cloud_sensor_data.sensordata (farm_id,ranch_id,cluster_id,sensor_id,sensor_type,sensor_status,sensor_data,data_dump_dt) VALUES ('\"+a.farmId+\"','\"+a.ranchId+\"','\"+a.clusterId+\"','\"+a.sensorId+\"','\"+a.type+\"','\"+a.status+\"','\"+a.value+\"','\"+a.timestamp+\"');\\n\";\n       m += \"INSERT INTO cloud_sensor_data.sensordata (farm_id,ranch_id,cluster_id,sensor_id,sensor_type,sensor_status,sensor_data,data_dump_dt) VALUES ('\"+a.farmId+\"','\"+a.ranchId+\"','\"+a.clusterId+\"','\"+a.sensorId+\"','\"+a.type+\"','\"+a.status+\"','\"+a.value+\"','\"+a.timestamp+\"');\\n\";\n    }\n    \n    m += \"APPLY BATCH;\";\n    msg.topic = m;\n    msg.payload = null;\n    // node.warn(msg);\n    \n} catch (e) {\n    node.error(`error in json parse: ${e}`);\n}\n\nreturn msg;",
+        "func": "try {\n    \n    var i;\n    var m = \"BEGIN BATCH \";\n    var stmt;\n   \n    for (i = 0; i < msg.payload.length; i++) {\n        var a;\n        a= msg.payload[i];\n       // m += \"INSERT INTO cloud_sensor_data.sensordata (farm_id,ranch_id,cluster_id,sensor_id,sensor_type,sensor_status,sensor_data,data_dump_dt) VALUES ('\"+a.farmId+\"','\"+a.ranchId+\"','\"+a.clusterId+\"','\"+a.sensorId+\"','\"+a.type+\"','\"+a.status+\"','\"+a.value+\"','\"+a.timestamp+\"');\\n\";\n       m += \"INSERT INTO cloud_sensor_data.sensordata (farm_id,ranch_id,cluster_id,sensor_id,sensor_type,sensor_status,sensor_data,data_dump_dt) VALUES ('\"+a.farmId+\"','\"+a.ranchId+\"','\"+a.clusterId+\"','\"+a.sensorId+\"','\"+a.type+\"','\"+a.status+\"','\"+a.value+\"','\"+a.timestamp+\"');\\n\";\n     //  m += \"INSERT INTO cloud_sensor_data.sensordata (farmer_id,farm_id,ranch_id,cluster_id,sensor_id,sensor_type,sensor_status,sensor_data,data_dump_dt) VALUES ('farmer3','\"+a.farmId+\"','\"+a.ranchId+\"','\"+a.clusterId+\"','\"+a.sensorId+\"','\"+a.type+\"','\"+a.status+\"','\"+a.value+\"','\"+a.timestamp+\"');\\n\";\n       \n    }\n    \n    m += \"APPLY BATCH;\";\n    msg.topic = m;\n    msg.payload = null;\n    // node.warn(msg);\n    \n} catch (e) {\n    node.error(`error in json parse: ${e}`);\n}\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 470,
-        "y": 660,
+        "x": 410,
+        "y": 220,
         "wires": [
             [
-                "f5f12a1f.061f28"
+                "fcfac7b3.1f91f8"
             ]
         ]
     },
     {
-        "id": "7f538425.d4dffc",
+        "id": "882a31ec.17c44",
         "type": "json",
-        "z": "e9859ff0.14239",
+        "z": "3736a922.aa8396",
         "name": "",
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 290,
-        "y": 660,
+        "x": 230,
+        "y": 220,
         "wires": [
             [
-                "98088123.1fe85"
+                "811f3fb5.07288"
             ]
         ]
     },
     {
-        "id": "98ab4b00.47cd48",
+        "id": "f80a61e2.86cba",
         "type": "mqtt in",
-        "z": "e9859ff0.14239",
+        "z": "3736a922.aa8396",
         "name": "/clustertopic",
         "topic": "/clustertopic",
         "qos": "2",
-        "broker": "d8285633.fb3cc8",
-        "x": 150,
-        "y": 660,
+        "broker": "933f8f51.89678",
+        "x": 90,
+        "y": 220,
         "wires": [
             [
-                "7f538425.d4dffc"
+                "882a31ec.17c44"
             ]
         ]
     },
     {
-        "id": "14ba31e7.705f8e",
+        "id": "9abeb1d5.a2f53",
         "type": "debug",
-        "z": "e9859ff0.14239",
+        "z": "3736a922.aa8396",
         "name": "",
         "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "payload",
-        "x": 670,
-        "y": 700,
+        "x": 610,
+        "y": 260,
         "wires": []
     },
     {
-        "id": "d4ab8eb1.a0bbb",
+        "id": "d222d761.5a4978",
         "type": "inject",
-        "z": "c1088999.1f4dc8",
+        "z": "85b67cb7.2993c",
         "name": "",
         "topic": "",
         "payload": "",
@@ -3555,78 +3175,295 @@
         "once": false,
         "onceDelay": "5",
         "x": 120,
-        "y": 200,
+        "y": 320,
         "wires": [
             [
-                "b1305c8f.51de6"
+                "62fe0455.618f2c"
             ]
         ]
     },
     {
-        "id": "b1305c8f.51de6",
+        "id": "62fe0455.618f2c",
         "type": "function",
-        "z": "c1088999.1f4dc8",
+        "z": "85b67cb7.2993c",
         "name": "process farms",
         "func": "\nconst farms = flow.get(\"farms\") || [];\nfarms.forEach(farm => {\n    const res = { \"farmId\": farm.farmId };\n    node.send({\"payload\": {farm, res}});\n});\n",
         "outputs": 1,
         "noerr": 0,
         "x": 140,
-        "y": 240,
+        "y": 360,
         "wires": [
             [
-                "60c7235.e8e48dc"
+                "6e27ebbe.889a04"
             ]
         ]
     },
     {
-        "id": "60c7235.e8e48dc",
+        "id": "6e27ebbe.889a04",
         "type": "function",
-        "z": "c1088999.1f4dc8",
+        "z": "85b67cb7.2993c",
         "name": "process ranches",
         "func": "const ranches = msg.payload.farm.ranches;\nconst fres = msg.payload.res;\nranches.forEach(ranch => {\n    const res = { ...fres, \"ranchId\": ranch.ranchId };\n    node.send({\"payload\": {ranch, res}});\n});",
         "outputs": 1,
         "noerr": 0,
         "x": 160,
-        "y": 280,
+        "y": 400,
         "wires": [
             [
-                "7e330d92.a0be54"
+                "8382551f.33f6a8"
             ]
         ]
     },
     {
-        "id": "7e330d92.a0be54",
+        "id": "8382551f.33f6a8",
         "type": "function",
-        "z": "c1088999.1f4dc8",
+        "z": "85b67cb7.2993c",
         "name": "process clusters",
         "func": "const clusters = msg.payload.ranch.clusters;\nconst rres = msg.payload.res;\nclusters.forEach(cluster => {\n    const cres = {\n        ...rres,\n        \"clusterId\": cluster.clusterId\n    };\n    const sensors = cluster.sensors;\n    const arr = [];\n    sensors.forEach(sensor => {\n        const res = {\n            ...cres,\n            \"sensorId\": sensor.sensorId,\n            \"type\": sensor.type,\n            \"status\": sensor.status\n        };\n        if (res.status === \"ON\") {\n            if (res.type === \"temperature\") {\n                res.timestamp = new Date();\n                res.value = Math.random();\n                const hour = res.timestamp.getHours();\n                if (hour >= 7 && hour <= 12) {\n                    res.value = Math.floor(Math.random() * 4) + 40;\n                }\n                if (hour > 12 && hour <= 18) {\n                    res.value = Math.floor((Math.random() * 5) + 44);\n                }\n                if (hour > 18 && hour <= 23) {\n                    res.value = Math.floor((Math.random() * 4) + 35);\n                }\n            }\n            if (res.type === \"humidity\") {\n                res.timestamp = new Date();\n                res.value = Math.random();\n                const hour = res.timestamp.getHours();\n                if (hour >= 7 && hour <= 12) {\n                    res.value = Math.floor(Math.random() * 6) + 70;\n                }\n                if (hour > 12 && hour <= 18) {\n                    res.value = Math.floor((Math.random() * 6) + 60);\n                }\n                if (hour > 18 && hour <= 23) {\n                    res.value = Math.floor((Math.random() * 6) + 65);\n                }\n            }\n            if (res.type === \"windSpeed\") {\n                res.timestamp = new Date();\n                res.value = Math.random();\n                res.value = Math.floor((Math.random() * 5) + 8);\n            }\n            if (res.type === \"rain\") {\n                res.timestamp = new Date();\n                res.value = Math.random();\n                //const hour = sres.timestamp.getHours();\n                res.value = Math.floor(Math.random() * 3) + 0;\n            }\n            if (res.type === \"soilMoisture\") {\n                res.timestamp = new Date();\n                res.value = Math.floor((Math.random() * 2) + 5);\n            }\n            arr.push(res);\n        }\n    });\n    node.send({\n        \"payload\": arr\n    });\n});",
         "outputs": 1,
         "noerr": 0,
         "x": 200,
-        "y": 320,
+        "y": 440,
         "wires": [
             [
-                "b08b4b91.b78518"
+                "83428ade.4b4288"
             ]
         ]
     },
     {
-        "id": "b08b4b91.b78518",
+        "id": "83428ade.4b4288",
         "type": "mqtt out",
-        "z": "c1088999.1f4dc8",
+        "z": "85b67cb7.2993c",
         "name": "/clustertopic",
         "topic": "/clustertopic",
         "qos": "1",
         "retain": "",
-        "broker": "977359bb.95ba38",
+        "broker": "10b63f1b.6f9391",
         "x": 370,
-        "y": 320,
+        "y": 440,
         "wires": []
     },
     {
-        "id": "e6626451.ce27d8",
+        "id": "12155026.9909f",
+        "type": "http in",
+        "z": "85b67cb7.2993c",
+        "name": "GET /sensors",
+        "url": "/sensors",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 100,
+        "y": 200,
+        "wires": [
+            [
+                "34395dde.bfc6d2"
+            ]
+        ]
+    },
+    {
+        "id": "c8d660b3.3b0f6",
+        "type": "http response",
+        "z": "85b67cb7.2993c",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 480,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "34395dde.bfc6d2",
+        "type": "function",
+        "z": "85b67cb7.2993c",
+        "name": "process nodes",
+        "func": "const farms = flow.get(\"farms\") || [];\nconst query = msg.req.query;\n\n// const query = {farmerId:\"farmer3\", farmId:10, ranchId:1, clusterId:1}\n// const farms = [{\"farmId\":\"10\",\"farmerId\":\"farmer3\",\"ranches\":[{\"ranchId\":\"1\",\"clusters\":[{\"clusterId\":\"1\",\"sensors\":[{\"sensorId\":\"1\",\"type\":\"temperature\",\"status\":\"ON\"},{\"sensorId\":\"2\",\"type\":\"soil\",\"status\":\"ON\"}]},{\"clusterId\":\"2\",\"sensors\":[{\"sensorId\":\"1\",\"type\":\"temperature\",\"status\":\"ON\"},{\"sensorId\":\"2\",\"type\":\"soil\",\"status\":\"ON\"}]}]},{\"ranchId\":\"2\",\"clusters\":[{\"clusterId\":\"1\",\"sensors\":[{\"sensorId\":\"1\",\"type\":\"temperature\",\"status\":\"ON\"},{\"sensorId\":\"2\",\"type\":\"soil\",\"status\":\"ON\"}]},{\"clusterId\":\"2\",\"sensors\":[{\"sensorId\":\"1\",\"type\":\"temperature\",\"status\":\"ON\"},{\"sensorId\":\"2\",\"type\":\"soil\",\"status\":\"ON\"}]}]}]},{\"farmId\":\"11\",\"farmerId\":\"farmer3\",\"ranches\":[{\"ranchId\":\"2\",\"clusters\":[{\"clusterId\":\"2\",\"sensors\":[{\"sensorId\":\"1\",\"type\":\"temperature\",\"status\":\"ON\"},{\"sensorId\":\"2\",\"type\":\"soil\",\"status\":\"ON\"}]}]}]},{\"farmId\":\"11\",\"farmerId\":\"farmer31\",\"ranches\":[{\"ranchId\":\"2\",\"clusters\":[{\"clusterId\":\"2\",\"sensors\":[{\"sensorId\":\"1\",\"type\":\"temperature\",\"status\":\"ON\"},{\"sensorId\":\"2\",\"type\":\"soil\",\"status\":\"ON\"}]}]}]}];\n\nconst getSensor = (cluster, farmerId, farmId, ranchId, clusterId) => {\n    // return nothing if cluster is falsy\n    if (!cluster) return [];\n    if (query.sensorId) {\n        let ret = [];\n        cluster.sensors.forEach(sensor => {\n            if (sensor.sensorId == query.sensorId) {\n                ret.push({\n                    farmerId,\n                    farmId,\n                    ranchId,\n                    clusterId,\n                    ...sensor\n                });\n            }\n        });\n        // document.writeln(JSON.stringify(ret))\n        msg.payload = ret;\n        node.send(msg);\n    } else {\n        let sensors = [];\n        let ret = {\n            farmerId,\n            farmId,\n            ranchId,\n            clusterId\n        };\n        cluster.sensors.forEach(sensor => {\n            ret = {\n                ...ret,\n                ...sensor\n            };\n            sensors.push(ret);\n        });\n        // document.writeln(JSON.stringify(sensors));\n        msg.payload = sensors;\n        node.send(msg);\n    }\n};\n\nconst getCluster = (ranch, farmerId, farmId, ranchId) => {\n    // return nothing if ranch is falsy\n    if (!ranch) return [];\n    if (query.clusterId) {\n        let ret = null;\n        ranch.clusters.some(cluster => {\n            if (cluster.clusterId == query.clusterId) {\n                ret = cluster;\n                return true;\n            }\n            return false;\n        });\n        if (ret) {\n            getSensor(ret, farmerId, farmId, ranchId, query.clusterId);\n        } else {\n            // cluster not found\n            // code to return nothing\n            // document.writeln(JSON.stringify([]));\n            msg.payload = [];\n            node.send(msg);\n        }\n    } else {\n        // code to return ALL nodes in this ranch\n        let sensors = [];\n        let ret = {\n            farmerId,\n            farmId,\n            ranchId\n        };\n        ranch.clusters.forEach(cluster => {\n            ret = {\n                ...ret,\n                clusterId: cluster.clusterId\n            };\n            cluster.sensors.forEach(sensor => {\n                ret = {\n                    ...ret,\n                    ...sensor\n                };\n                sensors.push(ret);\n            });\n        });\n        // document.writeln(JSON.stringify(sensors));\n        msg.payload = sensors;\n        node.send(msg);\n    }\n}\n\nconst getRanch = (farm, farmerId, farmId) => {\n    // return nothing if farm is falsy\n    if (!farm) return [];\n    if (query.ranchId) {\n        let ret = null;\n        farm.ranches.some(ranch => {\n            if (ranch.ranchId == query.ranchId) {\n                ret = ranch;\n                return true;\n            }\n            return false;\n        });\n        if (ret) {\n            getCluster(ret, farmerId, farmId, query.ranchId);\n        } else {\n            // ranch not found\n            // code to return nothing\n            // document.writeln(JSON.stringify([]));\n            msg.payload = [];\n            node.send(msg);\n        }\n    } else {\n        // code to return ALL nodes for this farm\n        let sensors = [];\n        let ret = {\n            farmerId,\n            farmId\n        };\n        farm.ranches.forEach(ranch => {\n            ret = {\n                ...ret,\n                ranchId: ranch.ranchId\n            };\n            ranch.clusters.forEach(cluster => {\n                ret = {\n                    ...ret,\n                    clusterId: cluster.clusterId\n                };\n                cluster.sensors.forEach(sensor => {\n                    ret = {\n                        ...ret,\n                        ...sensor\n                    };\n                    sensors.push(ret);\n                });\n            });\n        });\n        // document.writeln(JSON.stringify(sensors));\n        msg.payload = sensors;\n        node.send(msg);\n    }\n};\n\nconst getFarm = (farms, farmerId) => {\n    // return nothing if we could not find any farms\n    // for this farmer\n    if (farms.length === 0) return [];\n    if (query.farmId) {\n        let ret = null;\n        farms.some(farm => {\n            if (farm.farmId == query.farmId) {\n                ret = farm;\n                return true;\n            }\n            return false;\n        });\n        if (ret) {\n            getRanch(ret, farmerId, query.farmId);\n        }\n        // if we don't find a farm with that farmId\n        // return noting\n        else {\n            // code to return nothing\n            // document.writeln(JSON.stringify([]));\n            msg.payload = [];\n            node.send(msg);\n        }\n    } else {\n        // code to return all nodes in \"farms\"\n        let sensors = [];\n        farms.forEach(farm => {\n            let ret = {\n                farmerId,\n                farmId: farm.farmId\n            };\n            farm.ranches.forEach(ranch => {\n                ret = {\n                    ...ret,\n                    ranchId: ranch.ranchId\n                };\n                ranch.clusters.forEach(cluster => {\n                    ret = {\n                        ...ret,\n                        clusterId: cluster.clusterId\n                    };\n                    cluster.sensors.forEach(sensor => {\n                        ret = {\n                            ...ret,\n                            ...sensor\n                        };\n                        sensors.push(ret);\n                    });\n                });\n            });\n        });\n        // document.writeln(JSON.stringify(sensors));\n        msg.payload = sensors;\n        node.send(msg);\n    }\n};\n\n// if 'farmdId' is not present in the query\n// return ALL nodes\nif (query.farmerId) {\n    const ret = [];\n    farms.forEach(farm => {\n        if (farm.farmerId == query.farmerId) {\n            ret.push(farm);\n        }\n    });\n\n    if (ret.length > 0) {\n        getFarm(ret, query.farmerId);\n    } else {\n        // no farms for this farmerId\n        // return nothing\n        // document.writeln(JSON.stringify([]));\n        msg.payload = [];\n        node.send(msg);\n    }\n} else {\n    // code to return ALL nodes\n    let sensors = [];\n    farms.forEach(farm => {\n        let ret = {\n            farmerId: farm.farmerId,\n            farmId: farm.farmId\n        };\n        farm.ranches.forEach(ranch => {\n            ret = {\n                ...ret,\n                ranchId: ranch.ranchId\n            };\n            ranch.clusters.forEach(cluster => {\n                ret = {\n                    ...ret,\n                    clusterId: cluster.clusterId\n                };\n                cluster.sensors.forEach(sensor => {\n                    ret = {\n                        ...ret,\n                        ...sensor\n                    };\n                    sensors.push(ret);\n                });\n            });\n        });\n    });\n    // document.writeln(JSON.stringify(sensors));\n    msg.payload = sensors;\n    node.send(msg);\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 300,
+        "y": 200,
+        "wires": [
+            [
+                "c8d660b3.3b0f6"
+            ]
+        ]
+    },
+    {
+        "id": "5e6ddf45.a6cac",
         "type": "inject",
-        "z": "1cbcdb88.58fea4",
+        "z": "85b67cb7.2993c",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 100,
+        "y": 160,
+        "wires": [
+            [
+                "ce62f948.9e3ad8"
+            ]
+        ]
+    },
+    {
+        "id": "ce62f948.9e3ad8",
+        "type": "function",
+        "z": "85b67cb7.2993c",
+        "name": "dummy farms",
+        "func": "const farms = [\n  {\n    \"farmId\": \"1\",\n    \"farmerId\": \"farmer1\",\n    \"ranches\": [\n      {\n        \"ranchId\": \"1\",\n        \"clusters\": [\n          {\n            \"clusterId\": \"1\",\n            \"sensors\": [\n              {\n                \"sensorId\": \"1\",\n                \"type\": \"temperature\",\n                \"status\": \"ON\"\n              },\n              {\n                \"sensorId\": \"2\",\n                \"type\": \"soil\",\n                \"status\": \"ON\"\n              }\n            ]\n          },\n          {\n            \"clusterId\": \"2\",\n            \"sensors\": [\n              {\n                \"sensorId\": \"1\",\n                \"type\": \"temperature\",\n                \"status\": \"ON\"\n              },\n              {\n                \"sensorId\": \"2\",\n                \"type\": \"soil\",\n                \"status\": \"ON\"\n              }\n            ]\n          }\n        ]\n      },\n      {\n        \"ranchId\": \"2\",\n        \"clusters\": [\n          {\n            \"clusterId\": \"1\",\n            \"sensors\": [\n              {\n                \"sensorId\": \"1\",\n                \"type\": \"temperature\",\n                \"status\": \"ON\"\n              },\n              {\n                \"sensorId\": \"2\",\n                \"type\": \"soil\",\n                \"status\": \"ON\"\n              }\n            ]\n          },\n          {\n            \"clusterId\": \"2\",\n            \"sensors\": [\n              {\n                \"sensorId\": \"1\",\n                \"type\": \"temperature\",\n                \"status\": \"ON\"\n              },\n              {\n                \"sensorId\": \"2\",\n                \"type\": \"soil\",\n                \"status\": \"ON\"\n              }\n            ]\n          }\n        ]\n      }\n    ]\n  },\n  {\n    \"farmId\": \"2\",\n    \"farmerId\": \"farmer1\",\n    \"ranches\": [\n      {\n        \"ranchId\": \"1\",\n        \"clusters\": [\n          {\n            \"clusterId\": \"1\",\n            \"sensors\": [\n              {\n                \"sensorId\": \"1\",\n                \"type\": \"temperature\",\n                \"status\": \"ON\"\n              },\n              {\n                \"sensorId\": \"2\",\n                \"type\": \"soil\",\n                \"status\": \"ON\"\n              }\n            ]\n          }\n        ]\n      },\n      {\n        \"ranchId\": \"2\",\n        \"clusters\": [\n          {\n            \"clusterId\": \"2\",\n            \"sensors\": [\n              {\n                \"sensorId\": \"1\",\n                \"type\": \"temperature\",\n                \"status\": \"ON\"\n              },\n              {\n                \"sensorId\": \"2\",\n                \"type\": \"soil\",\n                \"status\": \"ON\"\n              }\n            ]\n          }\n        ]\n      }\n    ]\n  },\n  {\n    \"farmId\": \"1\",\n    \"farmerId\": \"farmer2\",\n    \"ranches\": [\n      {\n        \"ranchId\": \"1\",\n        \"clusters\": [\n          {\n            \"clusterId\": \"1\",\n            \"sensors\": [\n              {\n                \"sensorId\": \"1\",\n                \"type\": \"temperature\",\n                \"status\": \"ON\"\n              },\n              {\n                \"sensorId\": \"2\",\n                \"type\": \"soil\",\n                \"status\": \"ON\"\n              }\n            ]\n          },\n          {\n            \"clusterId\": \"2\",\n            \"sensors\": [\n              {\n                \"sensorId\": \"1\",\n                \"type\": \"temperature\",\n                \"status\": \"ON\"\n              },\n              {\n                \"sensorId\": \"2\",\n                \"type\": \"soil\",\n                \"status\": \"ON\"\n              }\n            ]\n          }\n        ]\n      },\n      {\n        \"ranchId\": \"2\",\n        \"clusters\": [\n          {\n            \"clusterId\": \"1\",\n            \"sensors\": [\n              {\n                \"sensorId\": \"1\",\n                \"type\": \"temperature\",\n                \"status\": \"ON\"\n              },\n              {\n                \"sensorId\": \"2\",\n                \"type\": \"soil\",\n                \"status\": \"ON\"\n              }\n            ]\n          },\n          {\n            \"clusterId\": \"2\",\n            \"sensors\": [\n              {\n                \"sensorId\": \"1\",\n                \"type\": \"temperature\",\n                \"status\": \"ON\"\n              },\n              {\n                \"sensorId\": \"2\",\n                \"type\": \"soil\",\n                \"status\": \"ON\"\n              }\n            ]\n          }\n        ]\n      }\n    ]\n  },\n  {\n    \"farmId\": \"2\",\n    \"farmerId\": \"farmer2\",\n    \"ranches\": [\n      {\n        \"ranchId\": \"1\",\n        \"clusters\": [\n          {\n            \"clusterId\": \"1\",\n            \"sensors\": [\n              {\n                \"sensorId\": \"1\",\n                \"type\": \"temperature\",\n                \"status\": \"ON\"\n              },\n              {\n                \"sensorId\": \"2\",\n                \"type\": \"soil\",\n                \"status\": \"ON\"\n              }\n            ]\n          }\n        ]\n      },\n      {\n        \"ranchId\": \"2\",\n        \"clusters\": [\n          {\n            \"clusterId\": \"2\",\n            \"sensors\": [\n              {\n                \"sensorId\": \"1\",\n                \"type\": \"temperature\",\n                \"status\": \"ON\"\n              },\n              {\n                \"sensorId\": \"2\",\n                \"type\": \"soil\",\n                \"status\": \"ON\"\n              }\n            ]\n          }\n        ]\n      }\n    ]\n  }\n];\nflow.set(\"farms\", farms)",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 280,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6eea6dfe.5b1d14",
+        "type": "cassandra",
+        "z": "79f883ec.307dec",
+        "mydb": "ac401990.62d6b8",
+        "name": "",
+        "x": 530,
+        "y": 40,
+        "wires": [
+            [
+                "163da9e.0e12156"
+            ]
+        ]
+    },
+    {
+        "id": "d14d7ee3.ba269",
+        "type": "function",
+        "z": "79f883ec.307dec",
+        "name": "Coordinate query",
+        "func": "//msg.topic = \"select * from cloud_sensor_data.SensorDataByFarmer where farmer_id = '1' and data_dump_dt = now() - interval 15 minute\";\nmsg.topic = \"select * from cloud_sensor_data.SensorDataByFarmer where farmer_id = '1'\";\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 320,
+        "y": 40,
+        "wires": [
+            [
+                "6eea6dfe.5b1d14"
+            ]
+        ]
+    },
+    {
+        "id": "fd736485.aadd88",
+        "type": "inject",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 130,
+        "y": 40,
+        "wires": [
+            [
+                "d14d7ee3.ba269"
+            ]
+        ]
+    },
+    {
+        "id": "b297233d.9fc7d",
+        "type": "ui_template",
+        "z": "79f883ec.307dec",
+        "group": "faca4658.70a1f8",
+        "name": "Farmer sensor status",
+        "order": 0,
+        "width": "0",
+        "height": "0",
+        "format": "<table id=\"table\" border=\"1\">\n <tr>\n <th>Farmer ID</th>\n <th>Timestamp</th>\n <th>Ranch ID</th>\n <th>Cluster ID</th>\n  <th>Farm ID</th>\n <th>Sensor ID</th>\n <th>Sensor Type</th>\n <th>Timestamp</th>\n <th>Sensor Data</th>\n <th>Sensor Status</th>\n \n </tr>\n <tbody>\n <tr ng-repeat=\"row in msg.payload\">\n <td ng-repeat=\"item in row\" >{{item}}</td>\n </tr>\n </tbody>\n</table>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 920,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "163da9e.0e12156",
+        "type": "function",
+        "z": "79f883ec.307dec",
+        "name": "threshold values",
+        "func": "for(var i = 0; i< msg.payload.length; i++){\n    if(msg.payload[i].sensor_type === \"Temperature\")\n      {\n          if(msg.payload[i].sensor_data <='55')\n          {\n           msg.payload[i].notification =\"Temperature is below threshold level\";\n          }else if(msg.payload[i].sensor_data >='85' )\n          {\n           msg.payload[i].notification =\"Temperature above threshold level\";\n          }else\n          {\n           msg.payload[i].notification =\"\";\n          }\n          \n      }\n    if(msg.payload[i].sensor_type === \"humidity\")\n      {\n          if(msg.payload[i].sensor_data <='55')\n          {\n           msg.payload[i].notification =\"humidity is below threshold level\";\n          }else if(msg.payload[i].sensor_data >='85' )\n          {\n           msg.payload[i].notification =\"humidity above threshold level\";\n          }else\n          {\n           msg.payload[i].notification =\"\";\n          }\n          \n      }\n    if(msg.payload[i].sensor_type === \"Wind Speed\")\n      {\n          if(msg.payload[i].sensor_data <='55')\n          {\n           msg.payload[i].notification =\"Wind Speed is below threshold level\";\n          }else if(msg.payload[i].sensor_data >='85' )\n          {\n           msg.payload[i].notification =\"Wind Speed above threshold level\";\n          }else\n          {\n           msg.payload[i].notification =\"\";\n          }\n          \n      }\n    if(msg.payload[i].sensor_type === \"Rain\")\n      {\n          if(msg.payload[i].sensor_data <='55')\n          {\n           msg.payload[i].notification =\"Rain is below threshold level\";\n          }else if(msg.payload[i].sensor_data[i] >='85' )\n          {\n           msg.payload[i].notification =\"Rain above threshold level\";\n          }else\n          {\n           msg.payload[i].notification =\"\";\n          }\n          \n      }\n    if(msg.payload[i].sensor_type === \"Soil Moisture\")\n      {\n          if(msg.payload[i].sensor_data <='55')\n          {\n           msg.payload[i].notification =\"Soil Moisture is below threshold level\";\n          }else if(msg.payload[i].sensor_data >='85' )\n          {\n           msg.payload[i].notification =\"Soil Moisture above threshold level\";\n          }else\n          {\n           msg.payload[i].notification =\"\";\n          }\n          \n      }\n}\nreturn msg;\n\n\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 720,
+        "y": 40,
+        "wires": [
+            [
+                "b297233d.9fc7d"
+            ]
+        ]
+    },
+    {
+        "id": "bd95181d.05db68",
+        "type": "worldmap",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "lat": "",
+        "lon": "",
+        "zoom": "",
+        "layer": "OSM",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "hide",
+        "panit": "true",
+        "path": "worldmapfarmer",
+        "x": 580,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "b5d70812.8d5278",
+        "type": "inject",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "x": 110,
+        "y": 80,
+        "wires": [
+            [
+                "9773d93e.cc2698"
+            ]
+        ]
+    },
+    {
+        "id": "9773d93e.cc2698",
+        "type": "function",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "func": "msg.topic =\" select * from Network.Farm_LocationbyFarmer \";",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 250,
+        "y": 80,
+        "wires": [
+            [
+                "5012be5.dfa984"
+            ]
+        ]
+    },
+    {
+        "id": "129df461.5fca7c",
+        "type": "inject",
+        "z": "79f883ec.307dec",
         "name": "",
         "topic": "",
         "payload": "",
@@ -3635,48 +3472,833 @@
         "crontab": "",
         "once": true,
         "onceDelay": "",
-        "x": 130,
-        "y": 580,
+        "x": 110,
+        "y": 200,
         "wires": [
             [
-                "af2d205c.b998d"
+                "6ae9e149.7738d"
             ]
         ]
     },
     {
-        "id": "677b6663.bd4a68",
+        "id": "9d9ae451.0012f8",
         "type": "ui_template",
-        "z": "1cbcdb88.58fea4",
-        "group": "43a94fb9.161a7",
-        "name": "",
+        "z": "79f883ec.307dec",
+        "group": "8fc6074c.ac30c8",
+        "name": "Farm location maps",
         "order": 0,
-        "width": "14",
-        "height": "9",
+        "width": "12",
+        "height": "7",
         "format": "<div ng-bind-html=\"msg.payload | trusted\"></div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
         "templateScope": "local",
-        "x": 420,
-        "y": 580,
+        "x": 510,
+        "y": 200,
         "wires": [
             []
         ]
     },
     {
-        "id": "af2d205c.b998d",
+        "id": "6ae9e149.7738d",
         "type": "template",
-        "z": "1cbcdb88.58fea4",
+        "z": "79f883ec.307dec",
         "name": "",
         "field": "payload",
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
-        "template": "<iframe src=\"../worldmap\"  width = 700px height=500px ></iframe>",
-        "x": 280,
-        "y": 580,
+        "template": "<iframe src=\"../worldmap\" width = 700px height=500px ></iframe>",
+        "x": 310,
+        "y": 200,
         "wires": [
             [
-                "677b6663.bd4a68"
+                "9d9ae451.0012f8"
+            ]
+        ]
+    },
+    {
+        "id": "5012be5.dfa984",
+        "type": "cassandra",
+        "z": "79f883ec.307dec",
+        "mydb": "d5689f9b.fd9db",
+        "name": "",
+        "x": 400,
+        "y": 80,
+        "wires": [
+            [
+                "bd95181d.05db68"
+            ]
+        ]
+    },
+    {
+        "id": "5ac08a6a.f62dd4",
+        "type": "worldmap",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "lat": "",
+        "lon": "",
+        "zoom": "",
+        "layer": "OSM",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "hide",
+        "panit": "true",
+        "path": "worldmapIOT",
+        "x": 660,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "eb152369.be45",
+        "type": "inject",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "x": 110,
+        "y": 240,
+        "wires": [
+            [
+                "72ebb6e.ef66b48"
+            ]
+        ]
+    },
+    {
+        "id": "72ebb6e.ef66b48",
+        "type": "function",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "func": "msg.topic =\" select * from Network.Farm_LocationbyIOTManger \";",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 290,
+        "y": 300,
+        "wires": [
+            [
+                "1146f379.b5c7fd"
+            ]
+        ]
+    },
+    {
+        "id": "8d14d8c2.d158d8",
+        "type": "inject",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "",
+        "x": 110,
+        "y": 360,
+        "wires": [
+            [
+                "73d94f7c.80d1"
+            ]
+        ]
+    },
+    {
+        "id": "4337a592.d7ce5c",
+        "type": "ui_template",
+        "z": "79f883ec.307dec",
+        "group": "fc6a590b.635c68",
+        "name": "IOTlocation maps",
+        "order": 0,
+        "width": "14",
+        "height": "7",
+        "format": "<div ng-bind-html=\"msg.payload | trusted\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 510,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "73d94f7c.80d1",
+        "type": "template",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<iframe src=\"../worldmap\" width = 700px height=500px ></iframe>",
+        "x": 310,
+        "y": 360,
+        "wires": [
+            [
+                "4337a592.d7ce5c"
+            ]
+        ]
+    },
+    {
+        "id": "defc6ddc.46424",
+        "type": "ui_button",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "group": "fc6a590b.635c68",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Move Farmer",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "fa-male",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "",
+        "x": 110,
+        "y": 300,
+        "wires": [
+            [
+                "72ebb6e.ef66b48"
+            ]
+        ]
+    },
+    {
+        "id": "1146f379.b5c7fd",
+        "type": "cassandra",
+        "z": "79f883ec.307dec",
+        "mydb": "d5689f9b.fd9db",
+        "name": "",
+        "x": 460,
+        "y": 300,
+        "wires": [
+            [
+                "5ac08a6a.f62dd4"
+            ]
+        ]
+    },
+    {
+        "id": "ed1c6045.60161",
+        "type": "inject",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 110,
+        "y": 440,
+        "wires": [
+            [
+                "fa448244.fe8ae"
+            ]
+        ]
+    },
+    {
+        "id": "3bed3590.33c40a",
+        "type": "ui_chart",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "group": "af4976b1.2695a8",
+        "order": 9,
+        "width": "7",
+        "height": "5",
+        "label": "Soil Moisture",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 2,
+        "x": 770,
+        "y": 640,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "96ddb680.c232b8",
+        "type": "ui_chart",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "group": "af4976b1.2695a8",
+        "order": 5,
+        "width": "7",
+        "height": "5",
+        "label": "WindSpeed",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 2,
+        "x": 770,
+        "y": 560,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d479f41.e14e408",
+        "type": "ui_chart",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "group": "af4976b1.2695a8",
+        "order": 7,
+        "width": "7",
+        "height": "5",
+        "label": "Rain",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 2,
+        "x": 750,
+        "y": 600,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d57f169d.f56608",
+        "type": "ui_chart",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "group": "af4976b1.2695a8",
+        "order": 3,
+        "width": "7",
+        "height": "5",
+        "label": "Humidity",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 2,
+        "x": 760,
+        "y": 520,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "fa448244.fe8ae",
+        "type": "function",
+        "z": "79f883ec.307dec",
+        "name": "DB query",
+        "func": "//msg.topic = \"select * from cloud_sensor_data.SensorData where data_dump_dt = now() - interval 15 minute\";\nmsg.topic = \"select * from cloud_sensor_data.SensorData\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 240,
+        "y": 440,
+        "wires": [
+            [
+                "c143737f.6d3d1"
+            ]
+        ]
+    },
+    {
+        "id": "6be4188a.5353c8",
+        "type": "ui_chart",
+        "z": "79f883ec.307dec",
+        "name": "Temperature",
+        "group": "af4976b1.2695a8",
+        "order": 1,
+        "width": "7",
+        "height": "5",
+        "label": "Temperature",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "Sensor",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 2,
+        "x": 770,
+        "y": 480,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "c1b96ca0.71c3d",
+        "type": "debug",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 930,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "bfaaa42c.2f5f88",
+        "type": "ui_template",
+        "z": "79f883ec.307dec",
+        "group": "b40dd8b3.658c48",
+        "name": "IOT Manager Monitoring table",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<table id=\"table\" border=\"1\">\n <tr>\n <th>Farm ID</th> \n <th>Ranch ID</th>\n <th>Cluster ID</th>\n <th>Sensor ID</th>\n <th>Sensor Type</th>\n <th>Timestamp</th>\n <th>Sensor Data</th>\n <th>Sensor Status</th>\n \n </tr>\n <tbody>\n <tr ng-repeat=\"row in msg.payload\">\n <td ng-repeat=\"item in row\" >{{item}}</td>\n </tr>\n </tbody>\n</table>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 690,
+        "y": 440,
+        "wires": [
+            [
+                "c1b96ca0.71c3d"
+            ]
+        ]
+    },
+    {
+        "id": "8e5633e0.fd326",
+        "type": "function",
+        "z": "79f883ec.307dec",
+        "name": "Parser",
+        "func": "let arr = (msg.payload);\narr.forEach(sensor => {\n    const res = {\n        \"topic\": sensor.sensor_id,\n        \"payload\": sensor.sensor_data,\n        \"series\": sensor.sensor_id,\n    };\n    if(sensor.sensor_type === \"Temperature\") {\n        node.send([res,null,null,null,null]);\n    }\n    if(sensor.sensor_type === \"humidity\") {\n        node.send([null,res,null,null,null]);\n    }\n    if(sensor.sensor_type === \"Wind Speed\") {\n       node.send([null,null,res,null,null]);\n    }\n    if(sensor.sensor_type === \"Rain\") {\n      node.send([null,null,null,res,null]);\n    }\n    if(sensor.sensor_type === \"Soil Moisture\") {\n       node.send([null,null,null,null,res]);\n    }\n    \n    \n    \n});",
+        "outputs": 5,
+        "noerr": 0,
+        "x": 590,
+        "y": 520,
+        "wires": [
+            [
+                "6be4188a.5353c8"
+            ],
+            [
+                "d57f169d.f56608"
+            ],
+            [
+                "96ddb680.c232b8"
+            ],
+            [
+                "d479f41.e14e408"
+            ],
+            [
+                "3bed3590.33c40a"
+            ]
+        ]
+    },
+    {
+        "id": "fa924d96.e2f2b",
+        "type": "function",
+        "z": "79f883ec.307dec",
+        "name": "Parser",
+        "func": "let items = (msg.payload);\n_.countBy(data, function(items) { return data.name; });\nmsg.options = Object.keys(farm_id);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 410,
+        "y": 480,
+        "wires": [
+            [
+                "844641e1.7fc55"
+            ]
+        ]
+    },
+    {
+        "id": "844641e1.7fc55",
+        "type": "debug",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 390,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "c143737f.6d3d1",
+        "type": "cassandra",
+        "z": "79f883ec.307dec",
+        "mydb": "fe13dd98.6254b",
+        "name": "cloud_sensor_data",
+        "x": 410,
+        "y": 440,
+        "wires": [
+            [
+                "bfaaa42c.2f5f88",
+                "8e5633e0.fd326",
+                "fa924d96.e2f2b"
+            ]
+        ]
+    },
+    {
+        "id": "3ed330f8.6d6e8",
+        "type": "inject",
+        "z": "c583f54a.4c61d8",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 160,
+        "y": 180,
+        "wires": [
+            [
+                "7e2b2903.f7ff68"
+            ]
+        ]
+    },
+    {
+        "id": "7e2b2903.f7ff68",
+        "type": "function",
+        "z": "c583f54a.4c61d8",
+        "name": "process farms",
+        "func": "const farms = flow.get(\"farms\") || [];\nfarms.forEach(farm => {\n    const res = { \"farmId\": farm.farmId };\n    node.send({\"payload\": {farm, res}});\n});",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 220,
+        "y": 220,
+        "wires": [
+            [
+                "39640cf3.ff06b4"
+            ]
+        ]
+    },
+    {
+        "id": "39640cf3.ff06b4",
+        "type": "function",
+        "z": "c583f54a.4c61d8",
+        "name": "process ranches",
+        "func": "const ranches = msg.payload.farm.ranches;\nconst fres = msg.payload.res;\nranches.forEach(ranch => {\n    const res = { ...fres, \"ranchId\": ranch.ranchId };\n    node.send({\"payload\": {ranch, res}});\n});",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 310,
+        "y": 260,
+        "wires": [
+            [
+                "822e718b.40c13"
+            ]
+        ]
+    },
+    {
+        "id": "822e718b.40c13",
+        "type": "function",
+        "z": "c583f54a.4c61d8",
+        "name": "process clusters",
+        "func": "const clusters = msg.payload.ranch.clusters;\nconst rres = msg.payload.res;\nclusters.forEach(cluster => {\n    const cres = {\n        ...rres,\n        \"clusterId\": cluster.clusterId\n    };\n    const sensors = cluster.sensors;\n    const arr = [];\n    sensors.forEach(sensor => {\n        const res = {\n            ...cres,\n            \"sensorId\": sensor.sensorId,\n            \"type\": sensor.type,\n            \"status\": sensor.status\n        };\n        if (res.status === \"ON\") {\n            if (res.type === \"temperature\") {\n                res.timestamp = new Date();\n                res.value = Math.random();\n                const hour = res.timestamp.getHours();\n                if (hour >= 7 && hour <= 12) {\n                    res.value = Math.floor(Math.random() * 4) + 40;\n                }\n                if (hour > 12 && hour <= 18) {\n                    res.value = Math.floor((Math.random() * 5) + 44);\n                }\n                if (hour > 18 && hour <= 23) {\n                    res.value = Math.floor((Math.random() * 4) + 35);\n                }\n            }\n            if (res.type === \"humidity\") {\n                res.timestamp = new Date();\n                res.value = Math.random();\n                const hour = res.timestamp.getHours();\n                if (hour >= 7 && hour <= 12) {\n                    res.value = Math.floor(Math.random() * 6) + 70;\n                }\n                if (hour > 12 && hour <= 18) {\n                    res.value = Math.floor((Math.random() * 6) + 60);\n                }\n                if (hour > 18 && hour <= 23) {\n                    res.value = Math.floor((Math.random() * 6) + 65);\n                }\n            }\n            if (res.type === \"windSpeed\") {\n                res.timestamp = new Date();\n                res.value = Math.random();\n                res.value = Math.floor((Math.random() * 5) + 8);\n            }\n            if (res.type === \"rain\") {\n                res.timestamp = new Date();\n                res.value = Math.random();\n               // const hour = sres.timestamp.getHours();\n                res.value = Math.floor(Math.random() * 3) + 0;\n            }\n            if (res.type === \"soilMoisture\") {\n                res.timestamp = new Date();\n                res.value = Math.floor((Math.random() * 2) + 5);\n            }\n            arr.push(res);\n        }\n    });\n    node.send({\n        \"payload\": arr\n    });\n});",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 400,
+        "y": 300,
+        "wires": [
+            [
+                "a6b1363.37fc1c8"
+            ]
+        ]
+    },
+    {
+        "id": "a6b1363.37fc1c8",
+        "type": "mqtt out",
+        "z": "c583f54a.4c61d8",
+        "name": "/clustertopic",
+        "topic": "/clustertopic",
+        "qos": "1",
+        "retain": "",
+        "broker": "b427e3f9.55255",
+        "x": 510,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "edba72cc.10ed9",
+        "type": "mqtt in",
+        "z": "c583f54a.4c61d8",
+        "name": "/clustertopic",
+        "topic": "/clustertopic",
+        "qos": "2",
+        "broker": "b427e3f9.55255",
+        "x": 150,
+        "y": 400,
+        "wires": [
+            [
+                "f1a1f23.3a7561",
+                "ead15d50.41e6c"
+            ]
+        ]
+    },
+    {
+        "id": "7384e529.3869bc",
+        "type": "function",
+        "z": "c583f54a.4c61d8",
+        "name": "json parse",
+        "func": "try {\n    \n    var i;\n    var m = \"BEGIN BATCH \";\n    var stmt;\n    var n=1;\n    for (i = 0; i < msg.payload.length; i++) {\n        var a;\n        a= msg.payload[i];\n     \n       // m += \"INSERT INTO sample.Sensor (farm_id,data_dump_dt,ranch_id) VALUES ('\"+a.farmId+\"','\"+a.timestamp+\"','\"+a.ranchId+\"');\\n\";\n       // m += \"INSERT INTO sample.SensorData (Farm_id,Ranch_Id,clusterId,sensorId,sensor_type,status,sensor_value,data_dump_dt) VALUES ('\"+a.farmId+\"','\"+a.ranchId+\"','\"+a.clusterId+\"','\"+a.sensorId+\"','\"+a.type+\"','\"+a.status+\"','\"+a.value+\"','\"+a.timestamp+\"');\\n\";\n       m += \"INSERT INTO cloud_sensor_data.sensordata (farmer_id,farm_id,ranch_id,cluster_id,sensor_id,sensor_type,sensor_status,sensor_data,data_dump_dt) VALUES ('\"+n+\"','\"+a.farmId+\"','\"+a.ranchId+\"','\"+a.clusterId+\"','\"+a.sensorId+\"','\"+a.type+\"','\"+a.status+\"','\"+a.value+\"','\"+a.timestamp+\"');\\n\";\n       m += \"INSERT INTO cloud_sensor_data.sensordatabyfarmer (Farmer_id,farm_id,ranch_id,cluster_id,sensor_id,sensor_type,sensor_status,sensor_data,data_dump_dt) VALUES ('\"+n+\"','\"+a.farmId+\"','\"+a.ranchId+\"','\"+a.clusterId+\"','\"+a.sensorId+\"','\"+a.type+\"','\"+a.status+\"','\"+a.value+\"','\"+a.timestamp+\"');\\n\";\n       m += \"INSERT INTO cloud_sensor_data.DataByFarm (farm_id,ranch_id,cluster_id,sensor_id,sensor_type,sensor_data,data_dump_dt) VALUES ('\"+a.farmId+\"','\"+a.ranchId+\"','\"+a.clusterId+\"','\"+a.sensorId+\"','\"+a.type+\"','\"+a.value+\"','\"+a.timestamp+\"');\\n\";\n       m += \"INSERT INTO cloud_sensor_data.databyranch (ranch_id,cluster_id,sensor_id,sensor_type,sensor_data,data_dump_dt) VALUES ('\"+a.ranchId+\"','\"+a.clusterId+\"','\"+a.sensorId+\"','\"+a.type+\"','\"+a.value+\"','\"+a.timestamp+\"');\\n\";\n       m += \"INSERT INTO cloud_sensor_data.DataByCluster (cluster_id,sensor_id,sensor_type,sensor_data,data_dump_dt) VALUES ('\"+a.clusterId+\"','\"+a.sensorId+\"','\"+a.type+\"','\"+a.value+\"','\"+a.timestamp+\"');\\n\";\n      // m += \"Insert into cloud_sensor_data.StatusCheck (Sensor_Id,Cluster_Id,Sensor_StatusSensor_type,Data_dump_dt) VALUES();\"\n    }\n    \n    m += \"APPLY BATCH;\";\n    msg.topic = m;\n    msg.payload = null;\n    node.warn(msg);\n    \n} catch (e) {\n    node.error(`error in json parse: ${e}`);\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 370,
+        "y": 480,
+        "wires": [
+            [
+                "2d7126a4.b2549a"
+            ]
+        ]
+    },
+    {
+        "id": "f1a1f23.3a7561",
+        "type": "json",
+        "z": "c583f54a.4c61d8",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 190,
+        "y": 480,
+        "wires": [
+            [
+                "7384e529.3869bc"
+            ]
+        ]
+    },
+    {
+        "id": "2d7126a4.b2549a",
+        "type": "cassandra",
+        "z": "c583f54a.4c61d8",
+        "mydb": "95405a5.d019ea8",
+        "name": "",
+        "x": 570,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6fb6069c.4aa638",
+        "type": "debug",
+        "z": "c583f54a.4c61d8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 590,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "ead15d50.41e6c",
+        "type": "function",
+        "z": "c583f54a.4c61d8",
+        "name": "json parse",
+        "func": "try {\n    msg.payload = JSON.parse(msg.payload);\n} catch (e) {\n    node.error(`error in json parse: ${e}`);\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 390,
+        "y": 400,
+        "wires": [
+            [
+                "6fb6069c.4aa638"
+            ]
+        ]
+    },
+    {
+        "id": "be909078.3081d",
+        "type": "function",
+        "z": "c583f54a.4c61d8",
+        "name": "process add farm",
+        "func": "const newFarm = msg.req.body.farm;\nconst farms = flow.get(\"farms\") || [];\nfarms.push(newFarm);\nflow.set(\"farms\", farms);\nmsg.payload = farms;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 418,
+        "y": 62,
+        "wires": [
+            [
+                "55ac7559.9b3b6c"
+            ]
+        ]
+    },
+    {
+        "id": "4744ea26.c2d524",
+        "type": "http in",
+        "z": "c583f54a.4c61d8",
+        "name": "POST /farms",
+        "url": "/farms",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 173,
+        "y": 63,
+        "wires": [
+            [
+                "be909078.3081d"
+            ]
+        ]
+    },
+    {
+        "id": "55ac7559.9b3b6c",
+        "type": "http response",
+        "z": "c583f54a.4c61d8",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 610,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "cdfbe1be.58f36",
+        "type": "http response",
+        "z": "c583f54a.4c61d8",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 610,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "1d9bdf0c.7a7401",
+        "type": "http in",
+        "z": "c583f54a.4c61d8",
+        "name": "GET /farms",
+        "url": "/farms",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 167,
+        "y": 127,
+        "wires": [
+            [
+                "15dafd8c.5f7b12"
+            ]
+        ]
+    },
+    {
+        "id": "15dafd8c.5f7b12",
+        "type": "function",
+        "z": "c583f54a.4c61d8",
+        "name": "process get farm",
+        "func": "node.warn(flow.get(\"farms\"))\nconst farms = flow.get(\"farms\") || [];\nmsg.payload = farms;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 417,
+        "y": 129,
+        "wires": [
+            [
+                "cdfbe1be.58f36"
             ]
         ]
     }
