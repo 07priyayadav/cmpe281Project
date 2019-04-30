@@ -1,4 +1,4 @@
-let deleteSensor, cleanAndPopulateSensorTable;
+let deleteSensor, cleanAndPopulateSensorTable, addSensor;
 
 $(document).ready(function() {
     const userAndScope = getUserAndScope();
@@ -23,27 +23,26 @@ $(document).ready(function() {
         }
     }
 
-    $("#addSensorButton").click(event => {
-        event.preventDefault();
-
-        const dataToPost = {
-            inp1: $("#inputSensorName").val(),
-            inp2: $("#inputSensorManufacturer").val(),
-            inp3: $("#selectSensorStatus").val(),
-            temp: $("#temperature").is(":checked"),
-            humidity: $("#humidity").is(":checked"),
-            soilMoisture: $("#soilMoisture").is(":checked"),
-            windSpeed: $("#windSpeed").is(":checked"),
-            rain: $("#rain").is(":checked"),
-        };
-        $.ajax({
-            method: "POST",
-            url: "http://localhost:1880/sensors",
-            data: dataToPost
-        }).done(function(response) {
-            alert(JSON.stringify(response, null, 4));
-        });
-    })
+    // $("#addSensorButton").click(event => {
+    //     event.preventDefault();
+    //     const dataToPost = {
+    //         inp1: $("#inputSensorName").val(),
+    //         inp2: $("#inputSensorManufacturer").val(),
+    //         inp3: $("#selectSensorStatus").val(),
+    //         temp: $("#temperature").is(":checked"),
+    //         humidity: $("#humidity").is(":checked"),
+    //         soilMoisture: $("#soilMoisture").is(":checked"),
+    //         windSpeed: $("#windSpeed").is(":checked"),
+    //         rain: $("#rain").is(":checked"),
+    //     };
+    //     $.ajax({
+    //         method: "POST",
+    //         url: "http://localhost:1880/sensors",
+    //         data: dataToPost
+    //     }).done(function(response) {
+    //         alert(JSON.stringify(response, null, 4));
+    //     });
+    // })
 
     $("#addFarmButton").click(event => {
         event.preventDefault();
@@ -138,6 +137,30 @@ $(document).ready(function() {
         });
     };
 
+    addSensor = rand => {
+        // get and validate inputs
+        const farmerId = $(`#farmerId-${rand}`).html();
+        const farmId = $(`#farmId-${rand}`).html();
+        const ranchId = $(`#ranchId-${rand}`).html();
+        const clusterId = $(`#clusterId-${rand}`).html();
+        const sensorId = $(`#sensorId-${rand}`).html();
+        const type = $(`#type-${rand}`).html();
+        if (!farmerId || !farmId || !ranchId || !clusterId || !sensorId || !type) {
+            // do nothing
+        } else {
+            const dataToPost = {
+                "sensor": { farmerId, farmId, ranchId, clusterId, sensorId, type }
+            };
+            $.ajax({
+                method: "POST",
+                url: "http://localhost:1880/sensors",
+                data: dataToPost
+            }).done(function(response) {
+                cleanAndPopulateSensorTable();
+            });
+        }
+    };
+
     $("#btnFilter").click(() => {
         const farmerId = $("#farmerIdFilterInput").val();
         const farmId = $("#farmIdFilterInput").val();
@@ -166,16 +189,17 @@ $(document).ready(function() {
 
 
     $("#nodesTableAddRowButton").click(() => {
+        const rand = Math.random().toString(36).slice(2);
         $('#nodesTable tr:last').after(`
             <tr>
-                <td class="pt-3-half"></td>
-                <td class="pt-3-half" contenteditable="true"></td>
-                <td class="pt-3-half" contenteditable="true"></td>
-                <td class="pt-3-half" contenteditable="true"></td>
-                <td class="pt-3-half"></td>
-                <td class="pt-3-half"></td>
+                <td id="farmerId-${rand}" class="pt-3-half" contenteditable="true"></td>
+                <td id="farmId-${rand}" class="pt-3-half" contenteditable="true"></td>
+                <td id="ranchId-${rand}" class="pt-3-half" contenteditable="true"></td>
+                <td id="clusterId-${rand}" class="pt-3-half" contenteditable="true"></td>
+                <td id="sensorId-${rand}" class="pt-3-half" contenteditable="true"></td>
+                <td id="type-${rand}" class="pt-3-half" contenteditable="true"></td>
                 <td>
-                    <span class="table-remove"><button type="button" class="btn btn-success btn-rounded btn-sm my-0">Save</button></span>
+                    <span class="table-remove"><button type="button" onclick="addSensor('${rand}')" class="btn btn-success btn-rounded btn-sm my-0">Save</button></span>
                 </td>
                 <td>
                     <span class="table-remove"><button type="button" class="btn btn-danger btn-rounded btn-sm my-0">Delete</button></span>
