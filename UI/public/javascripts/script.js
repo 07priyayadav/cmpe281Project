@@ -121,7 +121,7 @@ $(document).ready(function() {
                             <span class="table-remove"><button type="button" class="btn btn-success btn-rounded btn-sm my-0">Save</button></span>
                         </td>
                         <td>
-                            <span class="table-remove"><button type="button" onclick="deleteSensor('${sensor.farmId}', '${sensor.ranchId}', '${sensor.clusterId}', '${sensor.sensorId}', '${sensor.type}')" class="btn btn-danger btn-rounded btn-sm my-0">Delete</button></span>
+                            <span class="table-remove"><button type="button" onclick="deleteSensor('${sensor.farmerId}', '${sensor.farmId}', '${sensor.ranchId}', '${sensor.clusterId}', '${sensor.sensorId}', '${sensor.type}')" class="btn btn-danger btn-rounded btn-sm my-0">Delete</button></span>
                         </td>
                     </tr>
                 `);
@@ -130,10 +130,10 @@ $(document).ready(function() {
     };
     cleanAndPopulateSensorTable();
 
-    deleteSensor = (farmId, ranchId, clusterId, sensorId, type) => {
+    deleteSensor = (farmerId, farmId, ranchId, clusterId, sensorId, type) => {
         $.ajax({
             method: "DELETE",
-            url: `http://localhost:1880/sensors?farmId=${farmId}&ranchId=${ranchId}&clusterId=${clusterId}&sensorId=${sensorId}&type=${type}`
+            url: `http://localhost:1880/sensors?farmerId=${farmerId}&farmId=${farmId}&ranchId=${ranchId}&clusterId=${clusterId}&sensorId=${sensorId}&type=${type}`
         }).done(function(response) {
             cleanAndPopulateSensorTable();
         });

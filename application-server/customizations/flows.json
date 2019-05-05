@@ -1040,7 +1040,7 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 857,
+        "x": 910,
         "y": 240,
         "wires": []
     },
@@ -2049,10 +2049,11 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 120,
-        "y": 388,
+        "y": 384,
         "wires": [
             [
-                "3b17a65f.9b11ba"
+                "3b17a65f.9b11ba",
+                "1165cb86.ba6934"
             ]
         ]
     },
@@ -2063,24 +2064,22 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 530,
-        "y": 388,
+        "x": 791,
+        "y": 416,
         "wires": []
     },
     {
         "id": "3b17a65f.9b11ba",
         "type": "function",
         "z": "85b67cb7.2993c",
-        "name": "process",
+        "name": "process (in memory)",
         "func": "const {farmId, ranchId, clusterId, sensorId, type} = msg.req.query;\nconst farms = flow.get(\"farms\") || [];\n// remove sensor if found\ntry {\n    const farm = farms.find(f => f.farmId == farmId);\n    const ranch = farm.ranches.find(r => r.ranchId == ranchId);\n    const cluster = ranch.clusters.find(c => c.clusterId == clusterId);\n    cluster.sensors = cluster.sensors.filter(s => !(s.sensorId == sensorId && s.type == type));\n} catch(e) {\n    // do nothing\n}\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 340,
-        "y": 388,
+        "x": 380,
+        "y": 361,
         "wires": [
-            [
-                "ac11d70c.8ea6f8"
-            ]
+            []
         ]
     },
     {
@@ -2093,10 +2092,11 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 130,
-        "y": 449,
+        "y": 522,
         "wires": [
             [
-                "ec97b139.bce22"
+                "ec97b139.bce22",
+                "61335bc4.536cd4"
             ]
         ]
     },
@@ -2107,24 +2107,22 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 500,
-        "y": 450,
+        "x": 787,
+        "y": 573,
         "wires": []
     },
     {
         "id": "ec97b139.bce22",
         "type": "function",
         "z": "85b67cb7.2993c",
-        "name": "process",
-        "func": "const farms = flow.get(\"farms\") || [];\ntry {\n    const sensor = msg.req.body.sensor;\n    node.error(sensor);\n    const {farmerId, farmId, ranchId, clusterId, sensorId, type} = sensor;\n    if(!farmerId || !farmId || !ranchId || !clusterId || !sensorId || !type) {\n        msg.payload = { \"error\": \"insufficient data\" };\n        return msg;\n    }\n    \n    // get or add a farm\n    const farm = farms.find(farm => farm.farmerId==farmerId && farm.farmId==farmId);\n    if(!farm) {\n        farms.push({\n            farmerId,\n            farmId,\n            \"ranches\": [\n                {\n                    ranchId,\n                    \"clusters\": [\n                        {\n                            clusterId,\n                            \"sensors\": [{ sensorId, type }]\n                        }\n                    ]\n                }\n            ]\n        });\n        flow.set(\"farms\", farms);\n        msg.payload = sensor;\n        return msg;\n    }\n    \n    // get or add a ranch\n    const ranch = farm.ranches.find(r => r.ranchId == ranchId);\n    if(!ranch) {\n        farm.ranches.push({\n            ranchId,\n            \"clusters\": [\n                {\n                    clusterId,\n                    \"sensors\": [{ sensorId, type }]\n                }    \n            ]\n        });\n        flow.set(\"farms\", farms);\n        msg.payload = sensor;\n        return msg;\n    }\n    \n    // get or add cluster\n    const cluster = ranch.clusters.find(c => c.clusterId == clusterId);\n    if(!cluster) {\n        ranch.clusters.push({ clusterId, \"sensors\": [{ sensorId, type }] });\n        flow.set(\"farms\", farms);\n        msg.payload = sensor;\n        return msg;\n    }\n    \n    // get or add sensor\n    const s = cluster.sensors.find(ss => ss.sensorId==sensorId && ss.type == type);\n    if(s) {\n        msg.payload = { \"error\": \"sensor already exists\" };\n        return msg;\n    } else {\n        cluster.sensors.push({ sensorId, type });\n        flow.set(\"farms\", farms);\n        msg.payload = sensor;\n        return msg;\n    }\n    \n} catch(e) {\n    msg.payload = { \"error\": e.message };\n    return msg;\n}",
+        "name": "process (in memory)",
+        "func": "const farms = flow.get(\"farms\") || [];\ntry {\n    const sensor = msg.req.body.sensor;\n    const {farmerId, farmId, ranchId, clusterId, sensorId, type} = sensor;\n    if(!farmerId || !farmId || !ranchId || !clusterId || !sensorId || !type) {\n        msg.payload = { \"error\": \"insufficient data\" };\n        return msg;\n    }\n    \n    // get or add a farm\n    const farm = farms.find(farm => farm.farmerId==farmerId && farm.farmId==farmId);\n    if(!farm) {\n        farms.push({\n            farmerId,\n            farmId,\n            \"ranches\": [\n                {\n                    ranchId,\n                    \"clusters\": [\n                        {\n                            clusterId,\n                            \"sensors\": [{ sensorId, type }]\n                        }\n                    ]\n                }\n            ]\n        });\n        flow.set(\"farms\", farms);\n        msg.payload = sensor;\n        return msg;\n    }\n    \n    // get or add a ranch\n    const ranch = farm.ranches.find(r => r.ranchId == ranchId);\n    if(!ranch) {\n        farm.ranches.push({\n            ranchId,\n            \"clusters\": [\n                {\n                    clusterId,\n                    \"sensors\": [{ sensorId, type }]\n                }    \n            ]\n        });\n        flow.set(\"farms\", farms);\n        msg.payload = sensor;\n        return msg;\n    }\n    \n    // get or add cluster\n    const cluster = ranch.clusters.find(c => c.clusterId == clusterId);\n    if(!cluster) {\n        ranch.clusters.push({ clusterId, \"sensors\": [{ sensorId, type }] });\n        flow.set(\"farms\", farms);\n        msg.payload = sensor;\n        return msg;\n    }\n    \n    // get or add sensor\n    const s = cluster.sensors.find(ss => ss.sensorId==sensorId && ss.type == type);\n    if(s) {\n        msg.payload = { \"error\": \"sensor already exists\" };\n        return msg;\n    } else {\n        cluster.sensors.push({ sensorId, type });\n        flow.set(\"farms\", farms);\n        msg.payload = sensor;\n        return msg;\n    }\n    \n} catch(e) {\n    msg.payload = { \"error\": e.message };\n    return msg;\n}",
         "outputs": 1,
         "noerr": 0,
-        "x": 323,
-        "y": 449,
+        "x": 400,
+        "y": 513,
         "wires": [
-            [
-                "cdea7469.595918"
-            ]
+            []
         ]
     },
     {
@@ -2317,7 +2315,7 @@
         "tostatus": false,
         "complete": "payload",
         "x": 530,
-        "y": 700,
+        "y": 802,
         "wires": []
     },
     {
@@ -2329,7 +2327,7 @@
         "qos": "2",
         "broker": "10b63f1b.6f9391",
         "x": 210,
-        "y": 700,
+        "y": 802,
         "wires": [
             [
                 "ea471d4e.07172"
@@ -2345,7 +2343,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 370,
-        "y": 700,
+        "y": 802,
         "wires": [
             [
                 "4acfa087.ecb34"
@@ -2365,7 +2363,7 @@
         "once": false,
         "onceDelay": "5",
         "x": 140,
-        "y": 540,
+        "y": 642,
         "wires": [
             [
                 "1d33b2cb.0bd6dd"
@@ -2381,7 +2379,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 160,
-        "y": 580,
+        "y": 682,
         "wires": [
             [
                 "5d9affa6.349d7"
@@ -2397,7 +2395,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 180,
-        "y": 620,
+        "y": 722,
         "wires": [
             [
                 "194860b4.a8d2cf"
@@ -2413,7 +2411,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 220,
-        "y": 660,
+        "y": 762,
         "wires": [
             [
                 "9d0fe9a.fab6c18"
@@ -2430,7 +2428,7 @@
         "retain": "",
         "broker": "10b63f1b.6f9391",
         "x": 390,
-        "y": 660,
+        "y": 762,
         "wires": []
     },
     {
@@ -2440,7 +2438,7 @@
         "mydb": "95405a5.d019ea8",
         "name": "cloud_sensor_data",
         "x": 530,
-        "y": 800,
+        "y": 902,
         "wires": [
             [
                 "d4dc7671.4a09e8"
@@ -2456,7 +2454,7 @@
         "outputs": 1,
         "noerr": 0,
         "x": 530,
-        "y": 760,
+        "y": 862,
         "wires": [
             [
                 "b8e9e37.208202"
@@ -2472,7 +2470,7 @@
         "action": "",
         "pretty": false,
         "x": 350,
-        "y": 760,
+        "y": 862,
         "wires": [
             [
                 "c7f9998b.87f678"
@@ -2488,7 +2486,7 @@
         "qos": "2",
         "broker": "10b63f1b.6f9391",
         "x": 210,
-        "y": 760,
+        "y": 862,
         "wires": [
             [
                 "474e4f17.2b0ef"
@@ -2506,7 +2504,67 @@
         "tostatus": false,
         "complete": "payload",
         "x": 590,
-        "y": 840,
+        "y": 942,
         "wires": []
+    },
+    {
+        "id": "61335bc4.536cd4",
+        "type": "function",
+        "z": "85b67cb7.2993c",
+        "name": "build query",
+        "func": "try {\n    const sensor = msg.req.body.sensor;\n    const {farmerId, farmId, ranchId, clusterId, sensorId, type} = sensor;\n    if(!farmerId || !farmId || !ranchId || !clusterId || !sensorId || !type) {\n        node.error(\"insufficient data for ADD sensor\");\n    }\n    \n    msg.topic = \"INSERT INTO network_data.Farmer_Profile (farmer_id, farm_id, ranch_id, cluster_id, sensor_id, sensor_type)\" +\n    `VALUES ('${farmerId}', '${farmId}', '${ranchId}', '${clusterId}', '${sensorId}', '${type}');`\n    return msg;\n} catch(e) {\n    node.error(e.message);\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 350,
+        "y": 573,
+        "wires": [
+            [
+                "fd3fcd0.0d34e3"
+            ]
+        ]
+    },
+    {
+        "id": "fd3fcd0.0d34e3",
+        "type": "cassandra",
+        "z": "85b67cb7.2993c",
+        "mydb": "95405a5.d019ea8",
+        "name": "Farmer_Profile",
+        "x": 578,
+        "y": 573,
+        "wires": [
+            [
+                "cdea7469.595918"
+            ]
+        ]
+    },
+    {
+        "id": "1165cb86.ba6934",
+        "type": "function",
+        "z": "85b67cb7.2993c",
+        "name": "build query",
+        "func": "try {\n    const {farmerId, farmId, ranchId, clusterId, sensorId, type} = msg.req.query;\n    if(!farmerId || !farmId || !ranchId || !clusterId || !sensorId || !type) {\n        node.error(\"insufficient data for DELETE sensor\");\n    }\n    \n    msg.topic = `DELETE FROM network_data.Farmer_Profile where farmer_id='${farmerId}' and farm_id='${farmId}' and ranch_id='${ranchId}' and cluster_id='${clusterId}' and sensor_id='${sensorId}' and sensor_type='${type}'`;\n    return msg;\n} catch(e) {\n    node.error(e.message);\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 346,
+        "y": 416,
+        "wires": [
+            [
+                "8070abf7.37a018"
+            ]
+        ]
+    },
+    {
+        "id": "8070abf7.37a018",
+        "type": "cassandra",
+        "z": "85b67cb7.2993c",
+        "mydb": "95405a5.d019ea8",
+        "name": "Farmer_Profile",
+        "x": 570,
+        "y": 416,
+        "wires": [
+            [
+                "ac11d70c.8ea6f8"
+            ]
+        ]
     }
 ]
