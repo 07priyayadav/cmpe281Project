@@ -218,22 +218,6 @@
         "collapse": false
     },
     {
-        "id": "21b306d.4fb2afa",
-        "type": "CassandraDatabase",
-        "z": "",
-        "hosts": "127.0.0.1",
-        "port": "9042",
-        "keyspace": "Network_Data"
-    },
-    {
-        "id": "ecea06b.9181bf8",
-        "type": "CassandraDatabase",
-        "z": "",
-        "hosts": "54.67.0.79",
-        "port": "9042",
-        "keyspace": "network"
-    },
-    {
         "id": "ac095742.0d78f8",
         "type": "ui_group",
         "z": "",
@@ -243,14 +227,6 @@
         "disp": true,
         "width": "27",
         "collapse": false
-    },
-    {
-        "id": "1100fd68.7db503",
-        "type": "CassandraDatabase",
-        "z": "",
-        "hosts": "54.188.146.37",
-        "port": "9042",
-        "keyspace": "cloud_sensor_data"
     },
     {
         "id": "fca7d883.5fb068",
@@ -274,14 +250,6 @@
         "collapse": false
     },
     {
-        "id": "3b9f8378.fbea8c",
-        "type": "CassandraDatabase",
-        "z": "",
-        "hosts": "54.67.0.79",
-        "port": "9042",
-        "keyspace": "cloud_sensor_data"
-    },
-    {
         "id": "5eebc43d.5088ac",
         "type": "ui_group",
         "z": "",
@@ -301,14 +269,6 @@
         "order": 3,
         "disabled": false,
         "hidden": false
-    },
-    {
-        "id": "1ded2a58.790dc6",
-        "type": "CassandraDatabase",
-        "z": "",
-        "hosts": "54.67.0.79",
-        "port": "9042",
-        "keyspace": "cloud_sensor_data"
     },
     {
         "id": "8268cbef.0e3d98",
@@ -353,14 +313,6 @@
         "willTopic": "",
         "willQos": "0",
         "willPayload": ""
-    },
-    {
-        "id": "d870d288.0a9d2",
-        "type": "CassandraDatabase",
-        "z": "",
-        "hosts": "54.67.0.79",
-        "port": "9042",
-        "keyspace": "cloud_sensor_data"
     },
     {
         "id": "e81d613b.b7137",
@@ -546,22 +498,6 @@
         "collapse": false
     },
     {
-        "id": "d5689f9b.fd9db",
-        "type": "CassandraDatabase",
-        "z": "",
-        "hosts": "34.210.88.7",
-        "port": "9042",
-        "keyspace": "network_data"
-    },
-    {
-        "id": "224b7d26.67ca32",
-        "type": "CassandraDatabase",
-        "z": "",
-        "hosts": "13.57.27.218",
-        "port": "9042",
-        "keyspace": "network"
-    },
-    {
         "id": "af4976b1.2695a8",
         "type": "ui_group",
         "z": "",
@@ -573,14 +509,6 @@
         "collapse": false
     },
     {
-        "id": "2a4a094f.663ed6",
-        "type": "CassandraDatabase",
-        "z": "",
-        "hosts": "54.188.146.37",
-        "port": "9042",
-        "keyspace": "cloud_sensor_data"
-    },
-    {
         "id": "f117cae8.38d768",
         "type": "ui_tab",
         "z": "",
@@ -589,14 +517,6 @@
         "order": 1,
         "disabled": false,
         "hidden": false
-    },
-    {
-        "id": "1c96a990.7978c6",
-        "type": "CassandraDatabase",
-        "z": "",
-        "hosts": "13.57.27.218",
-        "port": "9042",
-        "keyspace": "cloud_sensor_data"
     },
     {
         "id": "b40dd8b3.658c48",
@@ -618,14 +538,6 @@
         "order": 3,
         "disabled": false,
         "hidden": false
-    },
-    {
-        "id": "8cc9d8c6.579f58",
-        "type": "CassandraDatabase",
-        "z": "",
-        "hosts": "34.210.88.7",
-        "port": "9042",
-        "keyspace": "cloud_sensor_data"
     },
     {
         "id": "faca4658.70a1f8",
@@ -672,14 +584,6 @@
         "willPayload": ""
     },
     {
-        "id": "bc2bafdd.22f21",
-        "type": "CassandraDatabase",
-        "z": "",
-        "hosts": "13.57.27.218",
-        "port": "9042",
-        "keyspace": "cloud_sensor_data"
-    },
-    {
         "id": "e985d58d.3a3f68",
         "type": "mqtt-broker",
         "z": "",
@@ -700,14 +604,6 @@
         "willTopic": "",
         "willQos": "0",
         "willPayload": ""
-    },
-    {
-        "id": "e5962960.8b5d88",
-        "type": "CassandraDatabase",
-        "z": "",
-        "hosts": "18.236.211.38",
-        "port": "9042",
-        "keyspace": "cloud_sensor_data"
     },
     {
         "id": "f11153fa.1440f",
@@ -732,22 +628,6 @@
         "willPayload": ""
     },
     {
-        "id": "9556f304.0db0d",
-        "type": "CassandraDatabase",
-        "z": "",
-        "hosts": "18.236.211.38",
-        "port": "9042",
-        "keyspace": "cloud_sensor_data"
-    },
-    {
-        "id": "ac401990.62d6b8",
-        "type": "CassandraDatabase",
-        "z": "",
-        "hosts": "34.210.88.7",
-        "port": "9042",
-        "keyspace": "cloud_sensor_data"
-    },
-    {
         "id": "859bf179.9472a",
         "type": "ui_group",
         "z": "",
@@ -768,14 +648,6 @@
         "disp": true,
         "width": "13",
         "collapse": false
-    },
-    {
-        "id": "f60381f8.c6e2",
-        "type": "CassandraDatabase",
-        "z": "",
-        "hosts": "54.67.0.79",
-        "port": "9042",
-        "keyspace": "Network"
     },
     {
         "id": "fc6a590b.635c68",
@@ -809,14 +681,6 @@
         "disp": true,
         "width": "27",
         "collapse": false
-    },
-    {
-        "id": "fe13dd98.6254b",
-        "type": "CassandraDatabase",
-        "z": "",
-        "hosts": "34.210.88.7",
-        "port": "9042",
-        "keyspace": "cloud_sensor_data"
     },
     {
         "id": "69f2a424.7e258c",
@@ -887,14 +751,6 @@
     },
     {
         "id": "95405a5.d019ea8",
-        "type": "CassandraDatabase",
-        "z": "",
-        "hosts": "34.210.88.7",
-        "port": "9042",
-        "keyspace": "cloud_sensor_data"
-    },
-    {
-        "id": "be725254.99dbd",
         "type": "CassandraDatabase",
         "z": "",
         "hosts": "54.188.146.37",
@@ -1155,7 +1011,7 @@
         "id": "5feb8a9.7f42874",
         "type": "cassandra",
         "z": "3736a922.aa8396",
-        "mydb": "2a4a094f.663ed6",
+        "mydb": "95405a5.d019ea8",
         "name": "cloud_sensor_data",
         "x": 330,
         "y": 320,
@@ -1219,7 +1075,7 @@
         "id": "fcfac7b3.1f91f8",
         "type": "cassandra",
         "z": "3736a922.aa8396",
-        "mydb": "2a4a094f.663ed6",
+        "mydb": "95405a5.d019ea8",
         "name": "cloud_sensor_data",
         "x": 650,
         "y": 220,
@@ -1338,7 +1194,7 @@
         "id": "6eea6dfe.5b1d14",
         "type": "cassandra",
         "z": "79f883ec.307dec",
-        "mydb": "ac401990.62d6b8",
+        "mydb": "95405a5.d019ea8",
         "name": "",
         "x": 530,
         "y": 40,
@@ -1534,7 +1390,7 @@
         "id": "5012be5.dfa984",
         "type": "cassandra",
         "z": "79f883ec.307dec",
-        "mydb": "d5689f9b.fd9db",
+        "mydb": "95405a5.d019ea8",
         "name": "",
         "x": 400,
         "y": 80,
@@ -1685,7 +1541,7 @@
         "id": "1146f379.b5c7fd",
         "type": "cassandra",
         "z": "79f883ec.307dec",
-        "mydb": "d5689f9b.fd9db",
+        "mydb": "95405a5.d019ea8",
         "name": "",
         "x": 460,
         "y": 300,
@@ -2043,7 +1899,7 @@
         "id": "c143737f.6d3d1",
         "type": "cassandra",
         "z": "79f883ec.307dec",
-        "mydb": "fe13dd98.6254b",
+        "mydb": "95405a5.d019ea8",
         "name": "cloud_sensor_data",
         "x": 410,
         "y": 440,
@@ -2407,7 +2263,7 @@
         "id": "cb18f061.a5a45",
         "type": "cassandra",
         "z": "85b67cb7.2993c",
-        "mydb": "1100fd68.7db503",
+        "mydb": "95405a5.d019ea8",
         "name": "cloud_sensor_data",
         "x": 505,
         "y": 280,
@@ -2561,7 +2417,7 @@
         "id": "809036f0.48f6f8",
         "type": "cassandra",
         "z": "85b67cb7.2993c",
-        "mydb": "2a4a094f.663ed6",
+        "mydb": "95405a5.d019ea8",
         "name": "cloud_sensor_data",
         "x": 710,
         "y": 120,
@@ -2713,7 +2569,7 @@
         "id": "b8e9e37.208202",
         "type": "cassandra",
         "z": "85b67cb7.2993c",
-        "mydb": "2a4a094f.663ed6",
+        "mydb": "95405a5.d019ea8",
         "name": "cloud_sensor_data",
         "x": 530,
         "y": 800,
