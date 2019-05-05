@@ -91,6 +91,7 @@ $(document).ready(function() {
             const headerRow = document.getElementById("nodesTable").insertRow(0);
             headerRow.innerHTML = `
                 <tr>
+                    <th class="pt-3-half">Row</th>
                     <th class="pt-3-half">Farmer Id</th>
                     <th class="pt-3-half">Farmd Id</th>
                     <th class="pt-3-half">Ranch Id</th>
@@ -106,9 +107,10 @@ $(document).ready(function() {
             // const farms = [{"farmerId":"1","farmId":"1","ranches":[{"ranchId":"1","clusters":[{"clusterId":"1","sensors":[{"sensorId":"1","status":"ON","type":"temperature"},{"sensorId":"1","status":"ON","type":"humidity"},{"sensorId":"1","status":"ON","type":"soilMoisture"},{"sensorId":"1","status":"ON","type":"windSpeed"},{"sensorId":"1","status":"ON","type":"rain"}]}]}]},{"farmerId":"1","farmId":"1","ranches":[{"ranchId":"1","clusters":[{"clusterId":"1","sensors":[{"sensorId":"1","status":"ON","type":"temperature"},{"sensorId":"1","status":"ON","type":"humidity"},{"sensorId":"1","status":"ON","type":"soilMoisture"},{"sensorId":"1","status":"ON","type":"windSpeed"},{"sensorId":"1","status":"ON","type":"rain"}]}]}]},{"farmerId":"1","farmId":"1","ranches":[{"ranchId":"1","clusters":[{"clusterId":"1","sensors":[{"sensorId":"1","status":"ON","type":"temperature"},{"sensorId":"1","status":"ON","type":"humidity"},{"sensorId":"1","status":"ON","type":"soilMoisture"},{"sensorId":"1","status":"ON","type":"windSpeed"},{"sensorId":"1","status":"ON","type":"rain"}]}]}]},{"farmerId":"1","farmId":"1","ranches":[{"ranchId":"1","clusters":[{"clusterId":"1","sensors":[{"sensorId":"2","status":"ON","type":"temperature"},{"sensorId":"2","status":"ON","type":"humidity"},{"sensorId":"2","status":"ON","type":"soilMoisture"},{"sensorId":"2","status":"ON","type":"windSpeed"},{"sensorId":"2","status":"ON","type":"rain"}]}]}]},{"farmerId":"1","farmId":"1","ranches":[{"ranchId":"1","clusters":[{"clusterId":"1","sensors":[{"sensorId":"3","status":"ON","type":"temperature"},{"sensorId":"3","status":"ON","type":"humidity"},{"sensorId":"3","status":"ON","type":"soilMoisture"},{"sensorId":"3","status":"ON","type":"windSpeed"},{"sensorId":"3","status":"ON","type":"rain"}]}]}]}];
 
             // dynamically populate the table
-            sensors.forEach(sensor => {
+            sensors.forEach((sensor, index) => {
                 $('#nodesTable tr:last').after(`
                     <tr>
+                        <td class="pt-3-half">${index + 1}</td>
                         <td class="pt-3-half">${sensor.farmerId}</td>
                         <td class="pt-3-half" contenteditable="true">${sensor.farmId}</td>
                         <td class="pt-3-half" contenteditable="true">${sensor.ranchId}</td>
@@ -167,6 +169,7 @@ $(document).ready(function() {
         const ranchId = $("#ranchIdFilterInput").val();
         const clusterId = $("#clusterIdFilterInput").val();
         const sensorId = $("#sensorIdFilterInput").val();
+        const sensorType = $("#sensorTypeFilterInput").val();
         if (farmerId) {
             let query = `?farmerId=${farmerId}`;
             if (farmId) {
@@ -177,6 +180,9 @@ $(document).ready(function() {
                         query += `&clusterId=${clusterId}`;
                         if (sensorId) {
                             query += `&sensorId=${sensorId}`;
+                            if (sensorType) {
+                                query += `&type=${sensorType}`;
+                            }
                         }
                     }
                 }
@@ -192,6 +198,7 @@ $(document).ready(function() {
         const rand = Math.random().toString(36).slice(2);
         $('#nodesTable tr:last').after(`
             <tr>
+                <td class="pt-3-half"></td>
                 <td id="farmerId-${rand}" class="pt-3-half" contenteditable="true"></td>
                 <td id="farmId-${rand}" class="pt-3-half" contenteditable="true"></td>
                 <td id="ranchId-${rand}" class="pt-3-half" contenteditable="true"></td>
