@@ -1,1 +1,3 @@
-// alert('login page')
+$(document).ready(function() {
+	 $("#frame").attr("src", `${appServerBaseURL}/demo`);
+});

@@ -19,6 +19,8 @@ $(document).ready(function() {
             $("#contact").css("display", "none");
             $("#btnabout").css("display", "none");
             $("#btnnews").css("display", "none");
+            $("#btnData").css("display", "");
+            
 
         }
     }
@@ -37,7 +39,7 @@ $(document).ready(function() {
     //     };
     //     $.ajax({
     //         method: "POST",
-    //         url: "http://localhost:1880/sensors",
+    //         url: `${appServerBaseURL}/sensors`,
     //         data: dataToPost
     //     }).done(function(response) {
     //         alert(JSON.stringify(response, null, 4));
@@ -75,7 +77,7 @@ $(document).ready(function() {
         });
         $.ajax({
             method: "POST",
-            url: "http://localhost:1880/farms",
+            url: `${appServerBaseURL}/farms`,
             data: dataToPost
         }).done(function(response) {
             cleanAndPopulateSensorTable();
@@ -85,7 +87,7 @@ $(document).ready(function() {
     cleanAndPopulateSensorTable = query => {
         $.ajax({
             "method": "GET",
-            "url": "http://localhost:1880/sensors" + (query ? query : "")
+            "url": `${appServerBaseURL}/sensors` + (query ? query : "")
         }).done(response => {
             $("#nodesTable").empty();
             const headerRow = document.getElementById("nodesTable").insertRow(0);
@@ -133,7 +135,7 @@ $(document).ready(function() {
     deleteSensor = (farmerId, farmId, ranchId, clusterId, sensorId, type) => {
         $.ajax({
             method: "DELETE",
-            url: `http://localhost:1880/sensors?farmerId=${farmerId}&farmId=${farmId}&ranchId=${ranchId}&clusterId=${clusterId}&sensorId=${sensorId}&type=${type}`
+            url: `${appServerBaseURL}/sensors?farmerId=${farmerId}&farmId=${farmId}&ranchId=${ranchId}&clusterId=${clusterId}&sensorId=${sensorId}&type=${type}`
         }).done(function(response) {
             cleanAndPopulateSensorTable();
         });
@@ -155,7 +157,7 @@ $(document).ready(function() {
             };
             $.ajax({
                 method: "POST",
-                url: "http://localhost:1880/sensors",
+                url: `${appServerBaseURL}/sensors`,
                 data: dataToPost
             }).done(function(response) {
                 cleanAndPopulateSensorTable();
