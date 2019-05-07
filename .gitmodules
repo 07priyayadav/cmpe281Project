@@ -1,3 +1,6 @@
 [submodule "application-server/node-red"]
 	path = application-server/node-red
 	url = https://github.com/node-red/node-red.git
+[submodule "dashboard-server/node-red"]
+	path = dashboard-server/node-red
+	url = https://github.com/node-red/node-red.git
