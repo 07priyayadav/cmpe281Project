@@ -16,8 +16,22 @@
     {
         "id": "79f883ec.307dec",
         "type": "tab",
-        "label": "Flow 3",
-        "disabled": true,
+        "label": "Farmer Dashboard",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "98be76eb.380708",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "cc876b4c.fe9878",
+        "type": "tab",
+        "label": "IOT Dashboard",
+        "disabled": false,
         "info": ""
     },
     {
@@ -25,26 +39,17 @@
         "type": "ui_group",
         "z": "",
         "name": "Default",
-        "tab": "cf5d7930.352328",
+        "tab": "",
         "order": 2,
         "disp": true,
         "width": "18",
         "collapse": false
     },
     {
-        "id": "cf5d7930.352328",
-        "type": "ui_tab",
-        "z": "",
-        "name": "Home",
-        "icon": "dashboard",
-        "disabled": true,
-        "hidden": false
-    },
-    {
         "id": "91728dc6.857af",
         "type": "ui_base",
         "theme": {
-            "name": "theme-dark",
+            "name": "theme-custom",
             "lightTheme": {
                 "default": "#0094CE",
                 "baseColor": "#0094CE",
@@ -63,16 +68,17 @@
                 "name": "Untitled Theme 1",
                 "default": "#4B7930",
                 "baseColor": "#4B7930",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
             },
             "themeState": {
                 "base-color": {
-                    "default": "#097479",
-                    "value": "#4e557b",
+                    "default": "#4B7930",
+                    "value": "#4B7930",
                     "edited": true
                 },
                 "page-titlebar-backgroundColor": {
-                    "value": "#4e557b",
+                    "value": "#4B7930",
                     "edited": false
                 },
                 "page-backgroundColor": {
@@ -84,7 +90,7 @@
                     "edited": false
                 },
                 "group-textColor": {
-                    "value": "#7179a5",
+                    "value": "#6db046",
                     "edited": false
                 },
                 "group-borderColor": {
@@ -100,7 +106,7 @@
                     "edited": false
                 },
                 "widget-backgroundColor": {
-                    "value": "#4e557b",
+                    "value": "#4b7930",
                     "edited": false
                 },
                 "widget-borderColor": {
@@ -119,9 +125,9 @@
             }
         },
         "site": {
-            "name": "Dashboard",
+            "name": "Node-RED Dashboard",
             "hideToolbar": "false",
-            "allowSwipe": "true",
+            "allowSwipe": "false",
             "lockMenu": "true",
             "allowTempTheme": "true",
             "dateFormat": "DD/MM/YYYY",
@@ -142,7 +148,7 @@
         "type": "ui_group",
         "z": "",
         "name": "Sensor Status Board",
-        "tab": "cf5d7930.352328",
+        "tab": "",
         "order": 3,
         "disp": true,
         "width": "10",
@@ -153,7 +159,7 @@
         "type": "ui_group",
         "z": "",
         "name": "Floor Map",
-        "tab": "cf5d7930.352328",
+        "tab": "",
         "order": 4,
         "disp": true,
         "width": "6",
@@ -171,7 +177,7 @@
         "type": "ui_group",
         "z": "",
         "name": "Filters",
-        "tab": "cf5d7930.352328",
+        "tab": "",
         "order": 1,
         "disp": true,
         "width": "24",
@@ -193,28 +199,18 @@
         "type": "ui_group",
         "z": "",
         "name": "Farmer statistics",
-        "tab": "fca7d883.5fb068",
+        "tab": "",
         "order": 3,
         "disp": true,
         "width": "27",
         "collapse": false
     },
     {
-        "id": "fca7d883.5fb068",
-        "type": "ui_tab",
-        "z": "",
-        "name": "Farmer",
-        "icon": "dashboard",
-        "order": 1,
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "7b23dd2d.8df864",
         "type": "ui_group",
         "z": "",
         "name": "Farm Overview",
-        "tab": "fca7d883.5fb068",
+        "tab": "",
         "order": 1,
         "disp": true,
         "width": "27",
@@ -225,28 +221,18 @@
         "type": "ui_group",
         "z": "",
         "name": "IOT Status Chart",
-        "tab": "68cd881c.0b2e58",
+        "tab": "",
         "order": 2,
         "disp": true,
         "width": "27",
         "collapse": false
     },
     {
-        "id": "68cd881c.0b2e58",
-        "type": "ui_tab",
-        "z": "",
-        "name": "IOT Support",
-        "icon": "dashboard",
-        "order": 3,
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "8268cbef.0e3d98",
         "type": "ui_group",
         "z": "",
         "name": "Farmer Notifications",
-        "tab": "fca7d883.5fb068",
+        "tab": "",
         "order": 2,
         "disp": true,
         "width": "13",
@@ -257,7 +243,7 @@
         "type": "ui_group",
         "z": "",
         "name": "Floor Map",
-        "tab": "68cd881c.0b2e58",
+        "tab": "",
         "order": 1,
         "disp": true,
         "width": "14",
@@ -268,139 +254,22 @@
         "type": "ui_group",
         "z": "",
         "name": "Default",
-        "tab": "b6aee9de.0e7558",
+        "tab": "",
         "order": 2,
         "disp": true,
         "width": "18",
         "collapse": false
     },
     {
-        "id": "b6aee9de.0e7558",
-        "type": "ui_tab",
-        "z": "",
-        "name": "Home",
-        "icon": "dashboard",
-        "disabled": true,
-        "hidden": true
-    },
-    {
-        "id": "69715470.1c769c",
-        "type": "ui_base",
-        "theme": {
-            "name": "theme-dark",
-            "lightTheme": {
-                "default": "#0094CE",
-                "baseColor": "#0094CE",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": true,
-                "reset": false
-            },
-            "darkTheme": {
-                "default": "#097479",
-                "baseColor": "#4e557b",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": true,
-                "reset": false
-            },
-            "customTheme": {
-                "name": "Untitled Theme 1",
-                "default": "#4B7930",
-                "baseColor": "#4B7930",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
-            },
-            "themeState": {
-                "base-color": {
-                    "default": "#097479",
-                    "value": "#4e557b",
-                    "edited": true
-                },
-                "page-titlebar-backgroundColor": {
-                    "value": "#4e557b",
-                    "edited": false
-                },
-                "page-backgroundColor": {
-                    "value": "#111111",
-                    "edited": false
-                },
-                "page-sidebar-backgroundColor": {
-                    "value": "#000000",
-                    "edited": false
-                },
-                "group-textColor": {
-                    "value": "#7179a5",
-                    "edited": false
-                },
-                "group-borderColor": {
-                    "value": "#555555",
-                    "edited": false
-                },
-                "group-backgroundColor": {
-                    "value": "#333333",
-                    "edited": false
-                },
-                "widget-textColor": {
-                    "value": "#eeeeee",
-                    "edited": false
-                },
-                "widget-backgroundColor": {
-                    "value": "#4e557b",
-                    "edited": false
-                },
-                "widget-borderColor": {
-                    "value": "#333333",
-                    "edited": false
-                },
-                "base-font": {
-                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
-                }
-            },
-            "angularTheme": {
-                "primary": "indigo",
-                "accents": "blue",
-                "warn": "red",
-                "background": "grey"
-            }
-        },
-        "site": {
-            "name": "Dashboard",
-            "hideToolbar": "false",
-            "allowSwipe": "true",
-            "lockMenu": "true",
-            "allowTempTheme": "true",
-            "dateFormat": "DD/MM/YYYY",
-            "sizes": {
-                "sx": 48,
-                "sy": 48,
-                "gx": 6,
-                "gy": 6,
-                "cx": 6,
-                "cy": 6,
-                "px": 0,
-                "py": 0
-            }
-        }
-    },
-    {
         "id": "ab2948ea.420c08",
         "type": "ui_group",
         "z": "",
         "name": "Sensor Status Board",
-        "tab": "b6aee9de.0e7558",
+        "tab": "",
         "order": 3,
         "disp": true,
         "width": "10",
         "collapse": true
-    },
-    {
-        "id": "36df1de9.d7e1b2",
-        "type": "ui_group",
-        "z": "",
-        "name": "Floor Map",
-        "tab": "b6aee9de.0e7558",
-        "order": 4,
-        "disp": true,
-        "width": "6",
-        "collapse": false
     },
     {
         "id": "10b63f1b.6f9391",
@@ -429,7 +298,7 @@
         "type": "ui_group",
         "z": "",
         "name": "Filters",
-        "tab": "b6aee9de.0e7558",
+        "tab": "",
         "order": 1,
         "disp": true,
         "width": "24",
@@ -451,49 +320,29 @@
         "type": "ui_group",
         "z": "",
         "name": "Farmer statistics",
-        "tab": "f117cae8.38d768",
+        "tab": "",
         "order": 4,
         "disp": true,
         "width": "27",
         "collapse": false
     },
     {
-        "id": "f117cae8.38d768",
-        "type": "ui_tab",
-        "z": "",
-        "name": "Farmer",
-        "icon": "dashboard",
-        "order": 1,
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "b40dd8b3.658c48",
         "type": "ui_group",
         "z": "",
         "name": "IOT Status Chart",
-        "tab": "5a3643e6.00972c",
+        "tab": "",
         "order": 2,
         "disp": true,
         "width": "27",
         "collapse": false
     },
     {
-        "id": "5a3643e6.00972c",
-        "type": "ui_tab",
-        "z": "",
-        "name": "IOT Support",
-        "icon": "dashboard",
-        "order": 3,
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "faca4658.70a1f8",
         "type": "ui_group",
         "z": "",
         "name": "Farmer Notifications",
-        "tab": "f117cae8.38d768",
+        "tab": "",
         "order": 2,
         "disp": true,
         "width": "13",
@@ -504,7 +353,7 @@
         "type": "ui_group",
         "z": "",
         "name": "Floor Map",
-        "tab": "5a3643e6.00972c",
+        "tab": "",
         "order": 1,
         "disp": true,
         "width": "14",
@@ -526,7 +375,7 @@
         "type": "ui_group",
         "z": "",
         "name": "Floor Map",
-        "tab": "f117cae8.38d768",
+        "tab": "",
         "order": 3,
         "disp": true,
         "width": "13",
@@ -649,6 +498,524 @@
         "willPayload": ""
     },
     {
+        "id": "e5178c15.150a9",
+        "type": "ui_group",
+        "z": "",
+        "name": "Statistics",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "27",
+        "collapse": false
+    },
+    {
+        "id": "180a98ae.9efe17",
+        "type": "ui_group",
+        "z": "",
+        "name": "Farmer Notifications",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "13",
+        "collapse": false
+    },
+    {
+        "id": "46687a64.47efe4",
+        "type": "ui_group",
+        "z": "",
+        "name": "Floor Map",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a5913ebf.b5fdf",
+        "type": "ui_group",
+        "z": "",
+        "name": "Farm Overview",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "27",
+        "collapse": false
+    },
+    {
+        "id": "7e0f3c12.6208d4",
+        "type": "ui_group",
+        "z": "",
+        "name": "Individual Farm statistics",
+        "tab": "",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "24717cd2.367164",
+        "type": "ui_group",
+        "z": "",
+        "name": "Farm Overview",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "27",
+        "collapse": false
+    },
+    {
+        "id": "cc136a60.751cf8",
+        "type": "ui_group",
+        "z": "",
+        "name": "IOT Status Chart",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "27",
+        "collapse": false
+    },
+    {
+        "id": "d2498a74.8587f8",
+        "type": "CassandraDatabase",
+        "z": "",
+        "hosts": "54.188.146.37",
+        "port": "9042",
+        "keyspace": "cloud_sensor_data"
+    },
+    {
+        "id": "f857adcc.222dd",
+        "type": "ui_group",
+        "z": "",
+        "name": "Statistics",
+        "tab": "",
+        "order": 1,
+        "disp": false,
+        "width": "27",
+        "collapse": false
+    },
+    {
+        "id": "99080f66.9373c",
+        "type": "ui_group",
+        "z": "",
+        "name": "Individual Farm statistics",
+        "tab": "",
+        "order": 5,
+        "disp": true,
+        "width": "27",
+        "collapse": false
+    },
+    {
+        "id": "5ca47df0.0f1d84",
+        "type": "CassandraDatabase",
+        "z": "",
+        "hosts": "54.188.146.37",
+        "port": "9042",
+        "keyspace": "cloud_sensor_data"
+    },
+    {
+        "id": "fbf67557.1d6738",
+        "type": "ui_group",
+        "z": "",
+        "name": "Farmer Notifications",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "13",
+        "collapse": false
+    },
+    {
+        "id": "7c7751b6.cd9de",
+        "type": "ui_group",
+        "z": "",
+        "name": "Floor Map",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "14",
+        "collapse": false
+    },
+    {
+        "id": "fe80a6f2.0502e8",
+        "type": "ui_group",
+        "z": "",
+        "name": "IOT location",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "27",
+        "collapse": false
+    },
+    {
+        "id": "41122988.8a2cd8",
+        "type": "CassandraDatabase",
+        "z": "",
+        "hosts": "54.188.146.37",
+        "port": "9042",
+        "keyspace": "network_data"
+    },
+    {
+        "id": "c2bb3ef4.29b25",
+        "type": "ui_group",
+        "z": "",
+        "name": "Summary",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "27",
+        "collapse": false
+    },
+    {
+        "id": "8cea54b6.2c2078",
+        "type": "ui_group",
+        "z": "",
+        "name": "Farm Overview",
+        "tab": "312c42ca.58f98e",
+        "order": 4,
+        "disp": true,
+        "width": "27",
+        "collapse": false
+    },
+    {
+        "id": "c29d034c.738ef",
+        "type": "ui_group",
+        "z": "",
+        "name": "IOT Status Chart",
+        "tab": "2de76741.1eb088",
+        "order": 4,
+        "disp": true,
+        "width": "27",
+        "collapse": false
+    },
+    {
+        "id": "1b26bcab.8871f3",
+        "type": "CassandraDatabase",
+        "z": "",
+        "hosts": "54.188.146.37",
+        "port": "9042",
+        "keyspace": "cloud_sensor_data"
+    },
+    {
+        "id": "e9045261.95fe6",
+        "type": "ui_group",
+        "z": "",
+        "name": "Statistics",
+        "tab": "312c42ca.58f98e",
+        "order": 1,
+        "disp": false,
+        "width": "27",
+        "collapse": false
+    },
+    {
+        "id": "bced289d.e291c8",
+        "type": "ui_group",
+        "z": "",
+        "name": "Individual Farm statistics",
+        "tab": "312c42ca.58f98e",
+        "order": 5,
+        "disp": true,
+        "width": "27",
+        "collapse": false
+    },
+    {
+        "id": "312c42ca.58f98e",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Farmer",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "2de76741.1eb088",
+        "type": "ui_tab",
+        "z": "",
+        "name": "IOT Support",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "29274b7e.937f74",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "8cea54b6.2c2078",
+        "order": 2,
+        "width": "3",
+        "height": "5"
+    },
+    {
+        "id": "75fd9eb6.3fff7",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "8cea54b6.2c2078",
+        "order": 4,
+        "width": "3",
+        "height": "5"
+    },
+    {
+        "id": "9827ba7d.557698",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "8cea54b6.2c2078",
+        "order": 6,
+        "width": "5",
+        "height": "5"
+    },
+    {
+        "id": "bd715586.d5eaf8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "8cea54b6.2c2078",
+        "order": 8,
+        "width": "3",
+        "height": "5"
+    },
+    {
+        "id": "4cb7677d.9d1cc8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "8cea54b6.2c2078",
+        "order": 10,
+        "width": "5",
+        "height": "5"
+    },
+    {
+        "id": "36832d1a.9aba82",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "e9045261.95fe6",
+        "order": 2,
+        "width": "2",
+        "height": "2"
+    },
+    {
+        "id": "fd60ce5b.d9cd",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "e9045261.95fe6",
+        "order": 4,
+        "width": "2",
+        "height": "2"
+    },
+    {
+        "id": "2098b77e.cfd018",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "e9045261.95fe6",
+        "order": 6,
+        "width": "2",
+        "height": "2"
+    },
+    {
+        "id": "3d255a29.8a0016",
+        "type": "CassandraDatabase",
+        "z": "",
+        "hosts": "54.188.146.37",
+        "port": "9042",
+        "keyspace": "cloud_sensor_data"
+    },
+    {
+        "id": "5fa84f03.6a5fe",
+        "type": "ui_group",
+        "z": "",
+        "name": "Farmer Notifications & Floor Map",
+        "tab": "312c42ca.58f98e",
+        "order": 2,
+        "disp": true,
+        "width": "27",
+        "collapse": false
+    },
+    {
+        "id": "1f88e965.639e07",
+        "type": "ui_group",
+        "z": "",
+        "name": "IOT location",
+        "tab": "2de76741.1eb088",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "6403d95a.df48c8",
+        "type": "CassandraDatabase",
+        "z": "",
+        "hosts": "54.188.146.37",
+        "port": "9042",
+        "keyspace": "network_data"
+    },
+    {
+        "id": "79d9e7b7.779cd8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "5fa84f03.6a5fe",
+        "order": 2,
+        "width": 1,
+        "height": "7"
+    },
+    {
+        "id": "f774cf7f.e955f",
+        "type": "ui_group",
+        "z": "",
+        "name": "Summary",
+        "tab": "2de76741.1eb088",
+        "order": 1,
+        "disp": true,
+        "width": "27",
+        "collapse": false
+    },
+    {
+        "id": "fa8e1ba9.db6ca8",
+        "type": "CassandraDatabase",
+        "z": "",
+        "hosts": "54.188.146.37",
+        "port": "9042",
+        "keyspace": "cloud_sensor_data"
+    },
+    {
+        "id": "210e2a48.b26466",
+        "type": "ui_group",
+        "z": "",
+        "name": "Statistics",
+        "tab": "f89f2cce.40da1",
+        "order": 1,
+        "disp": false,
+        "width": "27",
+        "collapse": false
+    },
+    {
+        "id": "b74754d9.d6ca98",
+        "type": "ui_group",
+        "z": "",
+        "name": "Ranch 1",
+        "tab": "",
+        "disp": true,
+        "width": "23",
+        "collapse": true
+    },
+    {
+        "id": "28c48b7d.f2b944",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "f89f2cce.40da1",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Farmer",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ad11b38d.c5687",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "f774cf7f.e955f",
+        "order": 2,
+        "width": "2",
+        "height": "2"
+    },
+    {
+        "id": "8e7ae447.63a3b8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "f774cf7f.e955f",
+        "order": 4,
+        "width": "2",
+        "height": "2"
+    },
+    {
+        "id": "b73bc845.df88b8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "f774cf7f.e955f",
+        "order": 6,
+        "width": "2",
+        "height": "2"
+    },
+    {
+        "id": "389acd63.d82dc2",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "bced289d.e291c8",
+        "order": 3,
+        "width": "3",
+        "height": "4"
+    },
+    {
+        "id": "8715ca8d.a66d38",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "bced289d.e291c8",
+        "order": 4,
+        "width": "3",
+        "height": "4"
+    },
+    {
+        "id": "fec2d915.d38728",
+        "type": "ui_group",
+        "z": "",
+        "name": "Individual Farmer Statistics",
+        "tab": "2de76741.1eb088",
+        "order": 3,
+        "disp": true,
+        "width": "27",
+        "collapse": false
+    },
+    {
+        "id": "8dd6bc9b.56a98",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fec2d915.d38728",
+        "order": 2,
+        "width": "3",
+        "height": "5"
+    },
+    {
+        "id": "d34887d2.66c9e8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fec2d915.d38728",
+        "order": 4,
+        "width": "3",
+        "height": "5"
+    },
+    {
+        "id": "bfe71571.073968",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fec2d915.d38728",
+        "order": 6,
+        "width": "5",
+        "height": "5"
+    },
+    {
+        "id": "31d87c65.308784",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fec2d915.d38728",
+        "order": 8,
+        "width": "3",
+        "height": "5"
+    },
+    {
+        "id": "3eda2ef9.e5e612",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "fec2d915.d38728",
+        "order": 3,
+        "width": "5",
+        "height": "5"
+    },
+    {
         "id": "c4107e33.d8c6a",
         "type": "users_isloggedin",
         "z": "92c9c3ef.39c9a",
@@ -687,12 +1054,12 @@
         "id": "26bbc347.849e0c",
         "type": "template",
         "z": "92c9c3ef.39c9a",
-        "name": "for admins onl",
+        "name": "for admins only",
         "field": "payload",
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
-        "template": "<html>\n    <head>\n        <script>\n            window.top.location.href = \"http://localhost:3000\"; \n        </script>\n    </head>\n    <body></body>\n</html>",
+        "template": "<html>\n    <head>\n        <script>\n            window.top.location.href = \"http://ec2-52-8-84-101.us-west-1.compute.amazonaws.com:8000\"; \n        </script>\n    </head>\n    <body></body>\n</html>",
         "x": 581,
         "y": 178,
         "wires": [
@@ -858,727 +1225,6 @@
         "y": 200,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "6eea6dfe.5b1d14",
-        "type": "cassandra",
-        "z": "79f883ec.307dec",
-        "mydb": "95405a5.d019ea8",
-        "name": "",
-        "x": 530,
-        "y": 40,
-        "wires": [
-            [
-                "163da9e.0e12156"
-            ]
-        ]
-    },
-    {
-        "id": "d14d7ee3.ba269",
-        "type": "function",
-        "z": "79f883ec.307dec",
-        "name": "Coordinate query",
-        "func": "//msg.topic = \"select * from cloud_sensor_data.SensorDataByFarmer where farmer_id = '1' and data_dump_dt = now() - interval 15 minute\";\nmsg.topic = \"select * from cloud_sensor_data.SensorDataByFarmer where farmer_id = '1'\";\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 320,
-        "y": 40,
-        "wires": [
-            [
-                "6eea6dfe.5b1d14"
-            ]
-        ]
-    },
-    {
-        "id": "fd736485.aadd88",
-        "type": "inject",
-        "z": "79f883ec.307dec",
-        "name": "",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "repeat": "5",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "x": 130,
-        "y": 40,
-        "wires": [
-            [
-                "d14d7ee3.ba269"
-            ]
-        ]
-    },
-    {
-        "id": "b297233d.9fc7d",
-        "type": "ui_template",
-        "z": "79f883ec.307dec",
-        "group": "faca4658.70a1f8",
-        "name": "Farmer sensor status",
-        "order": 0,
-        "width": "0",
-        "height": "0",
-        "format": "<table id=\"table\" border=\"1\">\n <tr>\n <th>Farmer ID</th>\n <th>Timestamp</th>\n <th>Ranch ID</th>\n <th>Cluster ID</th>\n  <th>Farm ID</th>\n <th>Sensor ID</th>\n <th>Sensor Type</th>\n <th>Timestamp</th>\n <th>Sensor Data</th>\n <th>Sensor Status</th>\n \n </tr>\n <tbody>\n <tr ng-repeat=\"row in msg.payload\">\n <td ng-repeat=\"item in row\" >{{item}}</td>\n </tr>\n </tbody>\n</table>\n",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 920,
-        "y": 40,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "163da9e.0e12156",
-        "type": "function",
-        "z": "79f883ec.307dec",
-        "name": "threshold values",
-        "func": "for(var i = 0; i< msg.payload.length; i++){\n    if(msg.payload[i].sensor_type === \"Temperature\")\n      {\n          if(msg.payload[i].sensor_data <='55')\n          {\n           msg.payload[i].notification =\"Temperature is below threshold level\";\n          }else if(msg.payload[i].sensor_data >='85' )\n          {\n           msg.payload[i].notification =\"Temperature above threshold level\";\n          }else\n          {\n           msg.payload[i].notification =\"\";\n          }\n          \n      }\n    if(msg.payload[i].sensor_type === \"humidity\")\n      {\n          if(msg.payload[i].sensor_data <='55')\n          {\n           msg.payload[i].notification =\"humidity is below threshold level\";\n          }else if(msg.payload[i].sensor_data >='85' )\n          {\n           msg.payload[i].notification =\"humidity above threshold level\";\n          }else\n          {\n           msg.payload[i].notification =\"\";\n          }\n          \n      }\n    if(msg.payload[i].sensor_type === \"Wind Speed\")\n      {\n          if(msg.payload[i].sensor_data <='55')\n          {\n           msg.payload[i].notification =\"Wind Speed is below threshold level\";\n          }else if(msg.payload[i].sensor_data >='85' )\n          {\n           msg.payload[i].notification =\"Wind Speed above threshold level\";\n          }else\n          {\n           msg.payload[i].notification =\"\";\n          }\n          \n      }\n    if(msg.payload[i].sensor_type === \"Rain\")\n      {\n          if(msg.payload[i].sensor_data <='55')\n          {\n           msg.payload[i].notification =\"Rain is below threshold level\";\n          }else if(msg.payload[i].sensor_data[i] >='85' )\n          {\n           msg.payload[i].notification =\"Rain above threshold level\";\n          }else\n          {\n           msg.payload[i].notification =\"\";\n          }\n          \n      }\n    if(msg.payload[i].sensor_type === \"Soil Moisture\")\n      {\n          if(msg.payload[i].sensor_data <='55')\n          {\n           msg.payload[i].notification =\"Soil Moisture is below threshold level\";\n          }else if(msg.payload[i].sensor_data >='85' )\n          {\n           msg.payload[i].notification =\"Soil Moisture above threshold level\";\n          }else\n          {\n           msg.payload[i].notification =\"\";\n          }\n          \n      }\n}\nreturn msg;\n\n\n\n\n\n",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 720,
-        "y": 40,
-        "wires": [
-            [
-                "b297233d.9fc7d"
-            ]
-        ]
-    },
-    {
-        "id": "bd95181d.05db68",
-        "type": "worldmap",
-        "z": "79f883ec.307dec",
-        "name": "",
-        "lat": "",
-        "lon": "",
-        "zoom": "",
-        "layer": "OSM",
-        "cluster": "",
-        "maxage": "",
-        "usermenu": "hide",
-        "panit": "true",
-        "path": "worldmapfarmer",
-        "x": 580,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "b5d70812.8d5278",
-        "type": "inject",
-        "z": "79f883ec.307dec",
-        "name": "",
-        "topic": "",
-        "payload": "",
-        "payloadType": "str",
-        "repeat": "5",
-        "crontab": "",
-        "once": false,
-        "onceDelay": "",
-        "x": 110,
-        "y": 80,
-        "wires": [
-            [
-                "9773d93e.cc2698"
-            ]
-        ]
-    },
-    {
-        "id": "9773d93e.cc2698",
-        "type": "function",
-        "z": "79f883ec.307dec",
-        "name": "",
-        "func": "msg.topic =\" select * from Network.Farm_LocationbyFarmer \";",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 250,
-        "y": 80,
-        "wires": [
-            [
-                "5012be5.dfa984"
-            ]
-        ]
-    },
-    {
-        "id": "129df461.5fca7c",
-        "type": "inject",
-        "z": "79f883ec.307dec",
-        "name": "",
-        "topic": "",
-        "payload": "",
-        "payloadType": "str",
-        "repeat": "5",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "",
-        "x": 110,
-        "y": 200,
-        "wires": [
-            [
-                "6ae9e149.7738d"
-            ]
-        ]
-    },
-    {
-        "id": "9d9ae451.0012f8",
-        "type": "ui_template",
-        "z": "79f883ec.307dec",
-        "group": "8fc6074c.ac30c8",
-        "name": "Farm location maps",
-        "order": 0,
-        "width": "12",
-        "height": "7",
-        "format": "<div ng-bind-html=\"msg.payload | trusted\"></div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 510,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "6ae9e149.7738d",
-        "type": "template",
-        "z": "79f883ec.307dec",
-        "name": "",
-        "field": "payload",
-        "fieldType": "msg",
-        "format": "handlebars",
-        "syntax": "mustache",
-        "template": "<iframe src=\"../worldmap\" width = 700px height=500px ></iframe>",
-        "x": 310,
-        "y": 200,
-        "wires": [
-            [
-                "9d9ae451.0012f8"
-            ]
-        ]
-    },
-    {
-        "id": "5012be5.dfa984",
-        "type": "cassandra",
-        "z": "79f883ec.307dec",
-        "mydb": "95405a5.d019ea8",
-        "name": "",
-        "x": 400,
-        "y": 80,
-        "wires": [
-            [
-                "bd95181d.05db68"
-            ]
-        ]
-    },
-    {
-        "id": "5ac08a6a.f62dd4",
-        "type": "worldmap",
-        "z": "79f883ec.307dec",
-        "name": "",
-        "lat": "",
-        "lon": "",
-        "zoom": "",
-        "layer": "OSM",
-        "cluster": "",
-        "maxage": "",
-        "usermenu": "hide",
-        "panit": "true",
-        "path": "worldmapIOT",
-        "x": 660,
-        "y": 300,
-        "wires": []
-    },
-    {
-        "id": "eb152369.be45",
-        "type": "inject",
-        "z": "79f883ec.307dec",
-        "name": "",
-        "topic": "",
-        "payload": "",
-        "payloadType": "str",
-        "repeat": "5",
-        "crontab": "",
-        "once": false,
-        "onceDelay": "",
-        "x": 110,
-        "y": 240,
-        "wires": [
-            [
-                "72ebb6e.ef66b48"
-            ]
-        ]
-    },
-    {
-        "id": "72ebb6e.ef66b48",
-        "type": "function",
-        "z": "79f883ec.307dec",
-        "name": "",
-        "func": "msg.topic =\" select * from Network.Farm_LocationbyIOTManger \";",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 290,
-        "y": 300,
-        "wires": [
-            [
-                "1146f379.b5c7fd"
-            ]
-        ]
-    },
-    {
-        "id": "8d14d8c2.d158d8",
-        "type": "inject",
-        "z": "79f883ec.307dec",
-        "name": "",
-        "topic": "",
-        "payload": "",
-        "payloadType": "str",
-        "repeat": "5",
-        "crontab": "",
-        "once": true,
-        "onceDelay": "",
-        "x": 110,
-        "y": 360,
-        "wires": [
-            [
-                "73d94f7c.80d1"
-            ]
-        ]
-    },
-    {
-        "id": "4337a592.d7ce5c",
-        "type": "ui_template",
-        "z": "79f883ec.307dec",
-        "group": "fc6a590b.635c68",
-        "name": "IOTlocation maps",
-        "order": 0,
-        "width": "14",
-        "height": "7",
-        "format": "<div ng-bind-html=\"msg.payload | trusted\"></div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 510,
-        "y": 360,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "73d94f7c.80d1",
-        "type": "template",
-        "z": "79f883ec.307dec",
-        "name": "",
-        "field": "payload",
-        "fieldType": "msg",
-        "format": "handlebars",
-        "syntax": "mustache",
-        "template": "<iframe src=\"../worldmap\" width = 700px height=500px ></iframe>",
-        "x": 310,
-        "y": 360,
-        "wires": [
-            [
-                "4337a592.d7ce5c"
-            ]
-        ]
-    },
-    {
-        "id": "defc6ddc.46424",
-        "type": "ui_button",
-        "z": "79f883ec.307dec",
-        "name": "",
-        "group": "fc6a590b.635c68",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Move Farmer",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "icon": "fa-male",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "",
-        "x": 110,
-        "y": 300,
-        "wires": [
-            [
-                "72ebb6e.ef66b48"
-            ]
-        ]
-    },
-    {
-        "id": "1146f379.b5c7fd",
-        "type": "cassandra",
-        "z": "79f883ec.307dec",
-        "mydb": "95405a5.d019ea8",
-        "name": "",
-        "x": 460,
-        "y": 300,
-        "wires": [
-            [
-                "5ac08a6a.f62dd4"
-            ]
-        ]
-    },
-    {
-        "id": "ed1c6045.60161",
-        "type": "inject",
-        "z": "79f883ec.307dec",
-        "name": "",
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "repeat": "5",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "x": 110,
-        "y": 440,
-        "wires": [
-            [
-                "fa448244.fe8ae"
-            ]
-        ]
-    },
-    {
-        "id": "3bed3590.33c40a",
-        "type": "ui_chart",
-        "z": "79f883ec.307dec",
-        "name": "",
-        "group": "af4976b1.2695a8",
-        "order": 9,
-        "width": "7",
-        "height": "5",
-        "label": "Soil Moisture",
-        "chartType": "line",
-        "legend": "true",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "useOldStyle": false,
-        "outputs": 2,
-        "x": 770,
-        "y": 640,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "96ddb680.c232b8",
-        "type": "ui_chart",
-        "z": "79f883ec.307dec",
-        "name": "",
-        "group": "af4976b1.2695a8",
-        "order": 5,
-        "width": "7",
-        "height": "5",
-        "label": "WindSpeed",
-        "chartType": "line",
-        "legend": "true",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "useOldStyle": false,
-        "outputs": 2,
-        "x": 770,
-        "y": 560,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "d479f41.e14e408",
-        "type": "ui_chart",
-        "z": "79f883ec.307dec",
-        "name": "",
-        "group": "af4976b1.2695a8",
-        "order": 7,
-        "width": "7",
-        "height": "5",
-        "label": "Rain",
-        "chartType": "line",
-        "legend": "true",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "useOldStyle": false,
-        "outputs": 2,
-        "x": 750,
-        "y": 600,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "d57f169d.f56608",
-        "type": "ui_chart",
-        "z": "79f883ec.307dec",
-        "name": "",
-        "group": "af4976b1.2695a8",
-        "order": 3,
-        "width": "7",
-        "height": "5",
-        "label": "Humidity",
-        "chartType": "line",
-        "legend": "true",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "",
-        "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
-        "cutout": 0,
-        "useOneColor": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "useOldStyle": false,
-        "outputs": 2,
-        "x": 760,
-        "y": 520,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "fa448244.fe8ae",
-        "type": "function",
-        "z": "79f883ec.307dec",
-        "name": "DB query",
-        "func": "//msg.topic = \"select * from cloud_sensor_data.SensorData where data_dump_dt = now() - interval 15 minute\";\nmsg.topic = \"select * from cloud_sensor_data.SensorData\";\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 260,
-        "y": 400,
-        "wires": [
-            [
-                "c143737f.6d3d1"
-            ]
-        ]
-    },
-    {
-        "id": "6be4188a.5353c8",
-        "type": "ui_chart",
-        "z": "79f883ec.307dec",
-        "name": "Temperature",
-        "group": "af4976b1.2695a8",
-        "order": 1,
-        "width": "7",
-        "height": "5",
-        "label": "Temperature",
-        "chartType": "line",
-        "legend": "true",
-        "xformat": "HH:mm:ss",
-        "interpolate": "linear",
-        "nodata": "Sensor",
-        "dot": false,
-        "ymin": "",
-        "ymax": "",
-        "removeOlder": 1,
-        "removeOlderPoints": "",
-        "removeOlderUnit": "60",
-        "cutout": 0,
-        "useOneColor": false,
-        "colors": [
-            "#1f77b4",
-            "#aec7e8",
-            "#ff7f0e",
-            "#2ca02c",
-            "#98df8a",
-            "#d62728",
-            "#ff9896",
-            "#9467bd",
-            "#c5b0d5"
-        ],
-        "useOldStyle": false,
-        "outputs": 2,
-        "x": 770,
-        "y": 480,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "c1b96ca0.71c3d",
-        "type": "debug",
-        "z": "79f883ec.307dec",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "x": 930,
-        "y": 440,
-        "wires": []
-    },
-    {
-        "id": "bfaaa42c.2f5f88",
-        "type": "ui_template",
-        "z": "79f883ec.307dec",
-        "group": "b40dd8b3.658c48",
-        "name": "IOT Manager Monitoring table",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "format": "<table id=\"table\" border=\"1\">\n <tr>\n <th>Farm ID</th> \n <th>Ranch ID</th>\n <th>Cluster ID</th>\n <th>Sensor ID</th>\n <th>Sensor Type</th>\n <th>Timestamp</th>\n <th>Sensor Data</th>\n <th>Sensor Status</th>\n \n </tr>\n <tbody>\n <tr ng-repeat=\"row in msg.payload\">\n <td ng-repeat=\"item in row\" >{{item}}</td>\n </tr>\n </tbody>\n</table>\n",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "templateScope": "local",
-        "x": 690,
-        "y": 440,
-        "wires": [
-            [
-                "c1b96ca0.71c3d"
-            ]
-        ]
-    },
-    {
-        "id": "8e5633e0.fd326",
-        "type": "function",
-        "z": "79f883ec.307dec",
-        "name": "Parser",
-        "func": "let arr = (msg.payload);\narr.forEach(sensor => {\n    const res = {\n        \"topic\": sensor.sensor_id,\n        \"payload\": sensor.sensor_data,\n        \"series\": sensor.sensor_id,\n    };\n    if(sensor.sensor_type === \"Temperature\") {\n        node.send([res,null,null,null,null]);\n    }\n    if(sensor.sensor_type === \"humidity\") {\n        node.send([null,res,null,null,null]);\n    }\n    if(sensor.sensor_type === \"Wind Speed\") {\n       node.send([null,null,res,null,null]);\n    }\n    if(sensor.sensor_type === \"Rain\") {\n      node.send([null,null,null,res,null]);\n    }\n    if(sensor.sensor_type === \"Soil Moisture\") {\n       node.send([null,null,null,null,res]);\n    }\n    \n    \n    \n});",
-        "outputs": 5,
-        "noerr": 0,
-        "x": 590,
-        "y": 520,
-        "wires": [
-            [
-                "6be4188a.5353c8"
-            ],
-            [
-                "d57f169d.f56608"
-            ],
-            [
-                "96ddb680.c232b8"
-            ],
-            [
-                "d479f41.e14e408"
-            ],
-            [
-                "3bed3590.33c40a"
-            ]
-        ]
-    },
-    {
-        "id": "fa924d96.e2f2b",
-        "type": "function",
-        "z": "79f883ec.307dec",
-        "name": "Parser",
-        "func": "let items = (msg.payload);\n_.countBy(data, function(items) { return data.name; });\nmsg.options = Object.keys(farm_id);\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "x": 410,
-        "y": 480,
-        "wires": [
-            [
-                "844641e1.7fc55"
-            ]
-        ]
-    },
-    {
-        "id": "844641e1.7fc55",
-        "type": "debug",
-        "z": "79f883ec.307dec",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "x": 390,
-        "y": 520,
-        "wires": []
-    },
-    {
-        "id": "c143737f.6d3d1",
-        "type": "cassandra",
-        "z": "79f883ec.307dec",
-        "mydb": "95405a5.d019ea8",
-        "name": "cloud_sensor_data",
-        "x": 410,
-        "y": 440,
-        "wires": [
-            [
-                "bfaaa42c.2f5f88",
-                "8e5633e0.fd326",
-                "fa924d96.e2f2b"
-            ]
         ]
     },
     {
@@ -2407,7 +2053,7 @@
         "z": "85b67cb7.2993c",
         "mydb": "d7d4b65d.165a58",
         "name": "cloud_sensor_data",
-        "x": 710,
+        "x": 730,
         "y": 940,
         "wires": [
             []
@@ -2578,7 +2224,7 @@
         "type": "function",
         "z": "85b67cb7.2993c",
         "name": "InsertStatusCheck",
-        "func": "\ntry {\n    const queryArr = [];\n    Array.isArray(msg.payload) && msg.payload.forEach(sensor => {\n        const query = \"INSERT INTO cloud_sensor_data.StatusCheck (cluster_id, sensor_id, sensor_type, data_dump_dt) VALUES \" +\n            `('${sensor.cluster_id}', '${sensor.sensor_id}', '${sensor.sensor_type}', '${sensor.data_dump_dt}')`;\n        queryArr.push(query);    \n        node.send({ \"payload\": null, \"topic\": query });\n    });\n} catch(e) {\n    node.error(e);\n}",
+        "func": "\ntry {\n    const queryArr = [];\n    Array.isArray(msg.payload) && msg.payload.forEach(sensor => {\n        const query = \"INSERT INTO cloud_sensor_data.StatusCheck (cluster_id, sensor_id, sensor_type, data_dump_dt,sensor_status) VALUES \" +\n            `('${sensor.cluster_id}', '${sensor.sensor_id}', '${sensor.sensor_type}', '${sensor.data_dump_dt}', 'ON')`;\n        queryArr.push(query);    \n        node.send({ \"payload\": null, \"topic\": query });\n    });\n} catch(e) {\n    node.error(e);\n}",
         "outputs": 1,
         "noerr": 0,
         "x": 470,
@@ -2604,5 +2250,2059 @@
                 "c93ad56a.4c2d38"
             ]
         ]
+    },
+    {
+        "id": "f53767d4.0360f8",
+        "type": "inject",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "0.2",
+        "x": 100,
+        "y": 660,
+        "wires": [
+            [
+                "f6a2360c.fc4738"
+            ]
+        ]
+    },
+    {
+        "id": "f955f643.11df08",
+        "type": "ui_chart",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "group": "8cea54b6.2c2078",
+        "order": 3,
+        "width": "7",
+        "height": "5",
+        "label": "Soil Moisture",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 790,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "28c181e.da92e7e",
+        "type": "ui_chart",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "group": "8cea54b6.2c2078",
+        "order": 5,
+        "width": "7",
+        "height": "5",
+        "label": "WindSpeed",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 790,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "773ee91a.57b668",
+        "type": "ui_chart",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "group": "8cea54b6.2c2078",
+        "order": 7,
+        "width": "7",
+        "height": "5",
+        "label": "Rain",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 770,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "87e5d3e5.264a7",
+        "type": "ui_chart",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "group": "8cea54b6.2c2078",
+        "order": 9,
+        "width": "7",
+        "height": "5",
+        "label": "Humidity",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 780,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f6a2360c.fc4738",
+        "type": "function",
+        "z": "79f883ec.307dec",
+        "name": "DB query",
+        "func": "msg.topic = \"select * from cloud_sensor_data.SensorData where farmer_id = '1' LIMIT 20\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 120,
+        "y": 540,
+        "wires": [
+            [
+                "17bedf5b.df6571"
+            ]
+        ]
+    },
+    {
+        "id": "2536aaa9.bdb906",
+        "type": "ui_chart",
+        "z": "79f883ec.307dec",
+        "name": "Temperature",
+        "group": "8cea54b6.2c2078",
+        "order": 1,
+        "width": "7",
+        "height": "5",
+        "label": "Temperature",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "Sensor",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "15",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 790,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "17bedf5b.df6571",
+        "type": "cassandra",
+        "z": "79f883ec.307dec",
+        "mydb": "1b26bcab.8871f3",
+        "name": "cloud_sensor_data",
+        "x": 350,
+        "y": 640,
+        "wires": [
+            [
+                "ee08f539.712ff8",
+                "39d5b194.91342e",
+                "61ba936d.6dbdac",
+                "73b59058.41877",
+                "55cbd290.33e57c",
+                "9906a6b1.082ae8"
+            ]
+        ]
+    },
+    {
+        "id": "ee08f539.712ff8",
+        "type": "function",
+        "z": "79f883ec.307dec",
+        "name": "getFarmStatistics",
+        "func": "\n//var counts = {};\nfor(var i = 0; i< msg.payload.length; i++)\n{\n    msg.payload[i] = msg.payload[i].farm_id;\n    //counts[msg.payload[i].farm_id] = 1 + (counts[msg.payload[i].farm_id] || 0);\n}\n\nvar count = 0;\nfor( var j = 0; j< msg.payload.length; j++)\n{\n    if(msg.payload[j] != msg.payload[j+1])\n    {\n        count = count +1;\n    }\n}\nmsg.payload = count;\nreturn msg;\n\n \n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 640,
+        "y": 960,
+        "wires": [
+            [
+                "17256dfd.9344f2"
+            ]
+        ]
+    },
+    {
+        "id": "39d5b194.91342e",
+        "type": "debug",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 630,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "61ba936d.6dbdac",
+        "type": "function",
+        "z": "79f883ec.307dec",
+        "name": "getRanchStatistics",
+        "func": "\n//var counts = {};\nfor(var i = 0; i< msg.payload.length; i++)\n{\n    msg.payload[i] = msg.payload[i].ranch_id;\n    //counts[msg.payload[i].farm_id] = 1 + (counts[msg.payload[i].farm_id] || 0);\n}\n\nvar count = 0;\nfor( var j = 0; j< msg.payload.length; j++)\n{\n    if(msg.payload[j] != msg.payload[j+1])\n    {\n        count = count +1;\n    }\n}\nmsg.payload = count;\nreturn msg;\n\n \n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 650,
+        "y": 1020,
+        "wires": [
+            [
+                "af041113.457db"
+            ]
+        ]
+    },
+    {
+        "id": "73b59058.41877",
+        "type": "function",
+        "z": "79f883ec.307dec",
+        "name": "getClusterStatistics",
+        "func": "\n//var counts = {};\nfor(var i = 0; i< msg.payload.length; i++)\n{\n    msg.payload[i] = msg.payload[i].cluster_id;\n    //counts[msg.payload[i].farm_id] = 1 + (counts[msg.payload[i].farm_id] || 0);\n}\n\nvar count = 0;\nfor( var j = 0; j< msg.payload.length; j++)\n{\n    if(msg.payload[j] != msg.payload[j+1])\n    {\n        count = count +1;\n    }\n}\nmsg.payload = count;\nreturn msg;\n\n \n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 650,
+        "y": 1080,
+        "wires": [
+            [
+                "88be10e5.5a9e5"
+            ]
+        ]
+    },
+    {
+        "id": "55cbd290.33e57c",
+        "type": "function",
+        "z": "79f883ec.307dec",
+        "name": "getSensorStatistics",
+        "func": "\n//var counts = {};\nfor(var i = 0; i< msg.payload.length; i++)\n{\n    msg.payload[i] = msg.payload[i].sensor_id;\n    //counts[msg.payload[i].farm_id] = 1 + (counts[msg.payload[i].farm_id] || 0);\n}\n\nvar count = 0;\nfor( var j = 0; j< msg.payload.length; j++)\n{\n    if(msg.payload[j] != msg.payload[j+1])\n    {\n        count = count +1;\n    }\n}\nmsg.payload = count;\nreturn msg;\n\n \n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 646,
+        "y": 1140,
+        "wires": [
+            [
+                "61ce3c8d.868ec4"
+            ]
+        ]
+    },
+    {
+        "id": "af041113.457db",
+        "type": "ui_text",
+        "z": "79f883ec.307dec",
+        "group": "e9045261.95fe6",
+        "order": 3,
+        "width": "5",
+        "height": "2",
+        "name": "",
+        "label": "Number of Ranches",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 880,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "88be10e5.5a9e5",
+        "type": "ui_text",
+        "z": "79f883ec.307dec",
+        "group": "e9045261.95fe6",
+        "order": 5,
+        "width": "5",
+        "height": "2",
+        "name": "",
+        "label": "Number of Clusters",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 870,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "61ce3c8d.868ec4",
+        "type": "ui_text",
+        "z": "79f883ec.307dec",
+        "group": "e9045261.95fe6",
+        "order": 7,
+        "width": "5",
+        "height": "2",
+        "name": "",
+        "label": "Number of Sensors",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 870,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "17256dfd.9344f2",
+        "type": "ui_text",
+        "z": "79f883ec.307dec",
+        "group": "e9045261.95fe6",
+        "order": 1,
+        "width": "5",
+        "height": "2",
+        "name": "",
+        "label": "Number of Farms",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 870,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "76609c01.a18b64",
+        "type": "function",
+        "z": "79f883ec.307dec",
+        "name": "Fetching farms",
+        "func": "for(var i = 0; i< msg.payload.length; i++)\n{\n        msg.payload[i] = msg.payload[i].farm_id;\n}\n\nconst ar = msg.payload;\nconst distinctar = [...new Set(ar)];\nmsg.options = distinctar;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 580,
+        "y": 1220,
+        "wires": [
+            [
+                "c27d8146.ae028"
+            ]
+        ]
+    },
+    {
+        "id": "c27d8146.ae028",
+        "type": "ui_dropdown",
+        "z": "79f883ec.307dec",
+        "name": "Farm ID",
+        "label": "",
+        "tooltip": "",
+        "place": "Select Farm ID",
+        "group": "bced289d.e291c8",
+        "order": 1,
+        "width": "5",
+        "height": "4",
+        "passthru": true,
+        "options": [
+            {
+                "label": "",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "",
+        "x": 780,
+        "y": 1220,
+        "wires": [
+            [
+                "356f9f03.b0415"
+            ]
+        ]
+    },
+    {
+        "id": "356f9f03.b0415",
+        "type": "function",
+        "z": "79f883ec.307dec",
+        "name": "Details of the farm selected",
+        "func": "var farmid = msg.payload\n//node.error(farmid);\nvar query = \"select * from cloud_sensor_data.SensorData where farmer_id ='1' and  farm_id = '\"+farmid+\"'  ALLOW FILTERING;\";\n//node.error(query);\n//msg.topic = \"select * from cloud_sensor_data.SensorData where farm_id = 'msg.payload' ALLOW FILTERING\";\nmsg.topic = query;\nmsg.payload = null;\n//node.error(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 620,
+        "y": 1280,
+        "wires": [
+            [
+                "44442d6d.91a624"
+            ]
+        ]
+    },
+    {
+        "id": "c7413e60.df76",
+        "type": "debug",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 1070,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "44442d6d.91a624",
+        "type": "cassandra",
+        "z": "79f883ec.307dec",
+        "mydb": "1b26bcab.8871f3",
+        "name": "cloud_sensor_data",
+        "x": 870,
+        "y": 1280,
+        "wires": [
+            [
+                "c7413e60.df76",
+                "a7769e49.4023"
+            ]
+        ]
+    },
+    {
+        "id": "a7769e49.4023",
+        "type": "function",
+        "z": "79f883ec.307dec",
+        "name": "Fetching ranches",
+        "func": "for(var i = 0; i< msg.payload.length; i++)\n{\n        msg.payload[i] = msg.payload[i].ranch_id;\n}\n\nconst ar = msg.payload;\nconst distinctar = [...new Set(ar)];\nmsg.options = distinctar;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 600,
+        "y": 1340,
+        "wires": [
+            [
+                "d347134.1840af"
+            ]
+        ]
+    },
+    {
+        "id": "90af5829.5463a8",
+        "type": "function",
+        "z": "79f883ec.307dec",
+        "name": "Details of the ranch selected",
+        "func": "var ranchid = msg.payload\n//node.error(farmid);\nvar query = \"select sensor_type, sensor_data from cloud_sensor_data.SensorData where farmer_id ='1' and  ranch_id = '\"+ranchid+\"'  ALLOW FILTERING;\";\n//node.error(query);\n//msg.topic = \"select * from cloud_sensor_data.SensorData where farm_id = 'msg.payload' ALLOW FILTERING\";\nmsg.topic = query;\nmsg.payload = null;\n//node.error(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1080,
+        "y": 1340,
+        "wires": [
+            [
+                "805b6267.3e817"
+            ]
+        ]
+    },
+    {
+        "id": "805b6267.3e817",
+        "type": "cassandra",
+        "z": "79f883ec.307dec",
+        "mydb": "1b26bcab.8871f3",
+        "name": "cloud_sensor_data",
+        "x": 610,
+        "y": 1400,
+        "wires": [
+            [
+                "8acd78a6.024fa8",
+                "16ce53f.119feac"
+            ]
+        ]
+    },
+    {
+        "id": "9906a6b1.082ae8",
+        "type": "function",
+        "z": "79f883ec.307dec",
+        "name": "Parser",
+        "func": "let arr = (msg.payload);\narr.forEach(sensor => {\n    const res = {\n        \"topic\": sensor.sensor_id,\n        \"payload\": sensor.sensor_data,\n        \"series\": sensor.sensor_id,\n    };\n    if(sensor.sensor_type === \"temperature\") {\n        node.send([res,null,null,null,null]);\n    }\n    if(sensor.sensor_type === \"humidity\") {\n        node.send([null,res,null,null,null]);\n    }\n    if(sensor.sensor_type === \"windSpeed\") {\n       node.send([null,null,res,null,null]);\n    }\n    if(sensor.sensor_type === \"rain\") {\n      node.send([null,null,null,res,null]);\n    }\n    if(sensor.sensor_type === \"soilMoisture\") {\n       node.send([null,null,null,null,res]);\n    }\n    \n    \n    \n});",
+        "outputs": 5,
+        "noerr": 0,
+        "x": 570,
+        "y": 680,
+        "wires": [
+            [
+                "2536aaa9.bdb906"
+            ],
+            [
+                "87e5d3e5.264a7"
+            ],
+            [
+                "28c181e.da92e7e"
+            ],
+            [
+                "773ee91a.57b668"
+            ],
+            [
+                "f955f643.11df08"
+            ]
+        ]
+    },
+    {
+        "id": "8acd78a6.024fa8",
+        "type": "function",
+        "z": "79f883ec.307dec",
+        "name": "Details of the farm",
+        "func": "let arr = [];\nlet style = [];\nvar rain=0;\nvar temperature=0;\nvar humidity= 0;\nvar windSpeed= 0;\nvar soilMoisture=0;\n\nvar ranch = msg.payload || [];\nranch.forEach(r => {\n     if(r.sensor_type === \"rain\")\n    {\n      rain++;\n       msg.topic = \"rain\";\n       msg.payload = rain;\n      \n    }\n     else if(r.sensor_type ===\"humidity\")\n     {\n       humidity++;\n       msg.topic = \"humidity\";\n       msg.payload = humidity;\n     }\n     else if(r.sensor_type ===\"temperature\")\n    {\n      temperature++;\n       msg.topic = \"temperature\";\n       msg.payload = temperature;\n     }\n         else if(r.sensor_type ===\"windSpeed\")\n     {\n       windSpeed++;\n        msg.topic = \"windSpeed\";\n       msg.payload = windSpeed;\n    \n     }\n         else if(r.sensor_type ===\"soilMoisture\")\n     {\n       soilMoisture++;\n       msg.topic = \"soilMoisture\";\n       msg.payload = soilMoisture;\n       \n     }\n    else{\n         return;\n     }\n })\n\n //var count = arr;\n //var typesensor =  style;\n\n// // msg.topic = type;\n// //msg.payload = count;\n\n// msg.topic = style;\n// msg.payload = arr;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 890,
+        "y": 1400,
+        "wires": [
+            [
+                "13d09a01.22cb06",
+                "f0d78edd.f06bc",
+                "ed5804bb.c0b368"
+            ]
+        ]
+    },
+    {
+        "id": "13d09a01.22cb06",
+        "type": "debug",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "topic",
+        "x": 1120,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "6d6497ec.8815d8",
+        "type": "cassandra",
+        "z": "98be76eb.380708",
+        "mydb": "3d255a29.8a0016",
+        "name": "",
+        "x": 510,
+        "y": 120,
+        "wires": [
+            [
+                "c0a4e034.4c808"
+            ]
+        ]
+    },
+    {
+        "id": "6d580ab7.a2df94",
+        "type": "function",
+        "z": "98be76eb.380708",
+        "name": "Coordinate query",
+        "func": "msg.topic = \"select * from cloud_sensor_data.SensorDataByFarmer where farmer_id = '1'\";\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 290,
+        "y": 120,
+        "wires": [
+            [
+                "6d6497ec.8815d8"
+            ]
+        ]
+    },
+    {
+        "id": "4e722c9d.4ef154",
+        "type": "inject",
+        "z": "98be76eb.380708",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 80,
+        "y": 120,
+        "wires": [
+            [
+                "6d580ab7.a2df94"
+            ]
+        ]
+    },
+    {
+        "id": "94d03370.5f395",
+        "type": "ui_template",
+        "z": "98be76eb.380708",
+        "group": "5fa84f03.6a5fe",
+        "name": "Farmer sensor status",
+        "order": 1,
+        "width": "13",
+        "height": "7",
+        "format": "\n<table id=\"table\" border=\"1\">\n\n <tr>\n <th>Farmer ID</th>\n  <th>Sensor ID</th>\n <th>Sensor Type</th>\n <th>Timestamp</th>\n  <th>Cluster ID</th>\n  <th>Farm ID</th>\n <th>Ranch ID</th>\n <th>Sensor Data</th>\n <th>Sensor Status</th>\n <th>Notifications</th>\n \n \n </tr>\n <tbody>\n <tr class=\"pure-table-odd\" ng-repeat=\"row in msg.payload\">\n <td ng-repeat=\"item in row\" >{{item}}</td>\n </tr>\n </tbody>\n</table>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 1079,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c0a4e034.4c808",
+        "type": "function",
+        "z": "98be76eb.380708",
+        "name": "threshold values",
+        "func": "for(var i = 0; i< msg.payload.length; i++){\n    if(msg.payload[i].sensor_type === \"temperature\")\n      {\n          if(msg.payload[i].sensor_data <='35')\n          {\n           msg.payload[i].notification =\"Temperature is below threshold level\";\n          }else if(msg.payload[i].sensor_data >='48' )\n          {\n           msg.payload[i].notification =\"Temperature above threshold level\";\n          }else\n          {\n           msg.payload[i].notification =\"\";\n          }\n          \n      }\n    if(msg.payload[i].sensor_type === \"humidity\")\n      {\n          if(msg.payload[i].sensor_data <='60')\n          {\n           msg.payload[i].notification =\"humidity is below threshold level\";\n          }else if(msg.payload[i].sensor_data >='75' )\n          {\n           msg.payload[i].notification =\"humidity above threshold level\";\n          }else\n          {\n           msg.payload[i].notification = \"\";\n          }\n          \n      }\n    if(msg.payload[i].sensor_type === \"windSpeed\")\n      {\n          if(msg.payload[i].sensor_data <='8')\n          {\n           msg.payload[i].notification =\"Wind Speed is below threshold level\";\n          }else if(msg.payload[i].sensor_data >='12' )\n          {\n           msg.payload[i].notification =\"Wind Speed above threshold level\";\n          }else\n          {\n           msg.payload[i].notification =\"\";\n          }\n          \n      }\n    if(msg.payload[i].sensor_type === \"rain\")\n      {\n          if(msg.payload[i].sensor_data < '0')\n          {\n           msg.payload[i].notification =\"Rain is below threshold level\";\n          }else if(msg.payload[i].sensor_data[i] >='2' )\n          {\n           msg.payload[i].notification =\"Rain above threshold level\";\n          }else\n          {\n           msg.payload[i].notification =\"\";\n          }\n          \n      }\n    if(msg.payload[i].sensor_type === \"soilMoisture\")\n      {\n          if(msg.payload[i].sensor_data <'5')\n          {\n           msg.payload[i].notification =\"Soil Moisture is below threshold level\";\n          }else if(msg.payload[i].sensor_data >='6' )\n          {\n           msg.payload[i].notification =\"Soil Moisture above threshold level\";\n          }else\n          {\n           msg.payload[i].notification =\"\";\n          }\n          \n      }\n}\n\nlet notif = {};\nfor(var j = 0; j< msg.payload.length;j++)\n{\n    if( msg.payload[j].notification !==\"\"){\n    notif[j] = msg.payload[j];\n    }\n}\nmsg.payload = notif;\nreturn msg;\n\n\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 700,
+        "y": 120,
+        "wires": [
+            [
+                "94d03370.5f395",
+                "8ef83570.d10f18"
+            ]
+        ]
+    },
+    {
+        "id": "f2be674d.a27dc8",
+        "type": "worldmap",
+        "z": "98be76eb.380708",
+        "name": "",
+        "lat": "",
+        "lon": "",
+        "zoom": "",
+        "layer": "OSM",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "hide",
+        "panit": "true",
+        "hiderightclick": "false",
+        "coords": "deg",
+        "path": "worldmap",
+        "x": 759,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "3a434c11.796164",
+        "type": "inject",
+        "z": "98be76eb.380708",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "x": 69,
+        "y": 220,
+        "wires": [
+            [
+                "d4110b98.d15d48"
+            ]
+        ]
+    },
+    {
+        "id": "1f3c61b0.63209e",
+        "type": "function",
+        "z": "98be76eb.380708",
+        "name": "Ranch coordinates",
+        "func": "/*var arr =  [{\"Farm ID\":1,\"Ranch ID\": 1,\"lat\":54.9619349,\"lon\":-1.6003813,\"radius\": 20,\"layer\": \"drawing\",\"iconColor\": '#464646',\"stroke\": \"false\", \"fillOpacity\": 0.8,},\n            {\"Farm ID\":1,\"Ranch ID\": 2,\"lat\":54.9656694,\"lon\":-1.5239833, \"radius\": 20,\"layer\": \"drawing\",\"iconColor\": '#464646',\"stroke\": \"false\", \"fillOpacity\": 0.8,},\n            {\"Farm ID\":1,\"Ranch ID\": 3,\"lat\":54.9696456,\"lon\":-1.5069755, \"radius\": 20,\"layer\": \"drawing\",\"iconColor\": '#464646',\"stroke\": \"false\", \"fillOpacity\": 0.8,},\n            {\"Farm ID\":1,\"Ranch ID\": 4,\"lat\":54.9378907,\"lon\":-1.5273729,\"radius\": 20,\"layer\": \"drawing\",\"iconColor\": '#464646',\"stroke\": \"false\", \"fillOpacity\": 0.8}]\n*/ \n/* msg.payload = [{ \"name\":\"Ranch1\", \"lat\":37.33, \"lon\":-121.89}, { \"name\":\"Ranch2\", \"lat\":37.30, \"lon\":-121.70}, { \"name\":\"Ranch3\", \"lat\":37.40, \"lon\":-121.79}];\n//msg.payload = {\"Name\":\"Jason\", \"lat\":51.05, \"lon\":-1.35, \"radius\": 20};\n*/\nvar loc = msg.payload || []; \nvar name;\nvar lat;\nvar lon;\n//node.error(loc);\nfor (var i =0; i<=loc.length; i++)\n{\n//node.error(msg.payload.farm_id);\n// name = loc[i].farm_id;\n// lat = loc[i].lat;\n// lon = loc[i].lon;\n//node.error(loc[i].farm_id);\n// node.error(name);\n//loc[i].lat = msg.payload.lat; \n//loc[i].lon = msg.payload.lon;\n}\n//msg.payload = loc;\nmsg.payload = [{\"name\": msg.payload.farm_id, \"lat\" : msg.payload.lat, \"lon\" : msg.payload.lon }] ;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 569,
+        "y": 220,
+        "wires": [
+            [
+                "f2be674d.a27dc8",
+                "abce96c0.0f1358"
+            ]
+        ]
+    },
+    {
+        "id": "3d378e31.542ad2",
+        "type": "inject",
+        "z": "98be76eb.380708",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "x": 90,
+        "y": 300,
+        "wires": [
+            [
+                "cf9e6630.21c4c8"
+            ]
+        ]
+    },
+    {
+        "id": "e551358e.d044f8",
+        "type": "ui_template",
+        "z": "98be76eb.380708",
+        "group": "5fa84f03.6a5fe",
+        "name": "Farm location maps",
+        "order": 3,
+        "width": "13",
+        "height": "7",
+        "format": "<div ng-bind-html=\"msg.payload | trusted\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 490,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cf9e6630.21c4c8",
+        "type": "template",
+        "z": "98be76eb.380708",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<iframe src=\"../worldmap\" width = 700px height=500px ></iframe>",
+        "x": 290,
+        "y": 300,
+        "wires": [
+            [
+                "e551358e.d044f8"
+            ]
+        ]
+    },
+    {
+        "id": "d2cd8df0.32c87",
+        "type": "worldmap",
+        "z": "98be76eb.380708",
+        "name": "",
+        "lat": "",
+        "lon": "",
+        "zoom": "",
+        "layer": "OSM",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "hide",
+        "panit": "true",
+        "hiderightclick": "false",
+        "coords": "none",
+        "path": "worldmap",
+        "x": 650,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "7ad83ecf.9cded",
+        "type": "inject",
+        "z": "98be76eb.380708",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "x": 100,
+        "y": 360,
+        "wires": [
+            [
+                "ffebbaaf.fccf48"
+            ]
+        ]
+    },
+    {
+        "id": "ffebbaaf.fccf48",
+        "type": "function",
+        "z": "98be76eb.380708",
+        "name": "Farm coordinates",
+        "func": " msg.payload = [{ \"name\":\"Ranch1\", \"lat\":37.33, \"lon\":-121.89}, { \"name\":\"Ranch2\", \"lat\":37.30, \"lon\":-121.70}, { \"name\":\"Ranch3\", \"lat\":37.40, \"lon\":-121.79}];\n//msg.payload = {\"Name\":\"Jason\", \"lat\":51.05, \"lon\":-1.35, \"radius\": 20};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 320,
+        "y": 420,
+        "wires": [
+            [
+                "d2cd8df0.32c87"
+            ]
+        ]
+    },
+    {
+        "id": "96618627.0e2038",
+        "type": "inject",
+        "z": "98be76eb.380708",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "",
+        "x": 80,
+        "y": 480,
+        "wires": [
+            [
+                "12432664.94d90a"
+            ]
+        ]
+    },
+    {
+        "id": "b5f13fb9.407e6",
+        "type": "ui_template",
+        "z": "98be76eb.380708",
+        "group": "1f88e965.639e07",
+        "name": "IOTlocation maps",
+        "order": 1,
+        "width": "12",
+        "height": "8",
+        "format": "<div ng-bind-html=\"msg.payload | trusted\"></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 480,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "12432664.94d90a",
+        "type": "template",
+        "z": "98be76eb.380708",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "<iframe src=\"../worldmap\" width = 700px height=500px ></iframe>",
+        "x": 280,
+        "y": 480,
+        "wires": [
+            [
+                "b5f13fb9.407e6"
+            ]
+        ]
+    },
+    {
+        "id": "fa9a96ba.571ed8",
+        "type": "cassandra",
+        "z": "98be76eb.380708",
+        "mydb": "6403d95a.df48c8",
+        "name": "",
+        "x": 479,
+        "y": 680,
+        "wires": [
+            [
+                "a3e3f34f.c9954"
+            ]
+        ]
+    },
+    {
+        "id": "e2d92614.1eec08",
+        "type": "function",
+        "z": "98be76eb.380708",
+        "name": "",
+        "func": "msg.topic =\" select * from Network_Data.Farm_LocationbyFarmer \";",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 429,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d4110b98.d15d48",
+        "type": "function",
+        "z": "98be76eb.380708",
+        "name": "Notif",
+        "func": "msg.topic =\"select * from network_data.Farm_LocationbyFarmer where farmer_id = '1';\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 209,
+        "y": 220,
+        "wires": [
+            [
+                "57f06f15.45b08"
+            ]
+        ]
+    },
+    {
+        "id": "8ef83570.d10f18",
+        "type": "debug",
+        "z": "98be76eb.380708",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 1079,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "6d624e6f.a9595",
+        "type": "inject",
+        "z": "98be76eb.380708",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 79,
+        "y": 680,
+        "wires": [
+            [
+                "7a086f33.aac38"
+            ]
+        ]
+    },
+    {
+        "id": "7a086f33.aac38",
+        "type": "function",
+        "z": "98be76eb.380708",
+        "name": "",
+        "func": "msg.topic = \"select farm_id, lat, lon from network_data.farm_locationbyfarmer\";\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 269,
+        "y": 680,
+        "wires": [
+            [
+                "fa9a96ba.571ed8"
+            ]
+        ]
+    },
+    {
+        "id": "7e5d22d2.efb31c",
+        "type": "debug",
+        "z": "98be76eb.380708",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 809,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "a3e3f34f.c9954",
+        "type": "function",
+        "z": "98be76eb.380708",
+        "name": "",
+        "func": "let arr = {};\nfor(var i=0; i<=msg.payload.length; i++)\n{\n    arr[i].name = msg.payload[i].farm_id;\n    arr[i].lat = msg.payload[i].lat;\n    arr[i].lon = msg.payload[i].lon;\n}\nmsg.payload = arr;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 649,
+        "y": 680,
+        "wires": [
+            [
+                "7e5d22d2.efb31c"
+            ]
+        ]
+    },
+    {
+        "id": "57f06f15.45b08",
+        "type": "cassandra",
+        "z": "98be76eb.380708",
+        "mydb": "6403d95a.df48c8",
+        "name": "",
+        "x": 359,
+        "y": 220,
+        "wires": [
+            [
+                "1f3c61b0.63209e"
+            ]
+        ]
+    },
+    {
+        "id": "abce96c0.0f1358",
+        "type": "debug",
+        "z": "98be76eb.380708",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 759,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "f0d78edd.f06bc",
+        "type": "debug",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 1330,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "ed5804bb.c0b368",
+        "type": "ui_chart",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "group": "bced289d.e291c8",
+        "order": 2,
+        "width": "10",
+        "height": "4",
+        "label": "Sensors by Ranch",
+        "chartType": "pie",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1160,
+        "y": 1500,
+        "wires": [
+            [
+                "59ed1d69.b1ea24"
+            ]
+        ]
+    },
+    {
+        "id": "59ed1d69.b1ea24",
+        "type": "debug",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "x": 1390,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "f526804b.05795",
+        "type": "inject",
+        "z": "cc876b4c.fe9878",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.2",
+        "x": 90,
+        "y": 220,
+        "wires": [
+            [
+                "35f1d071.5b025"
+            ]
+        ]
+    },
+    {
+        "id": "35f1d071.5b025",
+        "type": "function",
+        "z": "cc876b4c.fe9878",
+        "name": "DB query",
+        "func": "msg.topic = \"select * from cloud_sensor_data.SensorData\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 100,
+        "y": 100,
+        "wires": [
+            [
+                "87b4a88f.3f7cf8"
+            ]
+        ]
+    },
+    {
+        "id": "87b4a88f.3f7cf8",
+        "type": "cassandra",
+        "z": "cc876b4c.fe9878",
+        "mydb": "fa8e1ba9.db6ca8",
+        "name": "cloud_sensor_data",
+        "x": 330,
+        "y": 200,
+        "wires": [
+            [
+                "2bd2962.ed5406a",
+                "eed86cd7.b487",
+                "813076db.295a48",
+                "a809ff90.1b9aa",
+                "cd000dc8.a6204"
+            ]
+        ]
+    },
+    {
+        "id": "2bd2962.ed5406a",
+        "type": "function",
+        "z": "cc876b4c.fe9878",
+        "name": "getFarmerStatistics",
+        "func": "\n//var counts = {};\nfor(var i = 0; i< msg.payload.length; i++)\n{\n    msg.payload[i] = msg.payload[i].farmer_id;\n    //counts[msg.payload[i].farm_id] = 1 + (counts[msg.payload[i].farm_id] || 0);\n}\n\nvar count = 0;\nfor( var j = 0; j< msg.payload.length; j++)\n{\n    if(msg.payload[j] != msg.payload[j+1])\n    {\n        count = count +1;\n    }\n}\nmsg.payload = count;\nreturn msg;\n\n \n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 590,
+        "y": 100,
+        "wires": [
+            [
+                "fd3a7f30.6a45"
+            ]
+        ]
+    },
+    {
+        "id": "eed86cd7.b487",
+        "type": "function",
+        "z": "cc876b4c.fe9878",
+        "name": "getFarmStatistics",
+        "func": "\n//var counts = {};\nfor(var i = 0; i< msg.payload.length; i++)\n{\n    msg.payload[i] = msg.payload[i].farm_id;\n    //counts[msg.payload[i].farm_id] = 1 + (counts[msg.payload[i].farm_id] || 0);\n}\n\nvar count = 0;\nfor( var j = 0; j< msg.payload.length; j++)\n{\n    if(msg.payload[j] != msg.payload[j+1])\n    {\n        count = count +1;\n    }\n}\nmsg.payload = count;\nreturn msg;\n\n \n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 590,
+        "y": 160,
+        "wires": [
+            [
+                "162efc4d.12fe24"
+            ]
+        ]
+    },
+    {
+        "id": "813076db.295a48",
+        "type": "function",
+        "z": "cc876b4c.fe9878",
+        "name": "getRanchStatistics",
+        "func": "\n//var counts = {};\nfor(var i = 0; i< msg.payload.length; i++)\n{\n    msg.payload[i] = msg.payload[i].ranch_id;\n    //counts[msg.payload[i].farm_id] = 1 + (counts[msg.payload[i].farm_id] || 0);\n}\n\nvar count = 0;\nfor( var j = 0; j< msg.payload.length; j++)\n{\n    if(msg.payload[j] != msg.payload[j+1])\n    {\n        count = count +1;\n    }\n}\nmsg.payload = count;\nreturn msg;\n\n \n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 590,
+        "y": 220,
+        "wires": [
+            [
+                "8ac33cc4.24d12"
+            ]
+        ]
+    },
+    {
+        "id": "a809ff90.1b9aa",
+        "type": "function",
+        "z": "cc876b4c.fe9878",
+        "name": "getSensorStatistics",
+        "func": "\n//var counts = {};\nfor(var i = 0; i< msg.payload.length; i++)\n{\n    msg.payload[i] = msg.payload[i].sensor_id;\n    //counts[msg.payload[i].farm_id] = 1 + (counts[msg.payload[i].farm_id] || 0);\n}\n\nvar count = 0;\nfor( var j = 0; j< msg.payload.length; j++)\n{\n    if(msg.payload[j] != msg.payload[j+1])\n    {\n        count = count +1;\n    }\n}\nmsg.payload = count;\nreturn msg;\n\n \n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 590,
+        "y": 280,
+        "wires": [
+            [
+                "1027431a.85743d"
+            ]
+        ]
+    },
+    {
+        "id": "cd000dc8.a6204",
+        "type": "function",
+        "z": "cc876b4c.fe9878",
+        "name": "Fetching farmers",
+        "func": "for(var i = 0; i< msg.payload.length; i++)\n{\n        msg.payload[i] = msg.payload[i].farmer_id;\n}\n\nconst ar = msg.payload;\nconst distinctar = [...new Set(ar)];\nmsg.options = distinctar;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 590,
+        "y": 380,
+        "wires": [
+            [
+                "8103f638.4e8538"
+            ]
+        ]
+    },
+    {
+        "id": "fd3a7f30.6a45",
+        "type": "ui_text",
+        "z": "cc876b4c.fe9878",
+        "group": "f774cf7f.e955f",
+        "order": 1,
+        "width": "5",
+        "height": "2",
+        "name": "",
+        "label": "Number of Farmers",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 810,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "162efc4d.12fe24",
+        "type": "ui_text",
+        "z": "cc876b4c.fe9878",
+        "group": "f774cf7f.e955f",
+        "order": 3,
+        "width": "5",
+        "height": "2",
+        "name": "",
+        "label": "Number of Farms",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 810,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "8ac33cc4.24d12",
+        "type": "ui_text",
+        "z": "cc876b4c.fe9878",
+        "group": "f774cf7f.e955f",
+        "order": 5,
+        "width": "5",
+        "height": "2",
+        "name": "",
+        "label": "Number of Ranches",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 820,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "1027431a.85743d",
+        "type": "ui_text",
+        "z": "cc876b4c.fe9878",
+        "group": "f774cf7f.e955f",
+        "order": 7,
+        "width": "5",
+        "height": "2",
+        "name": "",
+        "label": "Number of Sensors",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 810,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "8103f638.4e8538",
+        "type": "ui_dropdown",
+        "z": "cc876b4c.fe9878",
+        "name": "Farm ID",
+        "label": "",
+        "tooltip": "",
+        "place": "Select Farmer ID",
+        "group": "1f88e965.639e07",
+        "order": 2,
+        "width": "5",
+        "height": "4",
+        "passthru": true,
+        "options": [
+            {
+                "label": "",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "",
+        "x": 780,
+        "y": 380,
+        "wires": [
+            [
+                "1c2eed1a.f7f213"
+            ]
+        ]
+    },
+    {
+        "id": "1c2eed1a.f7f213",
+        "type": "function",
+        "z": "cc876b4c.fe9878",
+        "name": "Details of the farmer selected",
+        "func": "var farmerid = msg.payload\n//node.error(farmerid);\nvar query = \"select * from cloud_sensor_data.SensorData where farmer_id  = '\"+farmerid+\"'  ALLOW FILTERING;\";\n//node.error(query);\n//msg.topic = \"select * from cloud_sensor_data.SensorData where farm_id = 'msg.payload' ALLOW FILTERING\";\nmsg.topic = query;\nmsg.payload = null;\n//node.error(msg);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 580,
+        "y": 460,
+        "wires": [
+            [
+                "1322731d.0b2acd"
+            ]
+        ]
+    },
+    {
+        "id": "1322731d.0b2acd",
+        "type": "cassandra",
+        "z": "cc876b4c.fe9878",
+        "mydb": "fa8e1ba9.db6ca8",
+        "name": "cloud_sensor_data",
+        "x": 830,
+        "y": 460,
+        "wires": [
+            [
+                "a4140a6e.07a738"
+            ]
+        ]
+    },
+    {
+        "id": "cf6c87ba.366c58",
+        "type": "inject",
+        "z": "cc876b4c.fe9878",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "0.2",
+        "x": 120,
+        "y": 540,
+        "wires": [
+            [
+                "8e5d2a58.94efb8"
+            ]
+        ]
+    },
+    {
+        "id": "8e5d2a58.94efb8",
+        "type": "function",
+        "z": "cc876b4c.fe9878",
+        "name": "DB query",
+        "func": "msg.topic = \"select * from cloud_sensor_data.SensorData\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 280,
+        "y": 540,
+        "wires": [
+            [
+                "6604344f.056dec"
+            ]
+        ]
+    },
+    {
+        "id": "6604344f.056dec",
+        "type": "cassandra",
+        "z": "cc876b4c.fe9878",
+        "mydb": "1b26bcab.8871f3",
+        "name": "cloud_sensor_data",
+        "x": 490,
+        "y": 540,
+        "wires": [
+            [
+                "6099bb12.2108a4",
+                "39b1e271.ca262e"
+            ]
+        ]
+    },
+    {
+        "id": "6099bb12.2108a4",
+        "type": "ui_template",
+        "z": "cc876b4c.fe9878",
+        "group": "c29d034c.738ef",
+        "name": "IOT Manager Monitoring table",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "\n<table class=\"table table-hover\" id=\"table\" border=\"1\">\n   <thead>\n <tr>\n <th scope=\"col\">Farmer ID</th>\n <th scope=\"col\">Farm ID</th> \n <th scope=\"col\">Ranch ID</th>\n <th scope=\"col\">Cluster ID</th>\n <th scope=\"col\">Sensor ID</th>\n <th scope=\"col\">Sensor Type</th>\n <th scope=\"col\">Timestamp</th>\n <th scope=\"col\">Sensor Data</th>\n <th scope=\"col\">Sensor Status</th>\n\n </tr>\n    </thead>\n <tbody>\n <tr ng-repeat=\"row in msg.payload\">\n <td ng-repeat=\"item in row\" >{{item}}</td>\n </tr>\n </tbody>\n</table>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "templateScope": "local",
+        "x": 750,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6e0fe21d.7131cc",
+        "type": "inject",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "0.2",
+        "x": 120,
+        "y": 1140,
+        "wires": [
+            [
+                "5812c7bb.258448"
+            ]
+        ]
+    },
+    {
+        "id": "5812c7bb.258448",
+        "type": "function",
+        "z": "79f883ec.307dec",
+        "name": "DB query",
+        "func": "msg.topic = \"select * from cloud_sensor_data.SensorData where farmer_id = '1'\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 200,
+        "y": 1180,
+        "wires": [
+            [
+                "7d9de297.841a6c"
+            ]
+        ]
+    },
+    {
+        "id": "7d9de297.841a6c",
+        "type": "cassandra",
+        "z": "79f883ec.307dec",
+        "mydb": "1b26bcab.8871f3",
+        "name": "cloud_sensor_data",
+        "x": 370,
+        "y": 1180,
+        "wires": [
+            [
+                "76609c01.a18b64"
+            ]
+        ]
+    },
+    {
+        "id": "39b1e271.ca262e",
+        "type": "debug",
+        "z": "cc876b4c.fe9878",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 720,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "16ce53f.119feac",
+        "type": "function",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "func": "let arr = (msg.payload);\narr.forEach(sensor => {\n    const res = {\n        \"topic\": sensor.sensor_id,\n        \"payload\": sensor.sensor_data,\n        \"series\": sensor.sensor_id,\n    };\n    if(sensor.sensor_type === \"temperature\") {\n        node.send([res,null,null,null,null]);\n    }\n    if(sensor.sensor_type === \"humidity\") {\n        node.send([null,res,null,null,null]);\n    }\n    if(sensor.sensor_type === \"windSpeed\") {\n       node.send([null,null,res,null,null]);\n    }\n    if(sensor.sensor_type === \"rain\") {\n      node.send([null,null,null,res,null]);\n    }\n    if(sensor.sensor_type === \"soilMoisture\") {\n       node.send([null,null,null,null,res]);\n    }\n    \n    \n    \n});",
+        "outputs": 5,
+        "noerr": 0,
+        "x": 770,
+        "y": 1560,
+        "wires": [
+            [
+                "6cc1bf6a.7db6c"
+            ],
+            [
+                "4b32f30c.7d8d4c"
+            ],
+            [
+                "b8220d6b.d4d17"
+            ],
+            [
+                "39c5afcd.85d61"
+            ],
+            [
+                "81506858.f98f58"
+            ]
+        ]
+    },
+    {
+        "id": "6cc1bf6a.7db6c",
+        "type": "ui_chart",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "group": "bced289d.e291c8",
+        "order": 6,
+        "width": "5",
+        "height": "4",
+        "label": "Temperature",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "20",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 950,
+        "y": 1560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b8220d6b.d4d17",
+        "type": "ui_chart",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "group": "bced289d.e291c8",
+        "order": 7,
+        "width": "5",
+        "height": "4",
+        "label": "windspeed",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 950,
+        "y": 1640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4b32f30c.7d8d4c",
+        "type": "ui_chart",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "group": "bced289d.e291c8",
+        "order": 8,
+        "width": "5",
+        "height": "4",
+        "label": "Humidity",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 940,
+        "y": 1600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "39c5afcd.85d61",
+        "type": "ui_chart",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "group": "bced289d.e291c8",
+        "order": 9,
+        "width": "5",
+        "height": "4",
+        "label": "rain",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 930,
+        "y": 1680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "81506858.f98f58",
+        "type": "ui_chart",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "group": "bced289d.e291c8",
+        "order": 10,
+        "width": "5",
+        "height": "4",
+        "label": "Soil Moisture",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 950,
+        "y": 1720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d347134.1840af",
+        "type": "ui_dropdown",
+        "z": "79f883ec.307dec",
+        "name": "",
+        "label": "Ranch ID",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "bced289d.e291c8",
+        "order": 2,
+        "width": "5",
+        "height": "4",
+        "passthru": true,
+        "options": [
+            {
+                "label": "",
+                "value": "",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "",
+        "x": 800,
+        "y": 1340,
+        "wires": [
+            [
+                "90af5829.5463a8"
+            ]
+        ]
+    },
+    {
+        "id": "a4140a6e.07a738",
+        "type": "function",
+        "z": "cc876b4c.fe9878",
+        "name": "Parser",
+        "func": "let arr = (msg.payload);\narr.forEach(sensor => {\n    const res = {\n        \"topic\": sensor.sensor_id,\n        \"payload\": sensor.sensor_data,\n        \"series\": sensor.sensor_id,\n    };\n    if(sensor.sensor_type === \"temperature\") {\n        node.send([res,null,null,null,null]);\n    }\n    if(sensor.sensor_type === \"humidity\") {\n        node.send([null,res,null,null,null]);\n    }\n    if(sensor.sensor_type === \"windSpeed\") {\n       node.send([null,null,res,null,null]);\n    }\n    if(sensor.sensor_type === \"rain\") {\n      node.send([null,null,null,res,null]);\n    }\n    if(sensor.sensor_type === \"soilMoisture\") {\n       node.send([null,null,null,null,res]);\n    }\n    \n    \n    \n});",
+        "outputs": 5,
+        "noerr": 0,
+        "x": 1030,
+        "y": 460,
+        "wires": [
+            [
+                "61b8f527.7b59dc"
+            ],
+            [
+                "d4aa3789.a16ec8"
+            ],
+            [
+                "366d0194.1143fe"
+            ],
+            [
+                "267c329d.42a77e"
+            ],
+            [
+                "5e259700.44caa8"
+            ]
+        ]
+    },
+    {
+        "id": "5e259700.44caa8",
+        "type": "ui_chart",
+        "z": "cc876b4c.fe9878",
+        "name": "",
+        "group": "fec2d915.d38728",
+        "order": 9,
+        "width": "7",
+        "height": "5",
+        "label": "Soil Moisture",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1210,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "366d0194.1143fe",
+        "type": "ui_chart",
+        "z": "cc876b4c.fe9878",
+        "name": "",
+        "group": "fec2d915.d38728",
+        "order": 5,
+        "width": "7",
+        "height": "5",
+        "label": "WindSpeed",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1210,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "267c329d.42a77e",
+        "type": "ui_chart",
+        "z": "cc876b4c.fe9878",
+        "name": "",
+        "group": "fec2d915.d38728",
+        "order": 7,
+        "width": "7",
+        "height": "5",
+        "label": "Rain",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1190,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d4aa3789.a16ec8",
+        "type": "ui_chart",
+        "z": "cc876b4c.fe9878",
+        "name": "",
+        "group": "fec2d915.d38728",
+        "order": 3,
+        "width": "7",
+        "height": "5",
+        "label": "Humidity",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1200,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "61b8f527.7b59dc",
+        "type": "ui_chart",
+        "z": "cc876b4c.fe9878",
+        "name": "Temperature",
+        "group": "fec2d915.d38728",
+        "order": 1,
+        "width": "7",
+        "height": "5",
+        "label": "Temperature",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "Sensor",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "15",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 1210,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "36b889af.557286",
+        "type": "debug",
+        "z": "85b67cb7.2993c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 660,
+        "y": 720,
+        "wires": []
     }
 ]

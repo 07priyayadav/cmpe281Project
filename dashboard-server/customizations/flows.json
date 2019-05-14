@@ -98,7 +98,7 @@
         "tab": "11735550.0c488b",
         "order": 2,
         "disp": true,
-        "width": "12",
+        "width": "27",
         "collapse": false
     },
     {
@@ -146,17 +146,6 @@
         "order": 1,
         "disp": true,
         "width": "27",
-        "collapse": false
-    },
-    {
-        "id": "eb65a4c7.e29348",
-        "type": "ui_group",
-        "z": "",
-        "name": "IOT location",
-        "tab": "11735550.0c488b",
-        "order": 3,
-        "disp": true,
-        "width": "12",
         "collapse": false
     },
     {
@@ -361,6 +350,87 @@
         "height": "5"
     },
     {
+        "id": "c2839f0a.8ee74",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "2af03a2b.e3d086",
+        "order": 2,
+        "width": "4",
+        "height": "7"
+    },
+    {
+        "id": "9705f2b7.07dbb",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "78e7b5a9.4390fc",
+        "order": 3,
+        "width": "5",
+        "height": "4"
+    },
+    {
+        "id": "9d0d453d.25b308",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "8a6ce203.70b13",
+        "order": 2,
+        "width": "2",
+        "height": "2"
+    },
+    {
+        "id": "cc655364.9e20f",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "8a6ce203.70b13",
+        "order": 4,
+        "width": "2",
+        "height": "2"
+    },
+    {
+        "id": "9a7af537.43edf8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "8a6ce203.70b13",
+        "order": 6,
+        "width": "2",
+        "height": "2"
+    },
+    {
+        "id": "3faafeb9.d442e2",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "9338cef.74d3c3",
+        "order": 2,
+        "width": "3",
+        "height": "5"
+    },
+    {
+        "id": "be108a1b.4fe058",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "9338cef.74d3c3",
+        "order": 4,
+        "width": "3",
+        "height": "5"
+    },
+    {
+        "id": "7598e266.6663ac",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "9338cef.74d3c3",
+        "order": 6,
+        "width": "5",
+        "height": "5"
+    },
+    {
+        "id": "f63d9c90.9cb24",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "9338cef.74d3c3",
+        "order": 8,
+        "width": "3",
+        "height": "5"
+    },
+    {
         "id": "f992b9f7.24a9f8",
         "type": "cassandra",
         "z": "6c747542.08dd5c",
@@ -419,7 +489,7 @@
         "ymax": "",
         "removeOlder": 1,
         "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
+        "removeOlderUnit": "60",
         "cutout": 0,
         "useOneColor": false,
         "colors": [
@@ -461,7 +531,7 @@
         "ymax": "",
         "removeOlder": 1,
         "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
+        "removeOlderUnit": "60",
         "cutout": 0,
         "useOneColor": false,
         "colors": [
@@ -503,7 +573,7 @@
         "ymax": "",
         "removeOlder": 1,
         "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
+        "removeOlderUnit": "60",
         "cutout": 0,
         "useOneColor": false,
         "colors": [
@@ -545,7 +615,7 @@
         "ymax": "",
         "removeOlder": 1,
         "removeOlderPoints": "",
-        "removeOlderUnit": "3600",
+        "removeOlderUnit": "60",
         "cutout": 0,
         "useOneColor": false,
         "colors": [
@@ -572,7 +642,7 @@
         "type": "function",
         "z": "6c747542.08dd5c",
         "name": "DB query",
-        "func": "msg.topic = \"select * from cloud_sensor_data.SensorData where farmer_id = '1' LIMIT 20\";\nreturn msg;",
+        "func": "msg.topic = \"select * from cloud_sensor_data.SensorData where farmer_id = '1'\";\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "x": 120,
@@ -601,7 +671,7 @@
         "dot": true,
         "ymin": "",
         "ymax": "",
-        "removeOlder": "15",
+        "removeOlder": "1",
         "removeOlderPoints": "",
         "removeOlderUnit": "60",
         "cutout": 0,
@@ -985,7 +1055,7 @@
         "z": "6c747542.08dd5c",
         "name": "",
         "group": "78e7b5a9.4390fc",
-        "order": 2,
+        "order": 4,
         "width": "10",
         "height": "4",
         "label": "Sensors by Ranch",
@@ -1093,16 +1163,24 @@
         "z": "6c747542.08dd5c",
         "name": "",
         "func": "let arr = (msg.payload);\narr.forEach(sensor => {\n    const res = {\n        \"topic\": sensor.sensor_id,\n        \"payload\": sensor.sensor_data,\n        \"series\": sensor.sensor_id,\n    };\n    if(sensor.sensor_type === \"temperature\") {\n        node.send([res,null,null,null,null]);\n    }\n    if(sensor.sensor_type === \"humidity\") {\n        node.send([null,res,null,null,null]);\n    }\n    if(sensor.sensor_type === \"windSpeed\") {\n       node.send([null,null,res,null,null]);\n    }\n    if(sensor.sensor_type === \"rain\") {\n      node.send([null,null,null,res,null]);\n    }\n    if(sensor.sensor_type === \"soilMoisture\") {\n       node.send([null,null,null,null,res]);\n    }\n    \n    \n    \n});",
-        "outputs": 1,
+        "outputs": 5,
         "noerr": 0,
         "x": 770,
         "y": 1080,
         "wires": [
             [
-                "4abc8044.89ed3",
-                "955bea8a.bf4478",
-                "9acd52e5.16349",
-                "1bdaf229.7cc05e",
+                "4abc8044.89ed3"
+            ],
+            [
+                "955bea8a.bf4478"
+            ],
+            [
+                "9acd52e5.16349"
+            ],
+            [
+                "1bdaf229.7cc05e"
+            ],
+            [
                 "1796520.eefc8ae"
             ]
         ]
@@ -1113,7 +1191,7 @@
         "z": "6c747542.08dd5c",
         "name": "",
         "group": "78e7b5a9.4390fc",
-        "order": 6,
+        "order": 5,
         "width": "5",
         "height": "4",
         "label": "Temperature",
@@ -1155,7 +1233,7 @@
         "z": "6c747542.08dd5c",
         "name": "",
         "group": "78e7b5a9.4390fc",
-        "order": 7,
+        "order": 6,
         "width": "5",
         "height": "4",
         "label": "windspeed",
@@ -1197,7 +1275,7 @@
         "z": "6c747542.08dd5c",
         "name": "",
         "group": "78e7b5a9.4390fc",
-        "order": 8,
+        "order": 7,
         "width": "5",
         "height": "4",
         "label": "Humidity",
@@ -1239,7 +1317,7 @@
         "z": "6c747542.08dd5c",
         "name": "",
         "group": "78e7b5a9.4390fc",
-        "order": 9,
+        "order": 8,
         "width": "5",
         "height": "4",
         "label": "rain",
@@ -1281,7 +1359,7 @@
         "z": "6c747542.08dd5c",
         "name": "",
         "group": "78e7b5a9.4390fc",
-        "order": 10,
+        "order": 9,
         "width": "5",
         "height": "4",
         "label": "Soil Moisture",
@@ -1385,11 +1463,11 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "repeat": "",
+        "repeat": "30",
         "crontab": "",
-        "once": false,
+        "once": true,
         "onceDelay": 0.1,
-        "x": 120,
+        "x": 130,
         "y": 40,
         "wires": [
             [
@@ -1447,7 +1525,7 @@
         "usermenu": "hide",
         "panit": "true",
         "hiderightclick": "false",
-        "coords": "deg",
+        "coords": "none",
         "path": "worldmap",
         "x": 739,
         "y": 180,
@@ -1461,15 +1539,15 @@
         "topic": "",
         "payload": "",
         "payloadType": "str",
-        "repeat": "",
+        "repeat": "30",
         "crontab": "",
         "once": false,
         "onceDelay": "",
         "x": 90,
-        "y": 140,
+        "y": 180,
         "wires": [
             [
-                "169c3b5f.f4c3a5"
+                "b70db03f.69932"
             ]
         ]
     },
@@ -1478,15 +1556,15 @@
         "type": "function",
         "z": "1f59fa5c.a5c906",
         "name": "Ranch coordinates",
-        "func": "/*var arr =  [{\"Farm ID\":1,\"Ranch ID\": 1,\"lat\":54.9619349,\"lon\":-1.6003813,\"radius\": 20,\"layer\": \"drawing\",\"iconColor\": '#464646',\"stroke\": \"false\", \"fillOpacity\": 0.8,},\n            {\"Farm ID\":1,\"Ranch ID\": 2,\"lat\":54.9656694,\"lon\":-1.5239833, \"radius\": 20,\"layer\": \"drawing\",\"iconColor\": '#464646',\"stroke\": \"false\", \"fillOpacity\": 0.8,},\n            {\"Farm ID\":1,\"Ranch ID\": 3,\"lat\":54.9696456,\"lon\":-1.5069755, \"radius\": 20,\"layer\": \"drawing\",\"iconColor\": '#464646',\"stroke\": \"false\", \"fillOpacity\": 0.8,},\n            {\"Farm ID\":1,\"Ranch ID\": 4,\"lat\":54.9378907,\"lon\":-1.5273729,\"radius\": 20,\"layer\": \"drawing\",\"iconColor\": '#464646',\"stroke\": \"false\", \"fillOpacity\": 0.8}]\n*/ \n/* msg.payload = [{ \"name\":\"Ranch1\", \"lat\":37.33, \"lon\":-121.89}, { \"name\":\"Ranch2\", \"lat\":37.30, \"lon\":-121.70}, { \"name\":\"Ranch3\", \"lat\":37.40, \"lon\":-121.79}];\n//msg.payload = {\"Name\":\"Jason\", \"lat\":51.05, \"lon\":-1.35, \"radius\": 20};\n*/\nvar loc = msg.payload || []; \nvar name;\nvar lat;\nvar lon;\n//node.error(loc);\nfor (var i =0; i<=loc.length; i++)\n{\n//node.error(msg.payload.farm_id);\n// name = loc[i].farm_id;\n// lat = loc[i].lat;\n// lon = loc[i].lon;\n//node.error(loc[i].farm_id);\n// node.error(name);\n//loc[i].lat = msg.payload.lat; \n//loc[i].lon = msg.payload.lon;\n}\n//msg.payload = loc;\nmsg.payload = [{\"name\": msg.payload.farm_id, \"lat\" : msg.payload.lat, \"lon\" : msg.payload.lon }] ;\n\nreturn msg;",
+        "func": " //msg.payload = [{ \"name\":\"Ranch1\", \"lat\":37.33, \"lon\":-121.89}, { \"name\":\"Ranch2\", \"lat\":37.30, \"lon\":-121.70}, { \"name\":\"Ranch3\", \"lat\":37.40, \"lon\":-121.79}];\nmsg.payload = {\"Name\":\"Jason\", \"lat\":51.05, \"lon\":-1.35};\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 549,
+        "x": 350,
         "y": 180,
         "wires": [
             [
-                "f892992.43ef168",
-                "7528a16.b9c476"
+                "7528a16.b9c476",
+                "f892992.43ef168"
             ]
         ]
     },
@@ -1498,7 +1576,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "str",
-        "repeat": "",
+        "repeat": "30",
         "crontab": "",
         "once": false,
         "onceDelay": "",
@@ -1563,8 +1641,8 @@
         "hiderightclick": "false",
         "coords": "none",
         "path": "worldmap",
-        "x": 630,
-        "y": 380,
+        "x": 560,
+        "y": 320,
         "wires": []
     },
     {
@@ -1575,7 +1653,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "str",
-        "repeat": "",
+        "repeat": "30",
         "crontab": "",
         "once": false,
         "onceDelay": "",
@@ -1595,8 +1673,8 @@
         "func": " msg.payload = [{ \"name\":\"Ranch1\", \"lat\":37.33, \"lon\":-121.89}, { \"name\":\"Ranch2\", \"lat\":37.30, \"lon\":-121.70}, { \"name\":\"Ranch3\", \"lat\":37.40, \"lon\":-121.79}];\n//msg.payload = {\"Name\":\"Jason\", \"lat\":51.05, \"lon\":-1.35, \"radius\": 20};\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 300,
-        "y": 380,
+        "x": 290,
+        "y": 320,
         "wires": [
             [
                 "4de4d040.ebf44"
@@ -1629,9 +1707,9 @@
         "z": "1f59fa5c.a5c906",
         "group": "2af03a2b.e3d086",
         "name": "IOTlocation maps",
-        "order": 2,
+        "order": 1,
         "width": "12",
-        "height": "8",
+        "height": "7",
         "format": "<div ng-bind-html=\"msg.payload | trusted\"></div>",
         "storeOutMessages": true,
         "fwdInMessages": true,
@@ -1696,12 +1774,10 @@
         "func": "msg.topic =\"select * from network_data.Farm_LocationbyFarmer where farmer_id = '1';\";\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
-        "x": 189,
-        "y": 180,
+        "x": 250,
+        "y": 120,
         "wires": [
-            [
-                "726abc71.964434"
-            ]
+            []
         ]
     },
     {
@@ -1790,12 +1866,10 @@
         "z": "1f59fa5c.a5c906",
         "mydb": "9d45dd60.46745",
         "name": "",
-        "x": 339,
-        "y": 180,
+        "x": 400,
+        "y": 120,
         "wires": [
-            [
-                "b70db03f.69932"
-            ]
+            []
         ]
     },
     {
@@ -1808,8 +1882,8 @@
         "console": false,
         "tostatus": false,
         "complete": "false",
-        "x": 739,
-        "y": 260,
+        "x": 730,
+        "y": 240,
         "wires": []
     },
     {
@@ -2015,11 +2089,11 @@
         "type": "ui_dropdown",
         "z": "e6629e90.eb606",
         "name": "Farm ID",
-        "label": "",
+        "label": "Statistics of Individual Farmers",
         "tooltip": "",
         "place": "Select Farmer ID",
         "group": "2af03a2b.e3d086",
-        "order": 1,
+        "order": 3,
         "width": "5",
         "height": "4",
         "passthru": true,
@@ -2095,7 +2169,7 @@
         "type": "function",
         "z": "e6629e90.eb606",
         "name": "DB query",
-        "func": "msg.topic = \"select * from cloud_sensor_data.SensorData\";\nreturn msg;",
+        "func": "msg.topic = \"select * from cloud_sensor_data.SensorData LIMIT 20\";\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "x": 280,
@@ -2128,8 +2202,8 @@
         "group": "bfce5f2b.12353",
         "name": "IOT Manager Monitoring table",
         "order": 0,
-        "width": 0,
-        "height": 0,
+        "width": "27",
+        "height": "8",
         "format": "\n<table class=\"table table-hover\" id=\"table\" border=\"1\">\n   <thead>\n <tr>\n <th scope=\"col\">Farmer ID</th>\n <th scope=\"col\">Farm ID</th> \n <th scope=\"col\">Ranch ID</th>\n <th scope=\"col\">Cluster ID</th>\n <th scope=\"col\">Sensor ID</th>\n <th scope=\"col\">Sensor Type</th>\n <th scope=\"col\">Timestamp</th>\n <th scope=\"col\">Sensor Data</th>\n <th scope=\"col\">Sensor Status</th>\n\n </tr>\n    </thead>\n <tbody>\n <tr ng-repeat=\"row in msg.payload\">\n <td ng-repeat=\"item in row\" >{{item}}</td>\n </tr>\n </tbody>\n</table>\n",
         "storeOutMessages": true,
         "fwdInMessages": true,
@@ -2231,7 +2305,7 @@
         "name": "",
         "group": "9338cef.74d3c3",
         "order": 5,
-        "width": "7",
+        "width": "3",
         "height": "5",
         "label": "WindSpeed",
         "chartType": "line",
